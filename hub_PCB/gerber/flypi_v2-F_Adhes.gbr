@@ -2,7 +2,7 @@ G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.4)-1*
 G04 #@! TF.CreationDate,2020-01-17T21:05:33+02:00*
 G04 #@! TF.ProjectId,flypi_v2,666c7970-695f-4763-922e-6b696361645f,rev?*
 G04 #@! TF.SameCoordinates,Original*
-G04 #@! TF.FileFunction,Paste,Top*
+G04 #@! TF.FileFunction,Glue,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
