@@ -1734,7 +1734,7 @@
     (descr "USB A vertical female connector, right angle")
     (tags "USB_A_Vertical female connector angled 73725-0110BLF")
     (path /59ED406F)
-    (fp_text reference J12 (at 3 8.5 90) (layer F.SilkS)
+    (fp_text reference J1 (at 3 8.5 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "USB A" (at 0 -9.5 90) (layer F.SilkS)
