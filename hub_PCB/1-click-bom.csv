@@ -9,7 +9,6 @@ CON1;,1,2.1mm socket,Cliff,FC68148 DC10A,Lumberg,NEB 21 R,Cliff,FC68148,Gravitec
 C1; C3;,2,680µF Capacitor,Rubycon,16ZL680MEFC10X16,Panasonic,EEU-FC1A681,Panasonic,EEU-FP1E681 ,,,,,1189-3978-ND,667-EEU-FP1E681 ,7037258,31M6417,1144691
 C2; C4;,2,CAP ALUM 220UF 20% 25V RADIAL,Panasonic, EEU-FM1E221 ,Panasonic,ECA-1CM221B,Panasonic,ECE-A0GKS221,Panasonic,EEU-EB1A221S,,,P12383-ND,667ECA1CM221B,7472036,70K9673,9451099
 1k1;,1,Resistor 1k 250mW through-hole,Multicomp,MF12 1K,Yageo,MFR-25FBF52-1K,RS Pro,7077666,,,,,1.00KXBK-ND,603MFR25FBF521K,7077666,38K5400,9342400
-MCU;,1,Arduino Mini,Arduino,A000087,Arduino,A000005 ,,,,,,,1050-1001-ND,992-ARD-NANO30,696-1667,13T9275,1848691
 2 pin housing;,4,plastic housing for crimped cables 2 pins XH,JST,XHP-2 ,,,,,,,,,455-2266-ND ,,1667314,,1516264
 3 pin housing;,3,plastic housing for crimped cables 3 pins XH,JST,XHP-3,,,,,,,,,455-2219-ND ,941-XHP35A0D0BD440E,8201614,,1516265
 4 pin housing;,1,plastic housing for crimped cables 4 pins XH,JST,XHP-4,,,,,,,,,455-2267-ND ,,1667316,74M5179,1516266
