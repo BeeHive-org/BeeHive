@@ -959,7 +959,7 @@ NoConn ~ 2300 6000
 Wire Notes Line
 	2950 6250 1750 6250
 Text Notes 3650 5300 0    100  ~ 0
-Connector pinout
+Connector pinout***
 Wire Notes Line
 	1750 5000 1750 6250
 Wire Notes Line
@@ -979,8 +979,6 @@ F 3 "" H 3300 3450 50  0000 C CNN
 	1    3300 3450
 	-1   0    0    1   
 $EndComp
-Text Notes 950  7350 0    100  ~ 0
-* Power supply (PS)\n** Specified voltage and amperage are maximum possible\nvalues for each PS 
 Wire Wire Line
 	3450 3450 3500 3450
 Wire Wire Line
@@ -1141,4 +1139,14 @@ F 3 "" H 9350 5150 50  0000 C CNN
 	1    9350 5150
 	-1   0    0    -1  
 $EndComp
+Text Notes 950  7400 0    100  ~ 0
+* Power supply (PS)\n** Specified voltage and amperage are maximum possible\nvalues for each PS \n*** This is the output connector. The corresponding input\nconnector will have the pinout reversed
+Text Notes 4500 5550 0    100  ~ 0
+1
+Text Notes 4500 5750 0    100  ~ 0
+2
+Text Notes 4500 5950 0    100  ~ 0
+3
+Text Notes 4500 6150 0    100  ~ 0
+4
 $EndSCHEMATC
