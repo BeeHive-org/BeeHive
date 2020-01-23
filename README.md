@@ -1,1 +1,1 @@
-# FlyPi V2 - a flexible platform for connectiing different sensors and actuators
+# FlyPi V2 - a flexible platform for connecting different sensors and actuators
