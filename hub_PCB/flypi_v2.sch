@@ -223,20 +223,9 @@ $EndComp
 Wire Wire Line
 	2650 3650 2650 3800
 Wire Wire Line
-	6600 2200 6050 2200
-Connection ~ 6600 2200
-Wire Wire Line
-	6600 3500 6050 3500
-Wire Wire Line
 	1950 3450 1950 4200
 Wire Wire Line
-	6500 2300 6050 2300
-Wire Wire Line
 	6500 1950 7450 1950
-Wire Wire Line
-	6500 3600 6050 3600
-Wire Wire Line
-	6500 4250 6050 4250
 $Comp
 L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U3
 U 1 1 5E2FAC04
@@ -473,36 +462,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 3450 4050 4100
 Connection ~ 4050 3450
-Wire Wire Line
-	6050 4150 6600 4150
-Connection ~ 6500 2300
-Wire Wire Line
-	7000 4250 7450 4250
-Wire Wire Line
-	7000 4150 7550 4150
-Wire Wire Line
-	7000 3600 7450 3600
-Wire Wire Line
-	7000 3500 7550 3500
-Wire Wire Line
-	7000 2300 7450 2300
-Connection ~ 7450 2300
-Wire Wire Line
-	7000 2200 7550 2200
-Connection ~ 7550 2200
 Connection ~ 6500 1950
 Wire Wire Line
 	6600 1850 7550 1850
-Wire Wire Line
-	9550 5800 10150 5800
-Wire Wire Line
-	10150 5150 9550 5150
-Wire Wire Line
-	9550 5700 10250 5700
-Wire Wire Line
-	10250 5050 9550 5050
-Connection ~ 10150 5150
-Connection ~ 10250 5700
 $Comp
 L power:+5V #PWR0105
 U 1 1 5E355388
@@ -607,24 +569,6 @@ F 3 "" H 6500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 1850 7550 2200
-Wire Wire Line
-	7450 1950 7450 2300
-Wire Wire Line
-	6600 1850 6600 2200
-Wire Wire Line
-	6500 1950 6500 2300
-Wire Wire Line
-	7550 2200 7550 2850
-Wire Wire Line
-	7450 2300 7450 2950
-Wire Wire Line
-	7000 2850 7550 2850
-Wire Wire Line
-	7000 2950 7450 2950
-Wire Wire Line
-	6500 2300 6500 2950
-Wire Wire Line
 	7100 3150 7000 3150
 Wire Wire Line
 	7100 3050 7000 3050
@@ -640,12 +584,6 @@ Text GLabel 6150 3150 2    50   BiDi ~ 0
 D3-4
 Text GLabel 6150 3050 2    50   BiDi ~ 0
 D3-3
-Wire Wire Line
-	6500 2950 6050 2950
-Wire Wire Line
-	6600 2850 6050 2850
-Wire Wire Line
-	6600 2200 6600 2850
 $Comp
 L Connector_Generic:Conn_01x04 P4
 U 1 1 5E1F3D40
@@ -668,33 +606,6 @@ F 3 "" H 5850 2950 50  0000 C CNN
 	1    5850 2950
 	-1   0    0    -1  
 $EndComp
-Connection ~ 6500 2950
-Connection ~ 6600 2850
-Wire Wire Line
-	6500 2950 6500 3600
-Wire Wire Line
-	6600 2850 6600 3500
-Connection ~ 7450 2950
-Connection ~ 7550 2850
-Wire Wire Line
-	7550 2850 7550 3500
-Wire Wire Line
-	7450 2950 7450 3600
-Connection ~ 6500 3600
-Connection ~ 6600 3500
-Wire Wire Line
-	6500 3600 6500 4250
-Wire Wire Line
-	6600 3500 6600 4150
-Connection ~ 7450 3600
-Connection ~ 7550 3500
-Wire Wire Line
-	7450 3600 7450 4250
-Wire Wire Line
-	7550 3500 7550 4150
-Connection ~ 7550 4150
-Wire Wire Line
-	7550 4150 7550 4400
 Wire Wire Line
 	7450 5350 8400 5350
 Connection ~ 7450 5350
@@ -757,12 +668,6 @@ Wire Notes Line
 	5600 5000 8700 5000
 Wire Notes Line
 	5600 6250 8700 6250
-Wire Wire Line
-	10150 5800 10150 5150
-Wire Wire Line
-	10250 5700 10250 5050
-Wire Wire Line
-	10250 5700 10250 5950
 Wire Notes Line
 	9100 6250 10450 6250
 Text Notes 9250 4800 0    100  ~ 0
@@ -773,8 +678,6 @@ Wire Notes Line
 	9100 4550 9100 6250
 Wire Notes Line
 	10450 4550 10450 6250
-Wire Wire Line
-	10150 4850 10150 5150
 Text Notes 1850 3400 0    100  ~ 0
 Main PS 5V3A
 $Comp
@@ -900,14 +803,6 @@ Text GLabel 10300 2350 2    50   BiDi ~ 0
 RX
 Text GLabel 10300 2250 2    50   BiDi ~ 0
 TX
-Wire Wire Line
-	6050 7150 6350 7150
-Wire Wire Line
-	6350 6850 6350 7150
-Wire Wire Line
-	6050 7050 6450 7050
-Wire Wire Line
-	6450 7050 6450 7300
 $Comp
 L power:+5V #PWR0114
 U 1 1 5E2A79F5
@@ -933,8 +828,6 @@ Wire Wire Line
 	10200 2250 10300 2250
 Wire Wire Line
 	10200 2350 10300 2350
-Wire Wire Line
-	1900 5700 2300 5700
 $Comp
 L Connector_Generic:Conn_01x04 P14
 U 1 1 5E555C9B
@@ -948,18 +841,14 @@ F 3 "" H 2500 5800 50  0000 C CNN
 $EndComp
 Text Notes 1850 5450 0    100  ~ 0
 To additional\nPS 5V3A
-Wire Wire Line
-	1900 5700 1900 5950
 Text Notes 800  1850 0    100  ~ 0
 12V5A
-Wire Wire Line
-	1550 5800 2300 5800
 NoConn ~ 2300 5900
 NoConn ~ 2300 6000
 Wire Notes Line
 	2950 6250 1750 6250
 Text Notes 3650 5300 0    100  ~ 0
-Connector pinout***
+Connector pinout
 Wire Notes Line
 	1750 5000 1750 6250
 Wire Notes Line
@@ -1011,12 +900,12 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	4450 5950 4850 5950
 Wire Notes Line style solid rgb(255, 0, 0)
-	4450 5750 4850 5750
+	4450 5600 4850 5600
 Text Notes 3850 6200 0    100  ~ 0
 DATA 1
 Text Notes 3850 6000 0    100  ~ 0
 DATA 2
-Text Notes 4050 5800 0    100  ~ 0
+Text Notes 4050 5600 0    100  ~ 0
 VCC
 Wire Wire Line
 	2550 2500 2550 2700
@@ -1027,7 +916,7 @@ Wire Wire Line
 Connection ~ 1950 4200
 Connection ~ 1550 3900
 Wire Wire Line
-	1550 3900 1550 5800
+	1550 3900 1550 5700
 Wire Wire Line
 	1550 2100 1550 3900
 Wire Notes Line
@@ -1062,37 +951,10 @@ Wire Wire Line
 Wire Notes Line
 	1750 2850 1750 1450
 Wire Wire Line
-	8500 5450 8500 5700
-Wire Wire Line
 	6600 5450 7550 5450
-Wire Wire Line
-	6050 5700 6600 5700
-Wire Wire Line
-	6600 5700 6600 5450
-Wire Wire Line
-	7550 5700 7550 5450
-Wire Wire Line
-	7000 5700 7550 5700
 Connection ~ 7550 5450
 Wire Wire Line
 	7550 5450 8500 5450
-Wire Wire Line
-	7000 5800 7450 5800
-Wire Wire Line
-	7450 5800 7450 5350
-Wire Wire Line
-	6050 5800 6500 5800
-Wire Wire Line
-	6500 5800 6500 5350
-Wire Wire Line
-	7950 5700 8500 5700
-Connection ~ 8500 5700
-Wire Wire Line
-	8500 5700 8500 5950
-Wire Wire Line
-	7950 5800 8400 5800
-Wire Wire Line
-	8400 5800 8400 5350
 Wire Notes Line
 	1750 3150 4700 3150
 Wire Notes Line
@@ -1123,10 +985,10 @@ NoConn ~ 10200 3750
 Wire Wire Line
 	10200 2650 10300 2650
 Wire Notes Line style solid rgb(0, 0, 0)
-	4450 5550 4850 5550
+	4450 5750 4850 5750
 Wire Notes Line style solid
 	4450 6250 4450 5450
-Text Notes 4050 5600 0    100  ~ 0
+Text Notes 4050 5800 0    100  ~ 0
 GND
 $Comp
 L Connector_Generic:Conn_01x04 P12
@@ -1139,9 +1001,9 @@ F 3 "" H 9350 5150 50  0000 C CNN
 	1    9350 5150
 	-1   0    0    -1  
 $EndComp
-Text Notes 950  7400 0    100  ~ 0
-* Power supply (PS)\n** Specified voltage and amperage are maximum possible\nvalues for each PS \n*** This is the output connector. The corresponding input\nconnector will have the pinout reversed
-Text Notes 4500 5550 0    100  ~ 0
+Text Notes 950  7250 0    100  ~ 0
+* Power supply (PS)\n** Specified voltage and amperage are maximum possible\nvalues for each PS 
+Text Notes 4500 5600 0    100  ~ 0
 1
 Text Notes 4500 5750 0    100  ~ 0
 2
@@ -1149,4 +1011,142 @@ Text Notes 4500 5950 0    100  ~ 0
 3
 Text Notes 4500 6150 0    100  ~ 0
 4
+Wire Wire Line
+	6050 3500 6500 3500
+Connection ~ 6500 3500
+Wire Wire Line
+	6500 3500 6500 4150
+Wire Wire Line
+	6050 3600 6600 3600
+Connection ~ 6600 3600
+Wire Wire Line
+	6050 2950 6600 2950
+Connection ~ 6600 2950
+Wire Wire Line
+	6600 2950 6600 3600
+Wire Wire Line
+	6050 2850 6500 2850
+Connection ~ 6500 2850
+Wire Wire Line
+	6500 2850 6500 3500
+Wire Wire Line
+	6500 1950 6500 2200
+Wire Wire Line
+	6600 1850 6600 2300
+Wire Wire Line
+	6050 2300 6600 2300
+Connection ~ 6600 2300
+Wire Wire Line
+	6600 2300 6600 2950
+Wire Wire Line
+	6050 2200 6500 2200
+Connection ~ 6500 2200
+Wire Wire Line
+	6500 2200 6500 2850
+Wire Wire Line
+	6050 4150 6500 4150
+Wire Wire Line
+	6050 4250 6600 4250
+Wire Wire Line
+	6600 3600 6600 4250
+Wire Wire Line
+	7000 4150 7450 4150
+Wire Wire Line
+	7000 4250 7550 4250
+Connection ~ 7550 4250
+Wire Wire Line
+	7550 4250 7550 4400
+Wire Wire Line
+	7000 3600 7550 3600
+Connection ~ 7550 3600
+Wire Wire Line
+	7550 3600 7550 4250
+Wire Wire Line
+	7000 3500 7450 3500
+Connection ~ 7450 3500
+Wire Wire Line
+	7450 3500 7450 4150
+Wire Wire Line
+	7000 2950 7550 2950
+Connection ~ 7550 2950
+Wire Wire Line
+	7550 2950 7550 3600
+Wire Wire Line
+	7000 2850 7450 2850
+Connection ~ 7450 2850
+Wire Wire Line
+	7450 2850 7450 3500
+Wire Wire Line
+	7450 1950 7450 2200
+Wire Wire Line
+	7550 1850 7550 2300
+Wire Wire Line
+	7000 2300 7550 2300
+Connection ~ 7550 2300
+Wire Wire Line
+	7550 2300 7550 2950
+Wire Wire Line
+	7000 2200 7450 2200
+Connection ~ 7450 2200
+Wire Wire Line
+	7450 2200 7450 2850
+Wire Wire Line
+	6050 7050 6350 7050
+Wire Wire Line
+	6350 7050 6350 6850
+Wire Wire Line
+	6050 7150 6450 7150
+Wire Wire Line
+	6450 7150 6450 7300
+Wire Wire Line
+	6050 5700 6500 5700
+Wire Wire Line
+	6500 5700 6500 5350
+Wire Wire Line
+	6050 5800 6600 5800
+Wire Wire Line
+	6600 5450 6600 5800
+Wire Wire Line
+	7000 5700 7450 5700
+Wire Wire Line
+	7450 5700 7450 5350
+Wire Wire Line
+	7000 5800 7550 5800
+Wire Wire Line
+	7550 5450 7550 5800
+Wire Wire Line
+	8500 5450 8500 5800
+Wire Wire Line
+	7950 5700 8400 5700
+Wire Wire Line
+	8400 5700 8400 5350
+Wire Wire Line
+	7950 5800 8500 5800
+Connection ~ 8500 5800
+Wire Wire Line
+	8500 5800 8500 5950
+Wire Wire Line
+	10150 4850 10150 5050
+Wire Wire Line
+	9550 5050 10150 5050
+Connection ~ 10150 5050
+Wire Wire Line
+	10150 5050 10150 5700
+Wire Wire Line
+	9550 5150 10250 5150
+Wire Wire Line
+	10250 5150 10250 5800
+Wire Wire Line
+	9550 5700 10150 5700
+Wire Wire Line
+	9550 5800 10250 5800
+Connection ~ 10250 5800
+Wire Wire Line
+	10250 5800 10250 5950
+Wire Wire Line
+	2300 5800 1900 5800
+Wire Wire Line
+	1900 5800 1900 5950
+Wire Wire Line
+	2300 5700 1550 5700
 $EndSCHEMATC
