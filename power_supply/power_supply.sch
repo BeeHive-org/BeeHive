@@ -220,21 +220,7 @@ Wire Notes Line
 Wire Wire Line
 	6750 2850 7100 2850
 Wire Wire Line
-	6750 2300 6750 2400
-Wire Wire Line
-	6900 2300 7100 2300
-Wire Wire Line
-	6900 2300 6900 3550
-Wire Wire Line
-	7100 2400 6750 2400
-Connection ~ 6750 2400
-Wire Wire Line
-	6750 2400 6750 2750
-Wire Wire Line
-	7100 2750 6750 2750
-Connection ~ 6750 2750
-Wire Wire Line
-	6750 2750 6750 2850
+	6900 2300 6900 2750
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5E26F9D6
@@ -259,4 +245,18 @@ Wire Wire Line
 Connection ~ 4200 2800
 NoConn ~ 3300 2950
 NoConn ~ 3300 3050
+Wire Wire Line
+	6900 2300 7100 2300
+Wire Wire Line
+	6750 2300 6750 2400
+Connection ~ 6750 2400
+Wire Wire Line
+	7100 2400 6750 2400
+Wire Wire Line
+	6750 2400 6750 2850
+Wire Wire Line
+	7100 2750 6900 2750
+Connection ~ 6900 2750
+Wire Wire Line
+	6900 2750 6900 3550
 $EndSCHEMATC
