@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:power_supply-cache
-LIBS:4_switch_array-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,24 +87,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 2650 4900 2800
 Wire Wire Line
-	3950 2800 4200 2800
-Connection ~ 4200 2800
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5E26F9D6
-P 3100 3000
-F 0 "J1" H 3100 2700 50  0000 C CNN
-F 1 "Conn_01x04" H 3000 2700 50  0001 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3100 3000 50  0001 C CNN
-F 3 "~" H 3100 3000 50  0001 C CNN
-	1    3100 3000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3950 2900 3950 2800
-Wire Wire Line
-	3850 2800 3850 3200
-Wire Wire Line
 	3850 3200 4750 3200
 Wire Wire Line
 	4750 3550 4750 3400
@@ -182,96 +163,40 @@ F 3 "" H 6900 3550 50  0001 C CNN
 	1    6900 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 2800 3300 2800
-Wire Wire Line
-	3300 2900 3950 2900
-Wire Wire Line
-	6750 2300 6750 2750
-Wire Wire Line
-	6900 2400 6900 2850
-Wire Wire Line
-	6750 2300 7100 2300
-Connection ~ 6750 2300
-Wire Wire Line
-	7100 2400 6900 2400
-Wire Wire Line
-	7100 2850 6900 2850
-Connection ~ 6900 2850
-Wire Wire Line
-	6900 2850 6900 3550
-Wire Wire Line
-	6750 2750 7100 2750
-NoConn ~ 3300 3000
-NoConn ~ 3300 3100
-Text Notes 9050 3100 0    100  ~ 0
+Text Notes 8750 2600 2    100  ~ 0
 GND
-Text Notes 9050 2900 0    100  ~ 0
+Text Notes 8750 2400 2    100  ~ 0
 VCC
-Text Notes 9050 2700 0    100  ~ 0
+Text Notes 8750 2800 2    100  ~ 0
 DATA 2
-Text Notes 9050 2500 0    100  ~ 0
+Text Notes 8750 3000 2    100  ~ 0
 DATA 1
 Wire Notes Line style solid
-	9000 2350 9650 2350
+	8800 3050 8150 3050
 Wire Notes Line style solid
-	9000 3150 9650 3150
+	8800 2250 8150 2250
 Wire Notes Line style solid
-	9650 3150 9650 2350
+	8150 2250 8150 3050
 Wire Notes Line style solid
-	9000 3150 9000 2350
+	8800 2250 8800 3050
 Wire Notes Line style solid
-	9000 2450 8600 2450
+	8800 2950 9200 2950
 Wire Notes Line style solid
-	9000 2650 8600 2650
+	8800 2750 9200 2750
 Wire Notes Line style solid rgb(255, 0, 0)
-	9000 2850 8600 2850
+	8800 2350 9200 2350
 Wire Notes Line style solid rgb(0, 0, 0)
-	9000 3050 8600 3050
-Text Notes 8850 2450 0    100  ~ 0
+	8800 2550 9200 2550
+Text Notes 8950 2350 2    100  ~ 0
 1
-Text Notes 8850 2650 0    100  ~ 0
+Text Notes 8950 2550 2    100  ~ 0
 2
-Text Notes 8850 2850 0    100  ~ 0
+Text Notes 8950 2750 2    100  ~ 0
 3
-Text Notes 8850 3050 0    100  ~ 0
+Text Notes 8950 2950 2    100  ~ 0
 4
-Text Notes 8550 2250 0    100  ~ 0
-Input connector\npinout
-Text Notes 9200 3850 2    100  ~ 0
-GND
-Text Notes 9200 4050 2    100  ~ 0
-VCC
-Text Notes 9200 4250 2    100  ~ 0
-DATA 2
-Text Notes 9200 4450 2    100  ~ 0
-DATA 1
-Wire Notes Line style solid
-	9250 4500 8600 4500
-Wire Notes Line style solid
-	9250 3700 8600 3700
-Wire Notes Line style solid
-	8600 3700 8600 4500
-Wire Notes Line style solid
-	9250 3700 9250 4500
-Wire Notes Line style solid
-	9250 4400 9650 4400
-Wire Notes Line style solid
-	9250 4200 9650 4200
-Wire Notes Line style solid rgb(255, 0, 0)
-	9250 4000 9650 4000
-Wire Notes Line style solid rgb(0, 0, 0)
-	9250 3800 9650 3800
-Text Notes 9400 3800 2    100  ~ 0
-1
-Text Notes 9400 4000 2    100  ~ 0
-2
-Text Notes 9400 4200 2    100  ~ 0
-3
-Text Notes 9400 4400 2    100  ~ 0
-4
-Text Notes 8550 3600 0    100  ~ 0
-Output connector\npinout
+Text Notes 8100 2150 0    100  ~ 0
+Connector\npinout
 Text Notes 3000 2600 0    100  ~ 0
 Input\n12V5A (max)
 Text Notes 6700 2100 0    100  ~ 0
@@ -292,4 +217,46 @@ Wire Notes Line
 	7700 1700 7700 3300
 Wire Notes Line
 	6600 1700 6600 3300
+Wire Wire Line
+	6750 2850 7100 2850
+Wire Wire Line
+	6750 2300 6750 2400
+Wire Wire Line
+	6900 2300 7100 2300
+Wire Wire Line
+	6900 2300 6900 3550
+Wire Wire Line
+	7100 2400 6750 2400
+Connection ~ 6750 2400
+Wire Wire Line
+	6750 2400 6750 2750
+Wire Wire Line
+	7100 2750 6750 2750
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 6750 2850
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E26F9D6
+P 3100 2850
+F 0 "J1" H 3100 3050 50  0000 C CNN
+F 1 "Conn_01x04" H 3000 2550 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3100 2850 50  0001 C CNN
+F 3 "~" H 3100 2850 50  0001 C CNN
+	1    3100 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2850 3850 2850
+Wire Wire Line
+	3850 2850 3850 3200
+Wire Wire Line
+	3300 2750 4000 2750
+Wire Wire Line
+	4000 2750 4000 2800
+Wire Wire Line
+	4000 2800 4200 2800
+Connection ~ 4200 2800
+NoConn ~ 3300 2950
+NoConn ~ 3300 3050
 $EndSCHEMATC
