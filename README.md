@@ -24,8 +24,16 @@ PCB
 
 The transistor-switch hub for 4 devices:
 
-Schematics ![switch_array.png](https://github.com/isobianin/FlyPi_v2/blob/master/4_switch_array/4_switch_array.png)
+Schematics ![4_switch_array.png](https://github.com/isobianin/FlyPi_v2/blob/master/4_switch_array/4_switch_array.png)
 
 PCB
 
 ![PCB_4_switch_array.png](https://github.com/isobianin/FlyPi_v2/blob/master/4_switch_array/PCB_4_switch_array.png)
+
+The transistor-switch hub for 8 devices:
+
+Schematics ![8_switch_array.png](https://github.com/isobianin/FlyPi_v2/blob/master/8_switch_array/8_switch_array.png)
+
+PCB
+
+![PCB_8_switch_array.png](https://github.com/isobianin/FlyPi_v2/blob/master/8_switch_array/PCB_8_switch_array.png)
