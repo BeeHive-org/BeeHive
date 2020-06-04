@@ -38,8 +38,10 @@ Here in discrete steps:
 - this examples leverages open source packages, and you'll need to install them before getting started:
 - Bonsai-RX
 - [MicroPython](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro)
-- OSC micropython library
+- [OSC micropython library](https://github.com/SpotlightKid/micropython-osc)
 
 
 ### Other notes:
 - For this example we are using MicroPython firmware stable version 1.12, taken from [here](https://micropython.org/download/esp32/)
+- [collection of micropyhton libraries](<https://github.com/mcauser/awesome-micropython>)
+- [core python libraries ported to micropython](<https://github.com/micropython/micropython-lib>)
