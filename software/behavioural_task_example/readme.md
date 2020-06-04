@@ -23,7 +23,7 @@ Here in discrete steps:
 
 
 
-## system specs:
+### system specs:
 - Hardware:
   - Beehive main board with ESP32 WROOM-32
   - ELP USB Camera
@@ -37,5 +37,9 @@ Here in discrete steps:
 
 - this examples leverages open source packages, and you'll need to install them before getting started:
 - Bonsai-RX
-- MicroPython
+- [MicroPython](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro)
 - OSC micropython library
+
+
+### Other notes:
+- For this example we are using MicroPython firmware stable version 1.12, taken from [here](https://micropython.org/download/esp32/)
