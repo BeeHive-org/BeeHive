@@ -12,8 +12,8 @@ This example shows how to setup a behavioural task for conditioning mice to drin
 
 Here in discrete steps:
 - LED Turns on
- - If animals lick in pre determined time window:
-  - Water pump on
+  - If animals lick in pre determined time window:
+    - Water pump on
   - LED off
   - Wait for a while so water consumes water
   - Water pump off
