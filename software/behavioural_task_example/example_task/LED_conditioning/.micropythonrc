@@ -16,7 +16,7 @@
     ]
   },
   "tools": {
-    "ampy": "/home/andre/miniconda3/bin/ampy",
+    "ampy": "/usr/local/bin/ampy",
     "rshell": "/usr/local/bin/rshell"
   }
 }

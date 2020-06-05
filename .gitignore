@@ -1,0 +1,7 @@
+
+#ignore vs code config files
+*.vscode
+#ignore micropython IDE for VSCode config files
+*.micropythonrc
+#ignore file with passwords
+*passes.py
