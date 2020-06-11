@@ -30,7 +30,7 @@ def do_connect():
 do_connect()
 
 
-
+'''
 osc = Client('192.168.4.2', 9001)
 osc.send('/controls/frobnicator', 42, 3.1419, "spamm")
 b = Bundle()
@@ -39,3 +39,4 @@ b.add(create_message("/spamm", 12345))
 
 osc.send(b)
 
+'''
