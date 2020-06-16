@@ -44,3 +44,7 @@ def do_connect():
 do_connect()
 import webrepl
 webrepl.start()
+
+
+import main
+main.main()

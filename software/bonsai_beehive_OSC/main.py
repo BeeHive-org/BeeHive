@@ -1,9 +1,9 @@
 from machine import Pin
 import network
-import uosc
+#import uosc
 import machine
-
-
+from uosc.client import Bundle, Client, create_message
+import time
 import passes
 
 
@@ -11,6 +11,15 @@ import passes
 
 
 def main():
+    #set variables for uosc client
+    microsDelay = 10*1000 #  time delay in microseconds
+    bonsaiAddress = '192.168.137.255'
+    commPort = 9001
+    digitalSend = "/digitalInput"
+    digitalReceive = "/digitalOutput"
+
+    #create osc client object
+    osc = Client(bonsaiAddress, commPort)
     #set Digital pins
     
     # Digital output
@@ -25,29 +34,29 @@ def main():
     #pinOutNum = [0,1,2,3]
     
     #digital input
-    p4 = Pin(27, Pin.IN) # currently beehive D4 is IO27
+    #p4 = Pin(27, Pin.IN) # currently beehive D4 is IO27
     p5 = Pin(14, Pin.IN) # currently beehive D5 is IO14
-    p6 = Pin(12, Pin.IN) # currently beehive D6 is IO12
-    p7 = Pin(13, Pin.IN) # currently beehive D7 is IO13
+    #p6 = Pin(12, Pin.IN) # currently beehive D6 is IO12
+    #p7 = Pin(13, Pin.IN) # currently beehive D7 is IO13
 
     #index of pins set as input
-    pinInList = [p4,p5,p6,p7]
-    pinInIndex = [4,5,6,7]
+    pinInList = [p5]#[p4,p5,p6,p7]
+    pinInIndex = [5]#[4,5,6,7]
 
     #Analog input
 
     # although attenuation allows 3.6V to be the max range, 3.3V should be the MAX send to the board!!!
-    adc0 = machine.ADC(34) # currently beehive D7 is IO13
-    adc0.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    adc1 = machine.ADC(34) # currently beehive D7 is IO13
-    adc1.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    adc2 = machine.ADC(34) # currently beehive D7 is IO13
-    adc2.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    adc3 = machine.ADC(34) # currently beehive D7 is IO13
-    adc3.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+    #adc0 = machine.ADC(34) # currently beehive D7 is IO13
+    #adc0.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+    #adc1 = machine.ADC(34) # currently beehive D7 is IO13
+    #adc1.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+    #adc2 = machine.ADC(34) # currently beehive D7 is IO13
+    #adc2.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+    #adc3 = machine.ADC(34) # currently beehive D7 is IO13
+    #adc3.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
 
     #index of pins set as analog
-    pinsAnalogInList = [adc0,adc1,adc2,adc3]
+    #pinsAnalogInList = [adc0,adc1,adc2,adc3]
 
     #analog output (actually PWM):
     #dac0 = 1
@@ -64,7 +73,7 @@ def main():
         if dummie != 0:
             break
 
-        temp = 10
+        temp = 0
         #loop to scan input pins
         for i in range(len(pinInList)):
             print(i)
@@ -72,10 +81,15 @@ def main():
             if pinInList[i].value()==1:
                 temp = temp + (2**pinInIndex[i])
             print(temp)
+        b = Bundle()
+        b.add(create_message("/digitalInput", temp))
+        osc.send(b)
+        #time.sleep(0.001)
 
-    for i in range(len(pinsAnalogInList)):
-        print(i)
-        print(pinsAnalogInList[i].adc.read_u16())
+    #analog input pins
+    #for i in range(len(pinsAnalogInList)):
+    #    print(i)
+    #    print(pinsAnalogInList[i].adc.read_u16())
         # do not forget to actually send the adc read info.
         
 
