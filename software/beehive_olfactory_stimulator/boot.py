@@ -14,7 +14,7 @@ machine.freq(240000000)
 
 
 import passes
-
+import serialtest
 
 
 
@@ -44,9 +44,11 @@ def do_connect():
     return wlan
 
 do_connect()
+
 import webrepl
 webrepl.start()
-print(webrepl)
+#print(webrepl)
 
-import main
+#import main
+
 #main.main()

@@ -5,14 +5,19 @@ import machine
 from uosc.client import Bundle, Client, create_message
 import time
 import passes
-
+import uarray
 
 
 
 
 def main():
+    #set timing variables:
+    timePeriod = 20 # time in milliseconds between each data sending
+    startTiming = 0
+    stopTiming = 0
+
     #set variables for uosc client
-    microsDelay = 10*1000 #  time delay in microseconds
+    microsDelay = 20*1000 #  time delay in microseconds
     bonsaiAddress = '192.168.137.255'
     commPort = 9001
     digitalSend = "/digitalInput"
@@ -64,26 +69,48 @@ def main():
     #dac2 = 3
     #dac4 = 4
 
-
+    #create bundle
+    b = Bundle()
     #infinite loop
+    
     while 1:
+        
         #receive message from OSC
         dummie = 0
         #if there is a specific message break the scanning loop
         if dummie != 0:
             break
-
+        
+        #temp variable to store digital input values
         temp = 0
+        
+        startTiming = time.ticks_us() # get microsecond counter
         #loop to scan input pins
+        
+        #tic1 = time.ticks_us()
         for i in range(len(pinInList)):
-            print(i)
-            print(pinInList[i].value())
+            #print(i)
+            #print(pinInList[i].value())
             if pinInList[i].value()==1:
                 temp = temp + (2**pinInIndex[i])
-            print(temp)
-        b = Bundle()
-        b.add(create_message("/digitalInput", temp))
+            #print(temp)
+        #toc1 = time.ticks_us()
+        #print("getting all dig in ports took: "+str(toc1-tic1)+ " microseconds" )
+        #print(toc1-tic1)
+        #temp = bytes(temp)
+        temp = uarray.array('B',[10,32,10,20,10,10])
+        msg = create_message(digitalSend, ('b',temp))
+        b.add(msg)
+        tic2 = time.ticks_us()
         osc.send(b)
+        osc.close()
+        del(temp)
+        toc2 = time.ticks_us()
+        print("sending took: " + str(toc2-tic2) + " microseconds")
+        x=0
+        while stopTiming-startTiming<timePeriod*1000: #convert milliseconds in microseconds
+            #read digital port
+            stopTiming = time.ticks_us()
         #time.sleep(0.001)
 
     #analog input pins
