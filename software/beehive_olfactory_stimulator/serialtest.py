@@ -14,8 +14,15 @@ class SerialTest:
         # the next line creates the uart object and sets uart 1 to be used with pins
         # 1 and 3, which are normally dedicated to uart 0 and locked to REPL.
         # with this code we bypass that and allow communication via the USB cable 
-        self.uart =UART(1, tx=1, rx=3,baudrate = self.baudRate)
-    
+        
+        self.uart =UART(1, tx=1, rx=3,
+                        baudrate = self.baudRate, 
+                        bits=8,
+                        parity=None,
+                        stop=1)
+        
+        self.uart.init()
+
     def writeData(self, data2Write="m"):
         '''write data to port without considering if there is anyone listening on the other side'''
         self.uart.write(data2Write)
@@ -27,7 +34,10 @@ class SerialTest:
         OBS: need to learn what is the UART buffer size and implement controls on the PC side'''
         poll = uselect.poll()
         poll.register(uart, uselect.POLLIN)
-        data = poll.poll(timeout=-1)#timeout=-1 polls the port indefintely. poll.poll returns  a list of tuples that need to be worked on 
+        
+        #timeout=-1 polls the port indefintely. poll.poll returns  a list of tuples that need to be worked on 
+        data = poll.poll(timeout=-1)
+        
         print(data)
         #add if statement to make use of poll
         #readData = self.uart.read(amount2Read)

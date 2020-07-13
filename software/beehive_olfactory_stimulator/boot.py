@@ -14,7 +14,7 @@ machine.freq(240000000)
 
 
 import passes
-import serialtest
+#import serialtest
 
 
 
