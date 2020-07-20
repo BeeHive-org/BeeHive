@@ -2,10 +2,10 @@
 import network
 import time
 import setup
-import serialtest
+from serial import Serial
 
 def main():
-    ser = serialtest.SerialTest()
+    ser = Serial()
     for i in range(10):
         ser.writeData(data2Write="m"+str(i))
         time.sleep(0.1)

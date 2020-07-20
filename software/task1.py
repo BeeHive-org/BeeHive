@@ -78,7 +78,10 @@ class Tasks:
 
     def start(self):
         while 1:
+            #test to see what is the status of the signal button
             self.startSignal = self.runButton.value()
+            
+            #if the button was pressed, or if a signal came from the serial port, start the task
             if self.startSignal == 1:
                 self.task1()
         
