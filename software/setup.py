@@ -18,14 +18,14 @@ class Pins:
         self.din27 = machine.Pin(27, machine.Pin.IN)
         
         #analog inputs # MAX 3.3V should be used!
-        self.adc32 = machine.ADC(32)
-        self.adc32.atten(machine.ADC.ATTN_11DB)   # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-        self.adc33 = machine.ADC(33) 
-        self.adc33.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-        self.adc34 = machine.ADC(34) 
-        self.adc34.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-        self.adc35 = machine.ADC(35) 
-        self.adc35.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+        #self.adc32 = machine.ADC(34)#currently A0 is pin 34.
+        #self.adc32.atten(machine.ADC.ATTN_11DB)   # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+        #self.adc33 = machine.ADC(33) 
+        #self.adc33.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+        #self.adc34 = machine.ADC(34) 
+        #self.adc34.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+        #self.adc35 = machine.ADC(35) 
+        #self.adc35.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
 
         # analog outputs (actually PWM)
         #dac0 = 1

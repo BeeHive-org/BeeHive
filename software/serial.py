@@ -5,6 +5,7 @@ test for serial communication
 here we just create a serial object that will take in data to be parsed and sent over the serial port
 '''
 print("imported")
+
 class Serial:
     ''' simple class to constantly read and write serial data
         for test purposes only'''
@@ -28,13 +29,21 @@ class Serial:
         self.uart.write(data2Write)
         return
     
-    def readData(self):#amount2Read=0):
+    def readData(self):
+        if self.uart.any()>0:
+            self.uart.readline()
+
+
+
+    def readDataPoll(self,timeout=10):#amount2Read=0):
         '''use poll method to see how many characters are available for reading, 
         read them, and return it
         OBS: need to learn what is the UART buffer size and implement controls on the PC side'''
         poll = uselect.poll()
         poll.register(self.uart, uselect.POLLIN)
-        
+        #set the duration for waiting 
+        poll.poll(timeout)
+
         #timeout=-1 polls the port indefintely. poll.poll returns  a list of tuples that need to be worked on 
         amount2read = poll.poll()
         amount2read = amount2read[0][1]+4 #+4 reads the trailing "/n/r" at the end of each line

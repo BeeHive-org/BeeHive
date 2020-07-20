@@ -1,9 +1,12 @@
-''' example task, where pressing a button starts an automated protocol'''
+
 import setup
 import machine
 import time
+from serial import Serial
 
 class Tasks:
+    """example class to start creating different tasks and ways to start them based on user interface"""
+
     def __init__(self):
         self.pins = setup.Pins()
         
@@ -11,6 +14,7 @@ class Tasks:
         self.stim1Pin = self.pins.dout25
         self.stim2Pin = self.pins.dout26
         self.trigger = self.pins.dout32
+        self.ser = Serial()
         #physical button to start running task
         self.runButton = self.pins.din12
         
@@ -76,12 +80,18 @@ class Tasks:
 
 
 
-    def start(self):
-        while 1:
+    def startTask1(self):
+        ran = 0
+        while ran == 0:
             #test to see what is the status of the signal button
             self.startSignal = self.runButton.value()
-            
+            self.serSignal = self.ser.readData()#@sdkjdsfk
+            print(self.serSignal)
             #if the button was pressed, or if a signal came from the serial port, start the task
-            if self.startSignal == 1:
+            if self.startSignal == 1#or self.serSignal == "a":
                 self.task1()
+                ran = 1
+                print("task 1 completed")
+        
+        return
         
