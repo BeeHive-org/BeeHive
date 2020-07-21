@@ -6,8 +6,11 @@ import tasks
 
 
 class Main:
+    def __init__(self):
+        print("main started")
+
     def start(self):
-        tasks.Tasks.startTasks()
+        startTask = tasks.Tasks.startTasks()
         return
 
     def reset(self):

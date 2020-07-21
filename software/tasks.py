@@ -6,13 +6,14 @@ import serial
 
 class Tasks:
     def __init__(self):
+        print("started tasks")
         self.pins = setup.Pins()
         # hardware interface configuration
-        self.stim2Pin = 1  # self.pins.dout26
-        self.trigger = 2  # self.pins.dout32
-        # self.ser = serial.Serial()
+        self.stim2Pin = self.pins.dout26
+        self.trigger =  self.pins.dout32
+        self.ser = serial.Serial()
         # physical button to start running task
-        self.runButton = 3  # self.pins.din12
+        self.runButton = self.pins.din12
 
         ##task parameters
         ## number of trials
@@ -26,7 +27,7 @@ class Tasks:
         ## stimulus2 duration (in milliseconds)
         self.stim2Dur = 100
 
-    def interval(self, duration=self.iti, funcs=None):
+    def interval(self, duration=100, funcs=None):
 
         # little excerpt to be expanded later
         # the idea is to pass an object with functions that can be executed
@@ -69,7 +70,7 @@ class Tasks:
             # test to see what is the status of the signal button
             self.startSignal = self.runButton.value()
             self.serSignal = self.ser.readData()  # @sdkjdsfk
-            print(self.serSignal)
+            #print(self.serSignal)
             # if the button was pressed, or if a signal came from the serial port, start the task
             if self.startSignal == 1:
                 self.task1()
