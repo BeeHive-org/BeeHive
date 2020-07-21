@@ -2,5 +2,3 @@
 
 print("boot.py loaded...")
 import passes
-  
-

@@ -11,7 +11,7 @@ except ImportError:
 from uosc.common import Bundle, to_frac
 
 
-if isinstance('', bytes):
+if isinstance("", bytes):
     have_bytes = False
     unicodetype = unicode  # noqa
 else:
@@ -19,14 +19,14 @@ else:
     unicodetype = str
 
 TYPE_MAP = {
-    int: 'i',
-    float: 'f',
-    bytes: 'b',
-    bytearray: 'b',
-    unicodetype: 's',
-    True: 'T',
-    False: 'F',
-    None: 'N',
+    int: "i",
+    float: "f",
+    bytes: "b",
+    bytearray: "b",
+    unicodetype: "s",
+    True: "T",
+    False: "F",
+    None: "N",
 }
 
 
@@ -44,21 +44,22 @@ def pack_addr(addr):
 
 def pack_timetag(t):
     """Pack an OSC timetag into 64-bit binary blob."""
-    return pack('>II', *to_frac(t))
+    return pack(">II", *to_frac(t))
 
 
-def pack_string(s, encoding='utf-8'):
+def pack_string(s, encoding="utf-8"):
     """Pack a string into a binary OSC string."""
     if isinstance(s, unicodetype):
         s = s.encode(encoding)
-    assert all((i if have_bytes else ord(i)) < 128 for i in s), (
-        "OSC strings may only contain ASCII chars.")
+    assert all(
+        (i if have_bytes else ord(i)) < 128 for i in s
+    ), "OSC strings may only contain ASCII chars."
 
     slen = len(s)
-    return s + b'\0' * (((slen + 4) & ~0x03) - slen)
+    return s + b"\0" * (((slen + 4) & ~0x03) - slen)
 
 
-def pack_blob(b, encoding='utf-8'):
+def pack_blob(b, encoding="utf-8"):
     """Pack a bytes, bytearray or tuple/list of ints into a binary OSC blob."""
     if isinstance(b, (tuple, list)):
         b = bytearray(b)
@@ -66,8 +67,8 @@ def pack_blob(b, encoding='utf-8'):
         b = b.encode(encoding)
 
     blen = len(b)
-    b = pack('>I', blen) + bytes(b)
-    return b + b'\0' * (((blen + 3) & ~0x03) - blen)
+    b = pack(">I", blen) + bytes(b)
+    return b + b"\0" * (((blen + 3) & ~0x03) - blen)
 
 
 def pack_bundle(bundle):
@@ -79,19 +80,20 @@ def pack_bundle(bundle):
         elif isinstance(msg, tuple):
             msg = create_message(*msg)
 
-        data.append(pack('>I', len(msg)) + msg)
+        data.append(pack(">I", len(msg)) + msg)
 
-    return b'#bundle\0' + pack_timetag(bundle.timetag) + b''.join(data)
+    return b"#bundle\0" + pack_timetag(bundle.timetag) + b"".join(data)
 
 
 def pack_midi(val):
     assert not isinstance(val, unicodetype), (
         "Value with tag 'm' or 'r' must be bytes, bytearray or a sequence of "
-        "ints, not %s" % unicodetype)
+        "ints, not %s" % unicodetype
+    )
     if not have_bytes and isinstance(val, str):
         val = (ord(c) for c in val)
 
-    return pack('BBBB', *tuple(val))
+    return pack("BBBB", *tuple(val))
 
 
 def create_message(address, *args):
@@ -124,10 +126,10 @@ def create_message(address, *args):
     * S: ``str``
 
     """
-    assert address.startswith('/'), "Address pattern must start with a slash."
+    assert address.startswith("/"), "Address pattern must start with a slash."
 
     data = []
-    types = [',']
+    types = [","]
 
     for arg in args:
         type_ = type(arg)
@@ -137,26 +139,26 @@ def create_message(address, *args):
         else:
             typetag = TYPE_MAP.get(type_) or TYPE_MAP.get(arg)
 
-        if typetag in 'ifd':
-            data.append(pack('>' + typetag, arg))
-        elif typetag in 'sS':
+        if typetag in "ifd":
+            data.append(pack(">" + typetag, arg))
+        elif typetag in "sS":
             data.append(pack_string(arg))
-        elif typetag == 'b':
+        elif typetag == "b":
             data.append(pack_blob(arg))
-        elif typetag in 'rm':
+        elif typetag in "rm":
             data.append(pack_midi(arg))
-        elif typetag == 'c':
-            data.append(pack('>I', ord(arg)))
-        elif typetag == 'h':
-            data.append(pack('>q', arg))
-        elif typetag == 't':
+        elif typetag == "c":
+            data.append(pack(">I", ord(arg)))
+        elif typetag == "h":
+            data.append(pack(">q", arg))
+        elif typetag == "t":
             data.append(pack_timetag(arg))
-        elif typetag not in 'IFNT':
+        elif typetag not in "IFNT":
             raise TypeError("Argument of type '%s' not supported." % type_)
 
         types.append(typetag)
 
-    return pack_string(address) + pack_string(''.join(types)) + b''.join(data)
+    return pack_string(address) + pack_string("".join(types)) + b"".join(data)
 
 
 class Client:
@@ -166,13 +168,13 @@ class Client:
                 host, port = host
             else:
                 port = host
-                host = '127.0.0.1'
+                host = "127.0.0.1"
 
         self.dest = pack_addr((host, port))
         self.sock = None
 
     def send(self, msg, *args, **kw):
-        dest = pack_addr(kw.get('dest', self.dest))
+        dest = pack_addr(kw.get("dest", self.dest))
 
         if not self.sock:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
