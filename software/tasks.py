@@ -9,6 +9,7 @@ class Tasks:
         print("started tasks")
         self.pins = setup.Pins()
         # hardware interface configuration
+        self.stim1Pin = self.pins.dout25
         self.stim2Pin = self.pins.dout26
         self.trigger =  self.pins.dout32
         self.ser = serial.Serial()
@@ -38,10 +39,13 @@ class Tasks:
         # except:
         #    funcsLen = len(funcs)
 
-        startTiming = time.ticks_us() * 1000  # get microsecond counter
-        stopTiming = time.ticks_us() * 1000  # get microsecond counter
+        duration = duration * 1000 # move duration to microseconds
+        startTiming = time.ticks_us()  # get microsecond counter
+        stopTiming = time.ticks_us()  # get microsecond counter
         while stopTiming - startTiming < duration:
-            stopTiming = time.ticks_us() * 1000
+            
+            stopTiming = time.ticks_us()
+
 
     def task1(self):
         for i in range(self.numTrials):
@@ -65,20 +69,35 @@ class Tasks:
             self.interval(duration=self.isi)
 
     def startTasks(self):
+
         ran = 0
-        while ran == 0:
+        while ran < 50:
             # test to see what is the status of the signal button
             self.startSignal = self.runButton.value()
-            self.serSignal = self.ser.readData()  # @sdkjdsfk
-            #print(self.serSignal)
+            
+            ran = ran+1
+            ##print("ran: "+ str(ran))
+
+            serialSignal = self.ser.readDataPoll(timeout=100)
+            ##print("raw: ")
+            ##print(serialSignal)
+
+            serialSignal = serialSignal.decode()
+            
+            ##print(serialSignal[0])
+
+            print(serialSignal[0]=="A")
+            print(serialSignal[0]=="a")
+
             # if the button was pressed, or if a signal came from the serial port, start the task
             if self.startSignal == 1:
                 self.task1()
                 print("task 1 completed")
-            if self.serSignal == "a":
+            if serialSignal[0] == "A":
                 self.task1()
-                print("task 1 completed")
-            if self.serSignal == "x":
-                ran = 1
+                print("task A completed")
+            if serialSignal[0] == "X":
+                ran = 50
                 print("exiting")
+            
         return

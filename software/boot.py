@@ -1,5 +1,4 @@
 import esp
-
 esp.osdebug(None)
 import network
 import machine
@@ -52,6 +51,6 @@ import webrepl
 webrepl.start()
 # print(webrepl)
 
-# import main
+import main
 
-# main.main()
+#test = main.main()

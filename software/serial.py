@@ -34,7 +34,7 @@ class Serial:
         if self.uart.any() > 0:
             self.uart.readline()
 
-    def readDataPoll(self, timeout=10):  # amount2Read=0):
+    def readDataPoll(self, timeout=100):  # amount2Read=0):
         """use poll method to see how many characters are available for reading, 
         read them, and return it
         OBS: need to learn what is the UART buffer size and implement controls on the PC side"""
