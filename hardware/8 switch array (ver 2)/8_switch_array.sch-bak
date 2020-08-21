@@ -256,13 +256,13 @@ Wire Notes Line
 	4500 4500 4500 5800
 Text Notes 5850 800  0    100  ~ 0
 Output transistor-switch array
-Text GLabel 4000 1950 2    50   Input ~ 0
+Text GLabel 4000 1850 2    50   Input ~ 0
 OUT_0
 Text GLabel 7550 1700 2    50   Input ~ 0
 OUT_0
 Wire Wire Line
 	7400 1700 7550 1700
-Text GLabel 4000 1850 2    50   Input ~ 0
+Text GLabel 4000 1950 2    50   Input ~ 0
 OUT_1
 Text GLabel 7550 3100 2    50   Input ~ 0
 OUT_1
@@ -874,9 +874,9 @@ Connection ~ 4550 2750
 Wire Wire Line
 	4550 2750 4550 1750
 Wire Wire Line
-	3800 1950 4000 1950
-Wire Wire Line
 	3800 1850 4000 1850
+Wire Wire Line
+	3800 1950 4000 1950
 Wire Wire Line
 	3800 2050 4000 2050
 Wire Wire Line
