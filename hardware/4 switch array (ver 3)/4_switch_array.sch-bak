@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:4_switch_array-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -266,13 +265,13 @@ Wire Notes Line
 Wire Notes Line
 	2850 3600 7750 3600
 Text Notes 8550 4850 2    100  ~ 0
-GND
-Text Notes 8550 4650 2    100  ~ 0
-VCC
-Text Notes 8550 5050 2    100  ~ 0
 DATA 2
-Text Notes 8550 5250 2    100  ~ 0
+Text Notes 8550 4650 2    100  ~ 0
 DATA 1
+Text Notes 8550 5050 2    100  ~ 0
+VCC
+Text Notes 8550 5250 2    100  ~ 0
+GND\n
 Wire Notes Line style solid
 	8600 5300 7950 5300
 Wire Notes Line style solid
@@ -282,13 +281,13 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	8600 4500 8600 5300
 Wire Notes Line style solid
-	8600 5200 9000 5200
+	8600 4850 9000 4850
 Wire Notes Line style solid
-	8600 5000 9000 5000
-Wire Notes Line style solid rgb(255, 0, 0)
 	8600 4650 9000 4650
+Wire Notes Line style solid rgb(255, 0, 0)
+	8600 5050 9000 5050
 Wire Notes Line style solid rgb(0, 0, 0)
-	8600 4800 9000 4800
+	8600 5200 9000 5200
 Text Notes 8750 4650 2    100  ~ 0
 1
 Text Notes 8750 4800 2    100  ~ 0
@@ -349,13 +348,13 @@ Wire Wire Line
 	7000 2150 7150 2150
 Text GLabel 4350 2050 0    50   Input ~ 0
 SER_IN
-Text GLabel 3450 2250 2    50   Input ~ 0
+Text GLabel 3450 2050 2    50   Input ~ 0
 SER_IN
-Text GLabel 3450 2900 2    50   Input ~ 0
+Text GLabel 3450 2700 2    50   Input ~ 0
 SRCLR
 Wire Wire Line
 	4300 2650 4300 3150
-Text GLabel 3450 2350 2    50   Input ~ 0
+Text GLabel 3450 2150 2    50   Input ~ 0
 RCLK
 Text GLabel 4350 2550 0    50   Input ~ 0
 RCLK
@@ -372,17 +371,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 2050 4350 2050
 $Comp
-L power:GND #PWR0112
-U 1 1 5E319499
-P 3600 2150
-F 0 "#PWR0112" H 3600 1900 50  0001 C CNN
-F 1 "GND" V 3600 1950 50  0000 C CNN
-F 2 "" H 3600 2150 50  0001 C CNN
-F 3 "" H 3600 2150 50  0001 C CNN
-	1    3600 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5E239C52
 P 3050 2150
@@ -396,42 +384,30 @@ $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5E32267D
-P 3600 2700
-F 0 "#PWR0111" H 3600 2450 50  0001 C CNN
-F 1 "GND" V 3600 2500 50  0000 C CNN
-F 2 "" H 3600 2700 50  0001 C CNN
-F 3 "" H 3600 2700 50  0001 C CNN
-	1    3600 2700
+P 3450 2900
+F 0 "#PWR0111" H 3450 2650 50  0001 C CNN
+F 1 "GND" V 3450 2700 50  0000 C CNN
+F 2 "" H 3450 2900 50  0001 C CNN
+F 3 "" H 3450 2900 50  0001 C CNN
+	1    3450 2900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3450 2800 2    50   Input ~ 0
+Text GLabel 3450 2600 2    50   Input ~ 0
 SRCLK
+NoConn ~ 3250 2800
 Wire Wire Line
-	3250 2150 3600 2150
-NoConn ~ 3250 2600
-Wire Wire Line
-	3250 2700 3600 2700
-Wire Wire Line
-	3250 2250 3450 2250
-Wire Wire Line
-	3250 2900 3450 2900
-Wire Wire Line
-	3250 2350 3450 2350
-Wire Wire Line
-	3250 2800 3450 2800
+	3250 2900 3400 2900
 $Comp
 L power:+5V #PWR0103
 U 1 1 5F3567C2
-P 3650 2050
-F 0 "#PWR0103" H 3650 1900 50  0001 C CNN
-F 1 "+5V" H 3665 2223 50  0000 C CNN
-F 2 "" H 3650 2050 50  0001 C CNN
-F 3 "" H 3650 2050 50  0001 C CNN
-	1    3650 2050
-	1    0    0    -1  
+P 3600 2250
+F 0 "#PWR0103" H 3600 2100 50  0001 C CNN
+F 1 "+5V" H 3615 2423 50  0000 C CNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3250 2050 3650 2050
 Wire Wire Line
 	3250 4250 3600 4250
 Wire Wire Line
@@ -611,4 +587,25 @@ Wire Wire Line
 	5300 2650 5500 2650
 Wire Wire Line
 	5300 2750 5500 2750
+Wire Wire Line
+	3250 2050 3450 2050
+Wire Wire Line
+	3250 2150 3450 2150
+Wire Wire Line
+	3800 2350 3800 3000
+Wire Wire Line
+	3800 3000 3400 3000
+Wire Wire Line
+	3400 3000 3400 2900
+Wire Wire Line
+	3250 2350 3800 2350
+Connection ~ 3400 2900
+Wire Wire Line
+	3400 2900 3450 2900
+Wire Wire Line
+	3250 2250 3600 2250
+Wire Wire Line
+	3250 2600 3450 2600
+Wire Wire Line
+	3250 2700 3450 2700
 $EndSCHEMATC
