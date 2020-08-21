@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power_supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,17 +25,6 @@ F 3 "~" H 4450 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flypi_components:LM2596 U1
-U 1 1 5E26A79A
-P 5300 2650
-F 0 "U1" H 5325 2853 60  0000 C CNN
-F 1 "LM2596" H 5325 2747 60  0000 C CNN
-F 2 "Flypi:LM2596" H 5325 2641 60  0000 C CNN
-F 3 "" H 5500 2650 60  0000 C CNN
-	1    5300 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Schottky D1
 U 1 1 5E26BBB5
 P 5350 2300
@@ -55,41 +43,16 @@ Wire Wire Line
 	4750 3000 4750 2300
 Connection ~ 4750 3000
 Wire Wire Line
-	4750 3000 4900 3000
-Wire Wire Line
 	4750 2300 5200 2300
-$Comp
-L power:GND #PWR01
-U 1 1 5E26D43B
-P 4750 3550
-F 0 "#PWR01" H 4750 3300 50  0001 C CNN
-F 1 "GND" H 4755 3377 50  0000 C CNN
-F 2 "" H 4750 3550 50  0001 C CNN
-F 3 "" H 4750 3550 50  0001 C CNN
-	1    4750 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 3000 4750 3200
-Wire Wire Line
-	4750 3200 4900 3200
 Connection ~ 4750 3200
-Wire Wire Line
-	5750 2900 5750 2300
-Wire Wire Line
-	5750 2300 5500 2300
 Wire Wire Line
 	4300 2800 4200 2800
 Wire Wire Line
 	4200 2800 4200 2650
 Wire Wire Line
-	4200 2650 4900 2650
-Wire Wire Line
-	4900 2650 4900 2800
-Wire Wire Line
 	3850 3200 4750 3200
-Wire Wire Line
-	4750 3550 4750 3400
 $Comp
 L Device:CP C2
 U 1 1 5E2736F5
@@ -101,13 +64,6 @@ F 3 "~" H 6250 3250 50  0001 C CNN
 	1    6250 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 3100 6250 3100
-Wire Wire Line
-	6250 3400 4750 3400
-Connection ~ 4750 3400
-Wire Wire Line
-	4750 3400 4750 3200
 $Comp
 L Device:L L1
 U 1 1 5E275662
@@ -119,9 +75,6 @@ F 3 "~" H 6000 2300 50  0001 C CNN
 	1    6000 2300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5750 2300 5850 2300
-Connection ~ 5750 2300
 Wire Wire Line
 	6150 2300 6250 2300
 Wire Wire Line
@@ -164,13 +117,13 @@ F 3 "" H 6900 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8750 2600 2    100  ~ 0
-GND
-Text Notes 8750 2400 2    100  ~ 0
-VCC
-Text Notes 8750 2800 2    100  ~ 0
 DATA 2
-Text Notes 8750 3000 2    100  ~ 0
+Text Notes 8750 2400 2    100  ~ 0
 DATA 1
+Text Notes 8750 2800 2    100  ~ 0
+VCC
+Text Notes 8750 3000 2    100  ~ 0
+GND
 Wire Notes Line style solid
 	8800 3050 8150 3050
 Wire Notes Line style solid
@@ -217,10 +170,6 @@ Wire Notes Line
 	7700 1700 7700 3300
 Wire Notes Line
 	6600 1700 6600 3300
-Wire Wire Line
-	6750 2850 7100 2850
-Wire Wire Line
-	6900 2300 6900 2750
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5E26F9D6
@@ -233,30 +182,100 @@ F 3 "~" H 3100 2850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 2850 3850 2850
-Wire Wire Line
-	3850 2850 3850 3200
-Wire Wire Line
-	3300 2750 4000 2750
-Wire Wire Line
-	4000 2750 4000 2800
-Wire Wire Line
 	4000 2800 4200 2800
 Connection ~ 4200 2800
-NoConn ~ 3300 2950
-NoConn ~ 3300 3050
+NoConn ~ 3300 2850
+$Comp
+L Regulator_Switching:LM2596S-5 U1
+U 1 1 5F3FE20F
+P 5350 3200
+F 0 "U1" H 5350 3567 50  0000 C CNN
+F 1 "LM2596S-5" H 5350 3476 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 5400 2950 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5350 3200 50  0001 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6900 2300 7100 2300
+	4750 3200 4750 3300
+$Comp
+L power:GND #PWR03
+U 1 1 5F403948
+P 6250 3550
+F 0 "#PWR03" H 6250 3300 50  0001 C CNN
+F 1 "GND" H 6255 3377 50  0000 C CNN
+F 2 "" H 6250 3550 50  0001 C CNN
+F 3 "" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2300 5850 2300
+Wire Wire Line
+	5750 2300 5500 2300
+Connection ~ 5750 2300
+Wire Wire Line
+	5750 2700 5950 2700
+Wire Wire Line
+	5950 2700 5950 3300
+Wire Wire Line
+	5750 2700 5750 2300
+Wire Wire Line
+	5850 3100 6250 3100
+Wire Wire Line
+	6250 3400 6250 3550
+Wire Wire Line
+	5950 3300 5850 3300
+Wire Wire Line
+	4850 2650 4850 3100
+Wire Wire Line
+	4200 2650 4850 2650
+Wire Wire Line
+	4850 3300 4750 3300
+Connection ~ 4750 3300
+Wire Wire Line
+	4750 3300 4750 3500
+Wire Wire Line
+	5350 3500 4750 3500
+Connection ~ 4750 3500
+Wire Wire Line
+	4750 3500 4750 3550
+$Comp
+L power:GND #PWR01
+U 1 1 5F409BB8
+P 4750 3550
+F 0 "#PWR01" H 4750 3300 50  0001 C CNN
+F 1 "GND" H 4755 3377 50  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2300 6900 2750
 Wire Wire Line
 	6750 2300 6750 2400
-Connection ~ 6750 2400
-Wire Wire Line
-	7100 2400 6750 2400
-Wire Wire Line
-	6750 2400 6750 2850
 Wire Wire Line
 	7100 2750 6900 2750
 Connection ~ 6900 2750
 Wire Wire Line
 	6900 2750 6900 3550
+Wire Wire Line
+	7100 2300 6900 2300
+Wire Wire Line
+	7100 2400 6750 2400
+Connection ~ 6750 2400
+Wire Wire Line
+	6750 2400 6750 2850
+Wire Wire Line
+	7100 2850 6750 2850
+Wire Wire Line
+	3850 3050 3300 3050
+Wire Wire Line
+	3850 3050 3850 3200
+Wire Wire Line
+	3300 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 2800
+NoConn ~ 3300 2750
 $EndSCHEMATC
