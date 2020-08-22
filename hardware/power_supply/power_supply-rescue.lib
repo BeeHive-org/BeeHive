@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# LM2596-flypi_components
+#
+DEF LM2596-flypi_components U 0 40 Y Y 1 F N
+F0 "U" 200 0 60 H V C CNN
+F1 "LM2596-flypi_components" -50 0 60 H V C CNN
+F2 "" 200 0 60 H V C CNN
+F3 "" 200 0 60 H V C CNN
+DRAW
+S -200 -100 250 -600 0 1 0 N
+X Power_in 1 -400 -150 200 R 50 50 1 1 I
+X Power_out 2 450 -250 200 L 50 50 1 1 O
+X Ground 3 -400 -350 200 R 50 50 1 1 B
+X Feedback 4 450 -450 200 L 50 50 1 1 I
+X On/Off 5 -400 -550 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
