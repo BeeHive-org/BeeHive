@@ -2,6 +2,8 @@ import esp
 esp.osdebug(None)
 import network
 import machine
+import passes
+import main
 
 # set cpu frequency to 240MHz
 machine.freq(240000000)
@@ -12,11 +14,6 @@ machine.freq(240000000)
 # a file named "passes_template.py" is provided instead.
 # users should rename this file to "passes.py" and
 # add the login information for their local networks.
-
-
-import passes
-
-# import serialtest
 
 
 # connect to wifi and setup osc
@@ -50,7 +47,3 @@ import webrepl
 
 webrepl.start()
 # print(webrepl)
-
-import main
-
-#test = main.main()
