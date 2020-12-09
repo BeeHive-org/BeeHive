@@ -31,9 +31,8 @@ def do_connect():
         wlan.connect(networkID, networkPass)
 
         while not wlan.isconnected():
-            pass
-            # print("notyet")
-            # print(networkID)
+            print("notyet")
+            print(networkID)
             # print(networkPass)
             # wlan.connect(networkID, networkPass)
 
@@ -41,9 +40,9 @@ def do_connect():
     return wlan
 
 
-do_connect()
+#do_connect()
 
-import webrepl
+#import webrepl
 
-webrepl.start()
+#webrepl.start()
 # print(webrepl)

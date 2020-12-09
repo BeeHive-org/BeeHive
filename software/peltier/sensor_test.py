@@ -30,10 +30,10 @@ class DS18B20:
 
 
     # Read temperature process
-    def read_ds_sensor(self,sensorNum = 0):
+    def read_ds_sensor(self):#,sensorNum = 0):
         #roms = dsSensor.scan()
         self.dsSensor.convert_temp()
-        self.temp = self.dsSensor.read_temp(self.roms[sensorNum])
+        self.temp = self.dsSensor.read_temp(self.roms[0])
         if isinstance(self.temp, float):
             self.temp = round(self.temp, 2)
             #print('Valid temperature')

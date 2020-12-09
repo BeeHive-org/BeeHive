@@ -35,11 +35,12 @@ class PID:
 
     def update(self):
 
-        if time.ticks_ms()-self.last_update_time > 500:
+        if time.ticks_ms()-self.last_update_time > 800:
             """
             Calculate PID output value for given reference input and feedback
             """
             current_value = self.input_fun()
+            print(current_value)
             self.error = self.set_point - current_value
             print ('temp '+str(current_value))
             print ('SP'+str(self.set_point))
@@ -60,13 +61,14 @@ class PID:
                 self.I_value = self.I_min
 
             self.output = self.P_value + self.I_value - self.D_value
-
+            
+            print("raw_output: " + str(self.output))
             if self.output<0:
                 self.output = 0.0
             if self.output>100:
                 self.output = 100.0
 
-            print("Setpoint: "+str(self.set_point))
+            #print("Setpoint: "+str(self.set_point))
             print("P: "+str(self.P_value))
             print("I: "+str(self.I_value))
             print("D: "+str(self.D_value))
