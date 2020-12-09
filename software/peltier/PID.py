@@ -73,7 +73,6 @@ class PID:
         #sp[200:] = 310.0
         self.timeNow - time.ticks_ms()
         self.lastTime = time.ticks_ms()
-        self.waitTime = 750 # time to wait between reads in milliseconds
     
     def update(self,setPoint):
         self.setPoint = setPoint
@@ -121,6 +120,7 @@ class PID:
         print("P: " + str(self.P))
         print("I: " + str(self.I))
         print("D: " + str(self.D))
+        self.pwm.duty(int(output))
         return output
 
     def setup_pwm_pin(self):
@@ -129,3 +129,10 @@ class PID:
         pwm.freq(self.freq)
         pwm.duty(self.duty)
         return pwm
+
+    def run(self):
+        self.start_PID()
+        for i in range(500):
+            print("round: " + str(i))
+            self.update(30.)
+            
