@@ -42,11 +42,11 @@ The main hub:
 
 Schematics
 
-![flypi_v2_schematics.png](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB/flypi_v2_schematics.png)
+![beehive.png](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB_redesign/beehive.png)
 
 PCB
 
-![PCB_flypi_v2.png](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB/PCB_flypi_v2.png)
+![beehive_PCB](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB_redesign/beehive_PCB.png)
 
 The power supply module:
 
@@ -60,18 +60,18 @@ PCB
 
 The transistor-switch hub for 4 devices:
 
-Schematics ![4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4_switch_array/4_switch_array.png)
+Schematics ![4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%203)/4_switch_array.png)
 
 PCB
 
-![PCB_4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4_switch_array/PCB_4_switch_array.png)
+![PCB_4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%203)/PCB_4_switch_array.png)
 
 The transistor-switch hub for 8 devices:
 
-Schematics ![8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8_switch_array/8_switch_array.png)
+Schematics ![8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8%20switch%20array%20(ver%202)/8_switch_array.png)
 
 PCB
 
-![PCB_8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8_switch_array/PCB_8_switch_array.png)
+![PCB_8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8%20switch%20array%20(ver%202)/8_switch_array_PCB.png)
 
 ---
