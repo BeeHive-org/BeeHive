@@ -102,12 +102,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J11
 U 1 1 5E272691
-P 3550 5250
-F 0 "J11" H 3550 5350 50  0000 C CNN
-F 1 "Conn_01x02" H 3468 5016 50  0001 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3550 5250 50  0001 C CNN
-F 3 "~" H 3550 5250 50  0001 C CNN
-	1    3550 5250
+P 3550 5050
+F 0 "J11" H 3550 5150 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 4816 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3550 5050 50  0001 C CNN
+F 3 "~" H 3550 5050 50  0001 C CNN
+	1    3550 5050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -121,10 +121,6 @@ F 3 "" H 3900 5550 50  0001 C CNN
 	1    3900 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 5350 3900 5550
-Wire Wire Line
-	3900 5250 3900 5050
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5E28795A
@@ -301,16 +297,12 @@ Wire Notes Line style solid
 	2200 5100 2600 5100
 Wire Notes Line style solid
 	2200 4950 2600 4950
-Wire Notes Line style solid rgb(255, 0, 0)
-	2200 5350 2600 5350
 Wire Notes Line style solid rgb(0, 0, 0)
 	2200 5500 2600 5500
 Text Notes 2350 4950 2    100  ~ 0
 1
 Text Notes 2350 5100 2    100  ~ 0
 2
-Text Notes 2350 5350 2    100  ~ 0
-3
 Text Notes 2350 5500 2    100  ~ 0
 4
 Text Notes 1500 4700 0    100  ~ 0
@@ -348,10 +340,6 @@ F 3 "~" H 5900 2700 50  0001 C CNN
 	1    5900 2700
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 5350 3900 5350
-Wire Wire Line
-	3750 5250 3900 5250
 Text GLabel 2750 1850 0    50   Input ~ 0
 SER_IN
 Text GLabel 1850 1850 2    50   Input ~ 0
@@ -813,17 +801,6 @@ Wire Notes Line
 Wire Notes Line
 	10600 550  10600 6450
 $Comp
-L power:+12V #PWR0110
-U 1 1 5F43B8EF
-P 3900 5050
-F 0 "#PWR0110" H 3900 4900 50  0001 C CNN
-F 1 "+12V" H 3915 5223 50  0000 C CNN
-F 2 "" H 3900 5050 50  0001 C CNN
-F 3 "" H 3900 5050 50  0001 C CNN
-	1    3900 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0111
 U 1 1 5F43E1D7
 P 2100 2050
@@ -888,4 +865,50 @@ Wire Wire Line
 	1650 2400 1850 2400
 Wire Wire Line
 	1650 2500 1850 2500
+$Comp
+L power:+12V #PWR0110
+U 1 1 5F43B8EF
+P 3900 5000
+F 0 "#PWR0110" H 3900 4850 50  0001 C CNN
+F 1 "+12V" H 3915 5173 50  0000 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5050 3900 5050
+Connection ~ 3900 5050
+Wire Wire Line
+	3900 5050 3900 5000
+Wire Wire Line
+	3750 5500 3900 5500
+Connection ~ 3900 5500
+Wire Wire Line
+	3900 5500 3900 5550
+Wire Wire Line
+	3750 5150 4000 5150
+Wire Wire Line
+	4000 5150 4000 5500
+Wire Wire Line
+	4000 5500 3900 5500
+Wire Wire Line
+	3900 5400 3750 5400
+Text Notes 2350 5350 2    100  ~ 0
+3
+Wire Notes Line style solid rgb(255, 0, 0)
+	2200 5350 2600 5350
+Wire Wire Line
+	3900 5050 3900 5400
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 5FD32169
+P 3550 5400
+F 0 "J12" H 3550 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 3468 5166 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3550 5400 50  0001 C CNN
+F 3 "~" H 3550 5400 50  0001 C CNN
+	1    3550 5400
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

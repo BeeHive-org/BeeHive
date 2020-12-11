@@ -102,12 +102,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5E272691
-P 6800 2150
-F 0 "J7" H 6800 2250 50  0000 C CNN
-F 1 "Conn_01x02" H 6718 1916 50  0001 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6800 2150 50  0001 C CNN
-F 3 "~" H 6800 2150 50  0001 C CNN
-	1    6800 2150
+P 6800 1950
+F 0 "J7" H 6800 2050 50  0000 C CNN
+F 1 "Conn_01x02" H 6718 1716 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6800 1950 50  0001 C CNN
+F 3 "~" H 6800 1950 50  0001 C CNN
+	1    6800 1950
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -121,10 +121,6 @@ F 3 "" H 7150 2450 50  0001 C CNN
 	1    7150 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 2250 7150 2450
-Wire Wire Line
-	7150 2150 7150 1950
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5E28795A
@@ -342,10 +338,6 @@ F 3 "" H 6750 4900 50  0001 C CNN
 	1    6750 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 2250 7150 2250
-Wire Wire Line
-	7000 2150 7150 2150
 Text GLabel 4350 2050 0    50   Input ~ 0
 SER_IN
 Text GLabel 3450 2050 2    50   Input ~ 0
@@ -455,12 +447,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0104
 U 1 1 5F396714
-P 7150 1950
-F 0 "#PWR0104" H 7150 1800 50  0001 C CNN
-F 1 "+12V" H 7165 2123 50  0000 C CNN
-F 2 "" H 7150 1950 50  0001 C CNN
-F 3 "" H 7150 1950 50  0001 C CNN
-	1    7150 1950
+P 7150 1900
+F 0 "#PWR0104" H 7150 1750 50  0001 C CNN
+F 1 "+12V" H 7165 2073 50  0000 C CNN
+F 2 "" H 7150 1900 50  0001 C CNN
+F 3 "" H 7150 1900 50  0001 C CNN
+	1    7150 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -608,4 +600,35 @@ Wire Wire Line
 	3250 2600 3450 2600
 Wire Wire Line
 	3250 2700 3450 2700
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5FD25C64
+P 6800 2300
+F 0 "J8" H 6800 2400 50  0000 C CNN
+F 1 "Conn_01x02" H 6718 2066 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6800 2300 50  0001 C CNN
+F 3 "~" H 6800 2300 50  0001 C CNN
+	1    6800 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1950 7150 1950
+Wire Wire Line
+	7150 1900 7150 1950
+Connection ~ 7150 1950
+Wire Wire Line
+	7000 2400 7150 2400
+Wire Wire Line
+	7150 2400 7150 2450
+Wire Wire Line
+	7000 2050 7250 2050
+Wire Wire Line
+	7250 2050 7250 2400
+Wire Wire Line
+	7250 2400 7150 2400
+Connection ~ 7150 2400
+Wire Wire Line
+	7150 2300 7000 2300
+Wire Wire Line
+	7150 1950 7150 2300
 $EndSCHEMATC

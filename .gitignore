@@ -5,3 +5,9 @@
 *.micropythonrc
 #ignore file with passwords
 *passes.py
+*.kicad_pcb-bak
+*.sch-bak
+hardware/gas_sensor/fp-info-cache
+hardware/hum_temp_sensor/fp-info-cache
+hardware/peltier/fp-info-cache
+hardware/power_supply/power_supply-cache.lib

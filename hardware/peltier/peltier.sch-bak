@@ -915,4 +915,5 @@ Wire Wire Line
 	1700 7100 1700 7550
 Wire Wire Line
 	950  7550 1700 7550
+NoConn ~ 950  7350
 $EndSCHEMATC

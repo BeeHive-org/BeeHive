@@ -81,10 +81,10 @@ Wire Wire Line
 	6250 2300 6250 3100
 Connection ~ 6250 3100
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5E277019
 P 7300 2400
-F 0 "J2" H 7300 2200 50  0000 C CNN
+F 0 "J3" H 7300 2200 50  0000 C CNN
 F 1 "Conn_01x02" H 7218 2166 50  0001 C CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7300 2400 50  0001 C CNN
 F 3 "~" H 7300 2400 50  0001 C CNN
@@ -92,10 +92,10 @@ F 3 "~" H 7300 2400 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5E277D0A
 P 7300 2850
-F 0 "J3" H 7300 2650 50  0000 C CNN
+F 0 "J4" H 7300 2650 50  0000 C CNN
 F 1 "Conn_01x02" H 7218 2616 50  0001 C CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7300 2850 50  0001 C CNN
 F 3 "~" H 7300 2850 50  0001 C CNN
@@ -170,21 +170,9 @@ Wire Notes Line
 	7700 1700 7700 3300
 Wire Notes Line
 	6600 1700 6600 3300
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5E26F9D6
-P 3100 2850
-F 0 "J1" H 3100 3050 50  0000 C CNN
-F 1 "Conn_01x04" H 3000 2550 50  0001 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3100 2850 50  0001 C CNN
-F 3 "~" H 3100 2850 50  0001 C CNN
-	1    3100 2850
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 2800 4200 2800
 Connection ~ 4200 2800
-NoConn ~ 3300 2850
 $Comp
 L Regulator_Switching:LM2596S-5 U1
 U 1 1 5F3FE20F
@@ -270,12 +258,43 @@ Wire Wire Line
 Wire Wire Line
 	7100 2850 6750 2850
 Wire Wire Line
-	3850 3050 3300 3050
+	3850 3150 3300 3150
 Wire Wire Line
-	3850 3050 3850 3200
+	3300 3050 4000 3050
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FD2430D
+P 3100 3050
+F 0 "J2" H 3100 3150 50  0000 C CNN
+F 1 "Conn_01x02" V 3250 3000 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3100 3050 50  0001 C CNN
+F 3 "~" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FD2538D
+P 3100 2750
+F 0 "J1" H 3100 2850 50  0000 C CNN
+F 1 "Conn_01x02" V 3250 2700 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3100 2750 50  0001 C CNN
+F 3 "~" H 3100 2750 50  0001 C CNN
+	1    3100 2750
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	3300 2950 4000 2950
+	3850 3150 3850 3200
 Wire Wire Line
-	4000 2950 4000 2800
-NoConn ~ 3300 2750
+	4000 2800 4000 3050
+Wire Wire Line
+	3300 2750 4000 2750
+Wire Wire Line
+	4000 2750 4000 2800
+Connection ~ 4000 2800
+Wire Wire Line
+	3300 2850 3850 2850
+Wire Wire Line
+	3850 2850 3850 3150
+Connection ~ 3850 3150
 $EndSCHEMATC
