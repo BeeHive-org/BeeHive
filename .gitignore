@@ -11,3 +11,5 @@ hardware/gas_sensor/fp-info-cache
 hardware/hum_temp_sensor/fp-info-cache
 hardware/peltier/fp-info-cache
 hardware/power_supply/power_supply-cache.lib
+hardware/hp_led_switch/fp-info-cache
+hardware/hp_led_switch/hp_led_switch-cache.lib
