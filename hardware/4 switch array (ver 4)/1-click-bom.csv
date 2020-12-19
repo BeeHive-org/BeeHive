@@ -1,0 +1,5 @@
+References,Qty,Description,Manufacturer,MPN,Manufacturer_1,MPN_2,Manufacturer_3,MPN_4,Manufacturer_5,MPN_6,Manufacturer_7,MPN_8,Digikey,Mouser,RS,Newark,Farnell
+Q1; Q2; Q3; Q4;,4,1A NPN,ON Semiconductor/fairchild,PN2222ATF ,,,,,,,,,PN2222ATFCT-ND ,512-PN2222ATF,806-1296,31Y3451,2453811
+R1; R2; R3; R4;,4,Resistor 270 ohm 250mW through-hole,Stackpole Electronics,CF14JT270R,Yageo,MFR-25FBF52-220R,TE Connectivity,CFR16J270R,Ohmite,OD271JE,Kamaya,RC1/4271JB ,CF14JT270RCT-ND,791-RC1/4-271JB ,148360,95W5736,2329504
+J1;J2;,2,CONN HEADER XH TOP 4POS 2.5MM,JST,B4B-XH-A (LF)(SN) ,,,,,,,,,455-2249-ND ,,820-1551,,1516278
+J3; J4; J5; J6; J7;,5,CONN HEADER XH TOP 2POS 2.5MM,JST,B2B-XH-A (LF)(SN),,,,,,,,,455-2247-ND,,8201554P,73M9415,1516276

@@ -25,20 +25,6 @@ F 3 "~" H 3050 2700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
-U 1 1 5E255A8F
-P 4300 3200
-F 0 "#PWR02" H 4300 2950 50  0001 C CNN
-F 1 "GND" H 4305 3027 50  0000 C CNN
-F 2 "" H 4300 3200 50  0001 C CNN
-F 3 "" H 4300 3200 50  0001 C CNN
-	1    4300 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3200 4300 3150
-Connection ~ 4300 3150
-$Comp
 L Device:R R4
 U 1 1 5E2596A7
 P 6200 5950
@@ -176,46 +162,6 @@ F 3 "~" H 3700 5950 50  0001 C CNN
 	1    3700 5950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 5E265876
-P 4900 1650
-F 0 "#PWR0101" H 4900 1500 50  0001 C CNN
-F 1 "+5V" H 4915 1823 50  0000 C CNN
-F 2 "" H 4900 1650 50  0001 C CNN
-F 3 "" H 4900 1650 50  0001 C CNN
-	1    4900 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 1850 4900 1650
-Wire Wire Line
-	4900 1650 6050 1650
-Connection ~ 4900 1650
-$Comp
-L Device:C C1
-U 1 1 5E27638C
-P 6050 1800
-F 0 "C1" H 6165 1846 50  0000 L CNN
-F 1 "100nF" H 6165 1755 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6088 1650 50  0001 C CNN
-F 3 "~" H 6050 1800 50  0001 C CNN
-	1    6050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5E2792D0
-P 6050 3200
-F 0 "#PWR0102" H 6050 2950 50  0001 C CNN
-F 1 "GND" H 6055 3027 50  0000 C CNN
-F 2 "" H 6050 3200 50  0001 C CNN
-F 3 "" H 6050 3200 50  0001 C CNN
-	1    6050 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 3200 6050 2950
 Wire Wire Line
 	6350 4650 6450 4650
 Text Notes 6750 1650 0    100  ~ 0
@@ -240,19 +186,19 @@ Wire Notes Line
 	7750 1400 7750 2700
 Text Notes 3000 3850 0    100  ~ 0
 Output transistor-switch array
-Text GLabel 5500 2150 2    50   Input ~ 0
+Text GLabel 3450 2150 2    50   Input ~ 0
 OUT_0
 Wire Wire Line
 	4300 4650 4450 4650
-Text GLabel 5500 2050 2    50   Input ~ 0
+Text GLabel 3450 2050 2    50   Input ~ 0
 OUT_1
 Wire Wire Line
 	4300 5950 4450 5950
-Text GLabel 5500 2750 2    50   Input ~ 0
+Text GLabel 3450 2600 2    50   Input ~ 0
 OUT_2
 Wire Wire Line
 	5900 5950 6050 5950
-Text GLabel 5500 2650 2    50   Input ~ 0
+Text GLabel 3450 2700 2    50   Input ~ 0
 OUT_3
 Wire Wire Line
 	5900 4650 6050 4650
@@ -338,30 +284,6 @@ F 3 "" H 6750 4900 50  0001 C CNN
 	1    6750 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 2050 0    50   Input ~ 0
-SER_IN
-Text GLabel 3450 2050 2    50   Input ~ 0
-SER_IN
-Text GLabel 3450 2700 2    50   Input ~ 0
-SRCLR
-Wire Wire Line
-	4300 2650 4300 3150
-Text GLabel 3450 2150 2    50   Input ~ 0
-RCLK
-Text GLabel 4350 2550 0    50   Input ~ 0
-RCLK
-Wire Wire Line
-	4350 2550 4500 2550
-Text GLabel 4350 2350 0    50   Input ~ 0
-SRCLR
-Wire Wire Line
-	4500 2350 4350 2350
-Text GLabel 4350 2250 0    50   Input ~ 0
-SRCLK
-Wire Wire Line
-	4500 2250 4350 2250
-Wire Wire Line
-	4500 2050 4350 2050
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5E239C52
@@ -384,22 +306,9 @@ F 3 "" H 3450 2900 50  0001 C CNN
 	1    3450 2900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3450 2600 2    50   Input ~ 0
-SRCLK
 NoConn ~ 3250 2800
 Wire Wire Line
 	3250 2900 3400 2900
-$Comp
-L power:+5V #PWR0103
-U 1 1 5F3567C2
-P 3600 2250
-F 0 "#PWR0103" H 3600 2100 50  0001 C CNN
-F 1 "+5V" H 3615 2423 50  0000 C CNN
-F 2 "" H 3600 2250 50  0001 C CNN
-F 3 "" H 3600 2250 50  0001 C CNN
-	1    3600 2250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3250 4250 3600 4250
 Wire Wire Line
@@ -499,52 +408,6 @@ F 3 "" H 3600 4100 50  0001 C CNN
 	1    3600 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74HC595 U1
-U 1 1 5F395EE4
-P 4900 2450
-F 0 "U1" H 4650 3000 50  0000 C CNN
-F 1 "74HC595" H 5100 3000 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 4900 2450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4900 2450 50  0001 C CNN
-	1    4900 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 2650 4500 2650
-Wire Wire Line
-	4300 3150 4900 3150
-Wire Wire Line
-	5300 2050 5500 2050
-Wire Wire Line
-	5300 2150 5500 2150
-Wire Wire Line
-	5300 2250 5450 2250
-Wire Wire Line
-	5450 2550 5300 2550
-Wire Wire Line
-	5300 2450 5450 2450
-Wire Wire Line
-	5450 2250 5450 2350
-Connection ~ 5450 2450
-Wire Wire Line
-	5450 2450 5450 2550
-Wire Wire Line
-	5300 2350 5450 2350
-Connection ~ 5450 2350
-Wire Wire Line
-	5450 2350 5450 2450
-Wire Wire Line
-	5450 2250 6050 2250
-Connection ~ 5450 2250
-Connection ~ 6050 2250
-Wire Wire Line
-	6050 2250 6050 1950
-Wire Wire Line
-	5300 2950 6050 2950
-Connection ~ 6050 2950
-Wire Wire Line
-	6050 2950 6050 2250
 Text GLabel 4450 4650 2    50   Input ~ 0
 OUT_0
 Text GLabel 4450 5950 2    50   Input ~ 0
@@ -576,10 +439,6 @@ F 3 "~" H 3050 4250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 2650 5500 2650
-Wire Wire Line
-	5300 2750 5500 2750
-Wire Wire Line
 	3250 2050 3450 2050
 Wire Wire Line
 	3250 2150 3450 2150
@@ -595,16 +454,14 @@ Connection ~ 3400 2900
 Wire Wire Line
 	3400 2900 3450 2900
 Wire Wire Line
-	3250 2250 3600 2250
-Wire Wire Line
 	3250 2600 3450 2600
 Wire Wire Line
 	3250 2700 3450 2700
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J8
 U 1 1 5FD25C64
 P 6800 2300
-F 0 "J?" H 6800 2400 50  0000 C CNN
+F 0 "J8" H 6800 2400 50  0000 C CNN
 F 1 "Conn_01x02" H 6718 2066 50  0001 C CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6800 2300 50  0001 C CNN
 F 3 "~" H 6800 2300 50  0001 C CNN
@@ -631,4 +488,5 @@ Wire Wire Line
 	7150 2300 7000 2300
 Wire Wire Line
 	7150 1950 7150 2300
+NoConn ~ 3250 2250
 $EndSCHEMATC
