@@ -60,11 +60,11 @@ PCB
 
 The transistor-switch hub for 4 devices:
 
-Schematics ![4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%203)/4_switch_array.png)
+Schematics ![4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%204)/4_switch_array.png)
 
 PCB
 
-![PCB_4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%203)/PCB_4_switch_array.png)
+![PCB_4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%204)/PCB_4_switch_array.png)
 
 The transistor-switch hub for 8 devices:
 
