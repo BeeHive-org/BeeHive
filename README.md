@@ -16,9 +16,9 @@ The idea here is to make a very flexible hardware system that is easy to expand/
 
 -  4 switch array with an [TPIC6B595 shift register](https://www.ti.com/lit/ds/symlink/tpic6b595.pdf) and transistors.
 
-
 -  8 switch array with an [TPIC6B595 shift register](https://www.ti.com/lit/ds/symlink/tpic6b595.pdf) and transistors.
 
+-  12V5A breakout which is based on simple barrel jack connector and JST connectors
 
 -  power supply which are based on the [LM2596 T5](https://www.ti.com/lit/ds/symlink/lm2596.pdf) a step down switching regulator
 For more details see [current design](#the-current-design) section below.  
