@@ -25,10 +25,10 @@ F 3 "~" H 4450 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Schottky D1
+L Device:D_Schottky D2
 U 1 1 5E26BBB5
 P 5350 2300
-F 0 "D1" H 5350 2084 50  0000 C CNN
+F 0 "D2" H 5350 2084 50  0000 C CNN
 F 1 "D_Schottky" H 5350 2175 50  0000 C CNN
 F 2 "Diode_THT:D_DO-201_P15.24mm_Horizontal" H 5350 2300 50  0001 C CNN
 F 3 "~" H 5350 2300 50  0001 C CNN
@@ -108,34 +108,22 @@ Connection ~ 6250 2300
 $Comp
 L power:GND #PWR02
 U 1 1 5E278D9D
-P 6900 3550
-F 0 "#PWR02" H 6900 3300 50  0001 C CNN
-F 1 "GND" H 6905 3377 50  0000 C CNN
-F 2 "" H 6900 3550 50  0001 C CNN
-F 3 "" H 6900 3550 50  0001 C CNN
-	1    6900 3550
+P 6900 4150
+F 0 "#PWR02" H 6900 3900 50  0001 C CNN
+F 1 "GND" H 6905 3977 50  0000 C CNN
+F 2 "" H 6900 4150 50  0001 C CNN
+F 3 "" H 6900 4150 50  0001 C CNN
+	1    6900 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 8750 2600 2    100  ~ 0
-DATA 2
-Text Notes 8750 2400 2    100  ~ 0
-DATA 1
-Text Notes 8750 2800 2    100  ~ 0
+Text Notes 8750 2450 2    100  ~ 0
 VCC
-Text Notes 8750 3000 2    100  ~ 0
+Text Notes 8750 2650 2    100  ~ 0
 GND
 Wire Notes Line style solid
-	8800 3050 8150 3050
+	8800 2750 8150 2750
 Wire Notes Line style solid
 	8800 2250 8150 2250
-Wire Notes Line style solid
-	8150 2250 8150 3050
-Wire Notes Line style solid
-	8800 2250 8800 3050
-Wire Notes Line style solid
-	8800 2950 9200 2950
-Wire Notes Line style solid
-	8800 2750 9200 2750
 Wire Notes Line style solid rgb(255, 0, 0)
 	8800 2350 9200 2350
 Wire Notes Line style solid rgb(0, 0, 0)
@@ -144,10 +132,6 @@ Text Notes 8950 2350 2    100  ~ 0
 1
 Text Notes 8950 2550 2    100  ~ 0
 2
-Text Notes 8950 2750 2    100  ~ 0
-3
-Text Notes 8950 2950 2    100  ~ 0
-4
 Text Notes 8100 2150 0    100  ~ 0
 Connector\npinout
 Text Notes 3000 2600 0    100  ~ 0
@@ -161,15 +145,11 @@ Wire Notes Line
 Wire Notes Line
 	6600 1700 7700 1700
 Wire Notes Line
-	6600 3300 7700 3300
+	6600 3850 7700 3850
 Wire Notes Line
 	2900 2200 4100 2200
 Wire Notes Line
 	2900 3300 4100 3300
-Wire Notes Line
-	7700 1700 7700 3300
-Wire Notes Line
-	6600 1700 6600 3300
 Wire Wire Line
 	4000 2800 4200 2800
 Connection ~ 4200 2800
@@ -247,7 +227,7 @@ Wire Wire Line
 	7100 2750 6900 2750
 Connection ~ 6900 2750
 Wire Wire Line
-	6900 2750 6900 3550
+	6900 2750 6900 3150
 Wire Wire Line
 	7100 2300 6900 2300
 Wire Wire Line
@@ -297,4 +277,94 @@ Wire Wire Line
 Wire Wire Line
 	3850 2850 3850 3150
 Connection ~ 3850 3150
+$Comp
+L Device:R R1
+U 1 1 60292F3D
+P 4000 3650
+F 0 "R1" H 4070 3696 50  0000 L CNN
+F 1 "560" H 4070 3605 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 3930 3650 50  0001 C CNN
+F 3 "~" H 4000 3650 50  0001 C CNN
+	1    4000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3500 4000 3050
+Connection ~ 4000 3050
+$Comp
+L Device:LED D1
+U 1 1 602950A0
+P 4000 4000
+F 0 "D1" V 4039 3882 50  0000 R CNN
+F 1 "LED" V 3948 3882 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4000 4000 50  0001 C CNN
+F 3 "~" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 3800 4000 3850
+$Comp
+L power:GND #PWR0101
+U 1 1 60296335
+P 4000 4300
+F 0 "#PWR0101" H 4000 4050 50  0001 C CNN
+F 1 "GND" H 4005 4127 50  0000 C CNN
+F 2 "" H 4000 4300 50  0001 C CNN
+F 3 "" H 4000 4300 50  0001 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4150 4000 4300
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 602991BE
+P 7300 3250
+F 0 "J5" H 7300 3050 50  0000 C CNN
+F 1 "Conn_01x02" H 7218 3016 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7300 3250 50  0001 C CNN
+F 3 "~" H 7300 3250 50  0001 C CNN
+	1    7300 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 602991C4
+P 7300 3700
+F 0 "J6" H 7300 3500 50  0000 C CNN
+F 1 "Conn_01x02" H 7218 3466 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7300 3700 50  0001 C CNN
+F 3 "~" H 7300 3700 50  0001 C CNN
+	1    7300 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6750 2850 6750 3250
+Wire Wire Line
+	6750 3250 7100 3250
+Connection ~ 6750 2850
+Wire Wire Line
+	6750 3250 6750 3700
+Wire Wire Line
+	6750 3700 7100 3700
+Connection ~ 6750 3250
+Wire Wire Line
+	7100 3600 6900 3600
+Connection ~ 6900 3600
+Wire Wire Line
+	6900 3600 6900 4150
+Wire Wire Line
+	7100 3150 6900 3150
+Connection ~ 6900 3150
+Wire Wire Line
+	6900 3150 6900 3600
+Wire Notes Line
+	7700 1700 7700 3850
+Wire Notes Line
+	6600 1700 6600 3850
+Wire Notes Line style solid
+	8150 2250 8150 2750
+Wire Notes Line style solid
+	8800 2250 8800 2750
 $EndSCHEMATC
