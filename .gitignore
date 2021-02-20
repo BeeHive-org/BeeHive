@@ -21,3 +21,6 @@ hardware/8 switch array (ver 2)/8_switch_array.kicad_pcb-bak
 hardware/archive/4 switch array (ver 3)/4_switch_array-cache.lib
 hardware/archive/4 switch array (ver 3)/fp-info-cache
 hardware/8 switch array (ver 2)/8_switch_array.kicad_pcb-bak
+hardware/peltier/peltier.kicad_pcb-bak
+hardware/peltier/peltier.kicad_pcb-bak
+*.kicad_pcb-bak
