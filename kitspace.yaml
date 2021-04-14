@@ -5,21 +5,33 @@ multi:
         site: https://github.com/isobianin/BeeHive
         bom: hardware/hub_PCB_redesign/1-click-bom.csv
         gerbers: hardware/hub_PCB_redesign/gerber
+        eda:
+            type: kicad
+            pcb: hardware/hub_PCB_redesign/beehive.kicad_pcb
     boards/8-switch-array:
         summary: an array of 8 individually addresseable NPN transistors
         color: green
         site: https://github.com/isobianin/BeeHive
         bom: hardware/8_switch_array_(ver 2)/1-click-bom.csv
         gerbers: boards/8_switch_array_(ver 2)/gerber
+        eda:
+            type: kicad
+            pcb: hardware/8_switch_array_(ver 2)/8_switch_array.kicad_pcb
     boards/Peltier:
         summary:  A board containing an H-Bridge and a temperature sensor for peltier applications
         color: green
         site: https://github.com/isobianin/BeeHive
         bom: hardware/peltier/1-click-bom.csv
         gerbers: hardware/peltier/gerber
+        eda:
+            type: kicad
+            pcb: hardware/peltier/peltier.kicad_pcb
     boards/hp-led-switch:
         summary:  A board to control high powered leds
         color: green
         site: https://github.com/isobianin/BeeHive
         bom: hardware/hp_led_switch/1-click-bom.csv
         gerbers: hardware/hp_led_switch/gerber
+        eda:
+            type: kicad
+            pcb: hardware/hp_led_switch/hp_led_switch.kicad_pcb
