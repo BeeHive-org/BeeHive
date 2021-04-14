@@ -1,4 +1,25 @@
-bom: PCB/flypi_pcb_kicad/1-click-bom.csv
-gerbers: PCB/flypi_pcb_kicad/gerber
-summary: 3D-printable microscope for diagnostics and scientific experiments
-site: https://hackaday.io/project/5059-flypi-cheap-microscopeexperimental-setup
+multi:
+    boards/central-hub:
+        summary: the central hub of BeeHive
+        color: green
+        site: https://github.com/isobianin/BeeHive
+        bom: hardware/hub_PCB_redesign/1-click-bom.csv
+        gerbers: hardware/hub_PCB_redesign/gerber
+    boards/8-switch-array:
+        summary: an array of 8 individually addresseable NPN transistors
+        color: green
+        site: https://github.com/isobianin/BeeHive
+        bom: hardware/8_switch_array/1-click-bom.csv
+        gerbers: boards//8_switch_array/gerber
+    boards/Peltier:
+        summary:  A board containing an H-Bridge and a temperature sensor for peltier applications
+        color: green
+        site: https://github.com/isobianin/BeeHive
+        bom: hardware/peltier/1-click-bom.csv
+        gerbers: hardware/peltier/gerber
+    boards/hp-led-switch:
+        summary:  A board to control high powered leds
+        color: green
+        site: https://github.com/isobianin/BeeHive
+        bom: hardware/hp_led_switch/1-click-bom.csv
+        gerbers: hardware/hp_led_switch/gerber
