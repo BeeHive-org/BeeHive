@@ -24,7 +24,7 @@ The idea here is to make a very flexible hardware system that is easy to expand/
 For more details see [current design](#the-current-design) section below.  
 
 
-## software
+## Software
 
 On the software side of things we are initially running micropython, as this will offer a low entry barrier for researchers (as Python is more and more the chosen language for much of the scientific stack).
 
@@ -32,46 +32,50 @@ On the software side of things we are initially running micropython, as this wil
 - The current implementation runs stock micropython with [OSC library](https://github.com/SpotlightKid/micropython-osc) for communication, as this will allow easy integration with [Bonsai-RX](https://bonsai-rx.org/), a powerful piece of software that has integrations with other interesting open source tools for science, such as [open ephys](https://open-ephys.org/), [DeepLab Cut](http://www.mousemotorlab.org/deeplabcut) and other proprietary but useful tools, like high speed cameras, National Instruments DAQ systems. 
 
 
-- The main wish software wise for thsi project is to make it compatible with [Labthings](https://github.com/labthings).
+- The main wish software wise for this project is to make it compatible with [Labthings](https://github.com/labthings).
 
 ---
 
 ## The current design
 
-The main hub:
+### The main hub:
 
-Schematics
+#### Schematics
 
-![beehive.png](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB_redesign/beehive.png)
+<img alt="beehive.png" src="hardware/hub_PCB_redesign/beehive.png" />
 
-PCB
+#### PCB
 
-![beehive_PCB](https://github.com/isobianin/BeeHive/blob/master/hardware/hub_PCB_redesign/beehive_PCB.png)
+<img alt="beehive_PCB" src="hardware/hub_PCB_redesign/beehive_PCB.png" />
 
-The power supply module:
+### The power supply module:
 
-Schematics
+#### Schematics
 
-![power_supply.png](https://github.com/isobianin/BeeHive/blob/master/hardware/power_supply/power_supply.png)
+<img alt="power_supply.png" src=hardware/power_supply/power_supply.png />
 
-PCB
+#### PCB
 
-![PCB_power_supply.png](https://github.com/isobianin/BeeHive/blob/master/hardware/power_supply/PCB_power_supply.png)
+<img alt="PCB_power_supply.png" src="hardware/power_supply/PCB_power_supply.png" />
 
-The transistor-switch hub for 4 devices:
+### The transistor-switch hub for 4 devices:
 
-Schematics ![4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%204)/4_switch_array.png)
+#### Schematics
 
-PCB
+<img alt="4_switch_array.png" src="hardware/4_switch_array_(ver 4)/4_switch_array.png" />
 
-![PCB_4_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/4%20switch%20array%20(ver%204)/PCB_4_switch_array.png)
+#### PCB
 
-The transistor-switch hub for 8 devices:
+<img alt="PCB_4_switch_array.png" src="hardware/4_switch_array_(ver 4)/PCB_4_switch_array.png" />
 
-Schematics ![8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8%20switch%20array%20(ver%202)/8_switch_array.png)
+### The transistor-switch hub for 8 devices:
 
-PCB
+#### Schematics
 
-![PCB_8_switch_array.png](https://github.com/isobianin/BeeHive/blob/master/hardware/8%20switch%20array%20(ver%202)/8_switch_array_PCB.png)
+<img alt="8_switch_array.png" src="hardware/8_switch_array_(ver 2)/8_switch_array.png" />
+
+#### PCB
+
+<img alt="PCB_8_switch_array.png" src="hardware/8_switch_array_(ver 2)/8_switch_array_PCB.png" />
 
 ---
