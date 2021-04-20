@@ -15,3 +15,6 @@ J2;J3,2,CONN HEADER XH TOP 4POS 2.5MM,JST,B4B-XH-A (LF)(SN),JST,B4B-XH-A(LF)(SN)
 J6;,1,Terminal block 5mm,RS Pro,494-8906,TE Connectivity,282837-2,RS Pro,4948906,,,,,,,,,,,,,A113320-ND,5712828372,7100100,,1784860
 D1;D2,2,3mm LED any colour,Bivar Inc,ELM 5-065,Bivar,ELM 5-065,,,,,,,,,,,,,,,492-2284-ND,749ELM5065,,,
 J6-1,1,DS18B20 temperature sensor,Maxim integrated,DS18B20,Maxim Integrated,DS18B20+,,,,,,,,,,,,,,,DS18B20+-ND,700DS18B20+,1901709,,2515553
+cables,16,"JUMPER SXH-001T-P0.6 X2 10""""",JST,ASXHSXH22K254,,,,,,,,,455-4223-ND,,,,,,,,,,,,
+connectors 2pin,4,CONN HOUSING 2.5MM 2POS,JST,XHP-2,,,,,,,,,455-2266-ND,,8201611,,1516264,,,,,,,,
+connectors 4pin,6,CONN HOUSING 2.5MM 4POS,JST,XHP-4,,,,,,,,,455-2267-ND,,8201618,,1516266,,,,,,,,
