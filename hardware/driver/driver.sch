@@ -149,39 +149,6 @@ F 3 "" H 1700 6250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	950  6400 1450 6400
-$Comp
-L power:+5V #PWR08
-U 1 1 5F591312
-P 1450 7100
-F 0 "#PWR08" H 1450 6950 50  0001 C CNN
-F 1 "+5V" H 1465 7273 50  0000 C CNN
-F 2 "" H 1450 7100 50  0001 C CNN
-F 3 "" H 1450 7100 50  0001 C CNN
-	1    1450 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5F59DECB
-P 750 7350
-F 0 "J4" H 668 7667 50  0000 C CNN
-F 1 "Conn_01x04" H 668 7576 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 750 7350 50  0001 C CNN
-F 3 "~" H 750 7350 50  0001 C CNN
-	1    750  7350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5F59FAE5
-P 1700 7100
-F 0 "#PWR06" H 1700 6850 50  0001 C CNN
-F 1 "GND" H 1705 6927 50  0000 C CNN
-F 2 "" H 1700 7100 50  0001 C CNN
-F 3 "" H 1700 7100 50  0001 C CNN
-	1    1700 7100
-	-1   0    0    1   
-$EndComp
 Text GLabel 1450 6500 2    50   Input ~ 0
 IN2
 Text GLabel 1450 6400 2    50   Input ~ 0
@@ -257,10 +224,10 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4100 3700 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R7
 U 1 1 5F64F957
 P 3800 4000
-F 0 "R8" H 3730 3954 50  0000 R CNN
+F 0 "R7" H 3730 3954 50  0000 R CNN
 F 1 "1k" H 3730 4045 50  0000 R CNN
 F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 3730 4000 50  0001 C CNN
 F 3 "~" H 3800 4000 50  0001 C CNN
@@ -538,17 +505,6 @@ Wire Wire Line
 Connection ~ 7650 2900
 Wire Wire Line
 	7650 2900 7550 2900
-$Comp
-L Device:R R9
-U 1 1 5F69B88C
-P 7650 4050
-F 0 "R9" H 7580 4004 50  0000 R CNN
-F 1 "1k" H 7580 4095 50  0000 R CNN
-F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 7580 4050 50  0001 C CNN
-F 3 "~" H 7650 4050 50  0001 C CNN
-	1    7650 4050
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7650 3900 7650 3700
 Connection ~ 7650 3700
@@ -577,17 +533,6 @@ F 3 "~" H 2200 7150 50  0001 C CNN
 	1    2200 7150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R10
-U 1 1 5F6C1F80
-P 2200 6500
-F 0 "R10" V 2300 6550 50  0000 R CNN
-F 1 "220" V 2100 6550 50  0000 R CNN
-F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 2130 6500 50  0001 C CNN
-F 3 "~" H 2200 6500 50  0001 C CNN
-	1    2200 6500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 7000 2200 6650
 $Comp
@@ -615,10 +560,10 @@ F 3 "~" H 7850 2900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R6
 U 1 1 5F6331C6
 P 7850 3700
-F 0 "R7" V 7950 3750 50  0000 R CNN
+F 0 "R6" V 7950 3750 50  0000 R CNN
 F 1 "47" V 7750 3750 50  0000 R CNN
 F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 7780 3700 50  0001 C CNN
 F 3 "~" H 7850 3700 50  0001 C CNN
@@ -635,17 +580,6 @@ F 2 "LED_THT:LED_D3.0mm" H 2700 7150 50  0001 C CNN
 F 3 "~" H 2700 7150 50  0001 C CNN
 	1    2700 7150
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F6D669A
-P 2700 6500
-F 0 "R11" V 2800 6550 50  0000 R CNN
-F 1 "560" V 2600 6550 50  0000 R CNN
-F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 2630 6500 50  0001 C CNN
-F 3 "~" H 2700 6500 50  0001 C CNN
-	1    2700 6500
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2700 7000 2700 6650
@@ -776,15 +710,6 @@ Wire Wire Line
 	950  6700 1700 6700
 Wire Wire Line
 	1700 6250 1700 6700
-NoConn ~ 950  6600
-Wire Wire Line
-	950  7450 1450 7450
-Wire Wire Line
-	1450 7100 1450 7350
-Wire Wire Line
-	1700 7100 1700 7550
-Wire Wire Line
-	950  7550 1700 7550
 Wire Wire Line
 	1700 5450 1700 5900
 Connection ~ 1700 5450
@@ -860,10 +785,52 @@ F 3 "" H 1700 5200 50  0001 C CNN
 	1    1700 5200
 	-1   0    0    1   
 $EndComp
-NoConn ~ 950  7250
+$Comp
+L Device:R R10
+U 1 1 5F6D669A
+P 2700 6500
+F 0 "R10" V 2800 6550 50  0000 R CNN
+F 1 "560" V 2600 6550 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 2630 6500 50  0001 C CNN
+F 3 "~" H 2700 6500 50  0001 C CNN
+	1    2700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5F6C1F80
+P 2200 6500
+F 0 "R9" V 2300 6550 50  0000 R CNN
+F 1 "220" V 2100 6550 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 2130 6500 50  0001 C CNN
+F 3 "~" H 2200 6500 50  0001 C CNN
+	1    2200 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5F69B88C
+P 7650 4050
+F 0 "R8" H 7580 4004 50  0000 R CNN
+F 1 "1k" H 7580 4095 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 7580 4050 50  0001 C CNN
+F 3 "~" H 7650 4050 50  0001 C CNN
+	1    7650 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60A6900B
+P 1300 6250
+F 0 "#PWR?" H 1300 6100 50  0001 C CNN
+F 1 "+5V" H 1315 6423 50  0000 C CNN
+F 2 "" H 1300 6250 50  0001 C CNN
+F 3 "" H 1300 6250 50  0001 C CNN
+	1    1300 6250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	950  7350 1450 7350
-Connection ~ 1450 7350
+	950  6600 1300 6600
 Wire Wire Line
-	1450 7350 1450 7450
+	1300 6600 1300 6250
 $EndSCHEMATC
