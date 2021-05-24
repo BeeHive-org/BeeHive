@@ -1,0 +1,33 @@
+References	Qty	Description	
+C1, C7, C14, C2, C16, C8	6	C Small 680pF Unpolarized capacitor, small symbol Disc D5.1mm W3.2mm P5.00mm	https://www.digikey.co.uk/product-detail/en/vishay-beyschlag-draloric-bc-components/K681K10X7RF5UH5/BC2690CT-ND/2356904
+C3, C9, C17, C4, C18, C10	6	C Small 10nF Unpolarized capacitor, small symbol	https://www.digikey.co.uk/product-detail/en/vishay-beyschlag-draloric-bc-components/K103K10X7RF5UH5/BC2662CT-ND/2356876
+C5, C12, C19, C6, C20, C13	6	C Small 10µF Unpolarized capacitor, small symbol	
+C11	1	CP Small 680µF Polarized capacitor, small symbol	
+C15	1	CP Small 220µF Polarized capacitor, small symbol	
+D1, D5, D3, D9, D12, D10, D18, D22, D19, D2, D6, D4, D20, D23, D21, D11, D14, D13	18	1N4005 50V 1A General Purpose Rectifier Diode, DO-41 D SOD81 P10.16mm Horizontal	
+D7, D15, D24, D8, D25, D16	6	1N47xxA 1300mW Zener Diode, DO-41 D SOD81 P10.16mm Horizontal	
+D17	1	1N5820 20V 3A Schottky Barrier Rectifier Diode, DO-201AD D P15.24mm Horizontal	
+J1	1	Conn 01x02 Female input trigger 2 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J2	1	Conn 01x02 Female input trigger 1 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J3	1	Screw Terminal 01x02 to solenoid 2 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J4	1	Screw Terminal 01x02 to solenoid 1 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J5	1	Conn 01x02 Female input trigger 4 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J6	1	Conn 01x02 Female input trigger 3 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J7	1	Screw Terminal 01x02 to solenoid 4 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J8	1	Screw Terminal 01x02 to solenoid 3 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J9	1	Barrel Jack MountingPin DC with a mounting pin 5.5mmODx2.1mmID PJ-202A	
+J10	1	Conn 01x02 Female input trigger 6 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J11	1	Conn 01x02 Female input trigger 5 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J12	1	Screw Terminal 01x02 to solenoid 6 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+J13	1	Screw Terminal 01x02 to solenoid 5 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/) PinHeader 1x02 P2.54mm Vertical	
+L1	1	L 33µH Inductor Radial D7.5mm P3.50mm Fastron 07P	
+Q1, Q9, Q17, Q2, Q18, Q10	6	Q PNP Darlington BCE MJH11021G transistor, base/collector/emitter	https://www.digikey.co.uk/products/en?keywords=MJH11021G
+Q3, Q11, Q19, Q4, Q20, Q12	6	MPSA42 0.5A Ic, 300V Vce, NPN High Voltage Transistor, TO-92 Inline	
+Q5, Q13, Q21, Q6, Q22, Q14	6	MPSA42 TRANS NPN 300V 0.5A TO-92 TO-92-3	
+Q7, Q15, Q23, Q8, Q24, Q16	6	Q NPN Darlington BCE MJH11022G transistor, base/collector/emitter	https://www.digikey.co.uk/products/en?keywords=MJH11022G
+R1, R9, R15, R22, R29, R37, R2, R10, R30, R38, R17, R24	12	R Small 10k Resistor, small symbol	
+R3, R16, R31, R4, R32, R18	6	R Small 4.7k Resistor, small symbol	
+R7, R11, R5, R21, R25, R19, R35, R39, R33, R8, R12, R6, R36, R40, R34, R23, R26, R20	18	R Small 330 Resistor, small symbol	
+R13, R27, R41, R14, R42, R28	6	R Small 2k Resistor, small symbol	
+U1, U3, U6, U2, U7, U4	6	LM555xM Precision Timers, 555 compatible, SOIC-8 DIP-8 W7.62mm LongPads	
+U5	1	LM2596T-12 12V 3A 150kHz Step-Down Voltage Regulator, TO-220 TO-220-5 P3.4x3.7mm StaggerOdd Lead3.8mm Vertical	
