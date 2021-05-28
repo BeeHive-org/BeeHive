@@ -19,7 +19,7 @@ U 1 1 6016FEA8
 P 6650 3850
 F 0 "L1" V 6840 3850 50  0000 C CNN
 F 1 "33µH" V 6749 3850 50  0000 C CNN
-F 2 "Inductor_THT:L_Radial_D7.5mm_P3.50mm_Fastron_07P" H 6650 3850 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D10.0mm_P5.00mm_Neosid_SD12_style3" H 6650 3850 50  0001 C CNN
 F 3 "~" H 6650 3850 50  0001 C CNN
 	1    6650 3850
 	0    -1   -1   0   
