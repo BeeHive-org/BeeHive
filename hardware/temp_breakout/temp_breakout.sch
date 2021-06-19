@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR03
+U 1 1 60CE1794
+P 3650 3600
+F 0 "#PWR03" H 3650 3450 50  0001 C CNN
+F 1 "+5V" H 3665 3773 50  0000 C CNN
+F 2 "" H 3650 3600 50  0001 C CNN
+F 3 "" H 3650 3600 50  0001 C CNN
+	1    3650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 60CE1A2B
+P 5350 3600
+F 0 "#PWR06" H 5350 3450 50  0001 C CNN
+F 1 "+5V" H 5365 3773 50  0000 C CNN
+F 2 "" H 5350 3600 50  0001 C CNN
+F 3 "" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60CE20F3
+P 5050 3600
+F 0 "#PWR04" H 5050 3350 50  0001 C CNN
+F 1 "GND" H 5055 3427 50  0000 C CNN
+F 2 "" H 5050 3600 50  0001 C CNN
+F 3 "" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 60CE2938
+P 5750 4100
+F 0 "J2" H 5830 4142 50  0000 L CNN
+F 1 "Conn_01x03" H 5830 4051 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 5750 4100 50  0001 C CNN
+F 3 "~" H 5750 4100 50  0001 C CNN
+	1    5750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60CE2F55
+P 3650 3850
+F 0 "R1" H 3580 3804 50  0000 R CNN
+F 1 "4,7k" H 3580 3895 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 3580 3850 50  0001 C CNN
+F 3 "~" H 3650 3850 50  0001 C CNN
+	1    3650 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 4000 5350 4000
+Wire Wire Line
+	5350 4000 5350 3600
+Wire Wire Line
+	3650 3700 3650 3600
+Wire Wire Line
+	5050 4200 5550 4200
+Wire Wire Line
+	5050 3600 5050 4200
+$Comp
+L power:+5V #PWR07
+U 1 1 60CE5D2C
+P 5350 4500
+F 0 "#PWR07" H 5350 4350 50  0001 C CNN
+F 1 "+5V" H 5365 4673 50  0000 C CNN
+F 2 "" H 5350 4500 50  0001 C CNN
+F 3 "" H 5350 4500 50  0001 C CNN
+	1    5350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60CE5D32
+P 5050 4500
+F 0 "#PWR05" H 5050 4250 50  0001 C CNN
+F 1 "GND" H 5055 4327 50  0000 C CNN
+F 2 "" H 5050 4500 50  0001 C CNN
+F 3 "" H 5050 4500 50  0001 C CNN
+	1    5050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 60CE5D38
+P 5750 5000
+F 0 "J3" H 5830 5042 50  0000 L CNN
+F 1 "Conn_01x03" H 5830 4951 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 5750 5000 50  0001 C CNN
+F 3 "~" H 5750 5000 50  0001 C CNN
+	1    5750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4900 5350 4900
+Wire Wire Line
+	5350 4900 5350 4500
+Wire Wire Line
+	5050 5100 5550 5100
+Wire Wire Line
+	5050 4500 5050 5100
+$Comp
+L power:+5V #PWR010
+U 1 1 60CE7510
+P 7350 3600
+F 0 "#PWR010" H 7350 3450 50  0001 C CNN
+F 1 "+5V" H 7365 3773 50  0000 C CNN
+F 2 "" H 7350 3600 50  0001 C CNN
+F 3 "" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 60CE7516
+P 7050 3600
+F 0 "#PWR08" H 7050 3350 50  0001 C CNN
+F 1 "GND" H 7055 3427 50  0000 C CNN
+F 2 "" H 7050 3600 50  0001 C CNN
+F 3 "" H 7050 3600 50  0001 C CNN
+	1    7050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 60CE751C
+P 7750 4100
+F 0 "J4" H 7830 4142 50  0000 L CNN
+F 1 "Conn_01x03" H 7830 4051 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 7750 4100 50  0001 C CNN
+F 3 "~" H 7750 4100 50  0001 C CNN
+	1    7750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4000 7350 4000
+Wire Wire Line
+	7350 4000 7350 3600
+Wire Wire Line
+	7050 4200 7550 4200
+Wire Wire Line
+	7050 3600 7050 4200
+$Comp
+L power:+5V #PWR011
+U 1 1 60CE8474
+P 7350 4500
+F 0 "#PWR011" H 7350 4350 50  0001 C CNN
+F 1 "+5V" H 7365 4673 50  0000 C CNN
+F 2 "" H 7350 4500 50  0001 C CNN
+F 3 "" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60CE847A
+P 7050 4500
+F 0 "#PWR09" H 7050 4250 50  0001 C CNN
+F 1 "GND" H 7055 4327 50  0000 C CNN
+F 2 "" H 7050 4500 50  0001 C CNN
+F 3 "" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 60CE8480
+P 7750 5000
+F 0 "J5" H 7830 5042 50  0000 L CNN
+F 1 "Conn_01x03" H 7830 4951 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 7750 5000 50  0001 C CNN
+F 3 "~" H 7750 5000 50  0001 C CNN
+	1    7750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4900 7350 4900
+Wire Wire Line
+	7350 4900 7350 4500
+Wire Wire Line
+	7050 5100 7550 5100
+Wire Wire Line
+	7050 4500 7050 5100
+Wire Wire Line
+	7550 5000 6800 5000
+Wire Wire Line
+	6800 4100 7550 4100
+Text GLabel 4850 4100 0    50   Input ~ 0
+esp_pin
+Wire Wire Line
+	4850 4100 5550 4100
+Text GLabel 4850 5000 0    50   Input ~ 0
+esp_pin
+Wire Wire Line
+	4850 5000 5550 5000
+Text GLabel 6800 5000 0    50   Input ~ 0
+esp_pin
+Text GLabel 6800 4100 0    50   Input ~ 0
+esp_pin
+$Comp
+L power:+5V #PWR014
+U 1 1 60CEE55A
+P 9350 3600
+F 0 "#PWR014" H 9350 3450 50  0001 C CNN
+F 1 "+5V" H 9365 3773 50  0000 C CNN
+F 2 "" H 9350 3600 50  0001 C CNN
+F 3 "" H 9350 3600 50  0001 C CNN
+	1    9350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 60CEE560
+P 9050 3600
+F 0 "#PWR012" H 9050 3350 50  0001 C CNN
+F 1 "GND" H 9055 3427 50  0000 C CNN
+F 2 "" H 9050 3600 50  0001 C CNN
+F 3 "" H 9050 3600 50  0001 C CNN
+	1    9050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 60CEE566
+P 9750 4100
+F 0 "J6" H 9830 4142 50  0000 L CNN
+F 1 "Conn_01x03" H 9830 4051 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 9750 4100 50  0001 C CNN
+F 3 "~" H 9750 4100 50  0001 C CNN
+	1    9750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4000 9350 4000
+Wire Wire Line
+	9350 4000 9350 3600
+Wire Wire Line
+	9050 4200 9550 4200
+Wire Wire Line
+	9050 3600 9050 4200
+$Comp
+L power:+5V #PWR015
+U 1 1 60CEE570
+P 9350 4500
+F 0 "#PWR015" H 9350 4350 50  0001 C CNN
+F 1 "+5V" H 9365 4673 50  0000 C CNN
+F 2 "" H 9350 4500 50  0001 C CNN
+F 3 "" H 9350 4500 50  0001 C CNN
+	1    9350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 60CEE576
+P 9050 4500
+F 0 "#PWR013" H 9050 4250 50  0001 C CNN
+F 1 "GND" H 9055 4327 50  0000 C CNN
+F 2 "" H 9050 4500 50  0001 C CNN
+F 3 "" H 9050 4500 50  0001 C CNN
+	1    9050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 60CEE57C
+P 9750 5000
+F 0 "J7" H 9830 5042 50  0000 L CNN
+F 1 "Conn_01x03" H 9830 4951 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 9750 5000 50  0001 C CNN
+F 3 "~" H 9750 5000 50  0001 C CNN
+	1    9750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4900 9350 4900
+Wire Wire Line
+	9350 4900 9350 4500
+Wire Wire Line
+	9050 5100 9550 5100
+Wire Wire Line
+	9050 4500 9050 5100
+Wire Wire Line
+	9550 5000 8800 5000
+Wire Wire Line
+	8800 4100 9550 4100
+Text GLabel 8800 5000 0    50   Input ~ 0
+esp_pin
+Text GLabel 8800 4100 0    50   Input ~ 0
+esp_pin
+Wire Wire Line
+	3650 4000 3650 4100
+Text GLabel 3900 4100 2    50   Input ~ 0
+esp_pin
+Wire Wire Line
+	3900 4100 3650 4100
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 60CF213C
+P 2750 4200
+F 0 "J1" H 2668 4517 50  0000 C CNN
+F 1 "Conn_01x04" H 2668 4426 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2750 4200 50  0001 C CNN
+F 3 "~" H 2750 4200 50  0001 C CNN
+	1    2750 4200
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3650 4100
+NoConn ~ 2950 4200
+$Comp
+L power:GND #PWR02
+U 1 1 60CF512E
+P 3300 4600
+F 0 "#PWR02" H 3300 4350 50  0001 C CNN
+F 1 "GND" H 3305 4427 50  0000 C CNN
+F 2 "" H 3300 4600 50  0001 C CNN
+F 3 "" H 3300 4600 50  0001 C CNN
+	1    3300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4400 3300 4400
+Wire Wire Line
+	3300 4400 3300 4600
+Wire Wire Line
+	2950 4100 3650 4100
+$Comp
+L power:+5V #PWR01
+U 1 1 60CF8933
+P 3300 3600
+F 0 "#PWR01" H 3300 3450 50  0001 C CNN
+F 1 "+5V" H 3315 3773 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4300 3300 4300
+Wire Wire Line
+	3300 4300 3300 3600
+$EndSCHEMATC
