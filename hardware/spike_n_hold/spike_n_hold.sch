@@ -295,32 +295,6 @@ F 3 "~" H 1700 5300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR03
-U 1 1 6055607C
-P 1100 5550
-F 0 "#PWR03" H 1100 5300 50  0001 C CNN
-F 1 "GND" H 1105 5377 50  0000 C CNN
-F 2 "" H 1100 5550 50  0001 C CNN
-F 3 "" H 1100 5550 50  0001 C CNN
-	1    1100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J1
-U 1 1 60556076
-P 900 5300
-F 0 "J1" H 792 5485 50  0000 C CNN
-F 1 "input_trigger_2" H 792 5394 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 900 5300 50  0001 C CNN
-F 3 "~" H 900 5300 50  0001 C CNN
-	1    900  5300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 5200 1100 5300
-Wire Wire Line
-	1100 5400 1100 5550
-$Comp
 L power:GND #PWR07
 U 1 1 6055606E
 P 2000 5900
@@ -333,8 +307,6 @@ F 3 "" H 2000 5900 50  0001 C CNN
 $EndComp
 Text GLabel 1250 5050 1    50   Input ~ 0
 input_trigger2
-Wire Wire Line
-	1100 5200 1250 5200
 Wire Wire Line
 	1250 5050 1250 5200
 Connection ~ 1250 5200
@@ -790,32 +762,6 @@ F 3 "~" H 1750 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR04
-U 1 1 6038634E
-P 1150 1900
-F 0 "#PWR04" H 1150 1650 50  0001 C CNN
-F 1 "GND" H 1155 1727 50  0000 C CNN
-F 2 "" H 1150 1900 50  0001 C CNN
-F 3 "" H 1150 1900 50  0001 C CNN
-	1    1150 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 60386348
-P 950 1650
-F 0 "J2" H 842 1835 50  0000 C CNN
-F 1 "input_trigger_1" H 842 1744 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 950 1650 50  0001 C CNN
-F 3 "~" H 950 1650 50  0001 C CNN
-	1    950  1650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 1550 1150 1650
-Wire Wire Line
-	1150 1750 1150 1900
-$Comp
 L power:GND #PWR08
 U 1 1 60386340
 P 2050 2250
@@ -828,8 +774,6 @@ F 3 "" H 2050 2250 50  0001 C CNN
 $EndComp
 Text GLabel 1300 1400 1    50   Input ~ 0
 input_trigger1
-Wire Wire Line
-	1150 1550 1300 1550
 Wire Wire Line
 	1300 1400 1300 1550
 Connection ~ 1300 1550
@@ -1554,4 +1498,43 @@ Text Notes 8350 2250 0    50   ~ 0
 *
 Text Notes 8700 2550 0    50   ~ 0
 **
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 60DA480F
+P 750 4100
+F 0 "J1" H 642 4385 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 642 4294 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 750 4100 50  0001 C CNN
+F 3 "~" H 750 4100 50  0001 C CNN
+	1    750  4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4100 1150 4100
+Wire Wire Line
+	1150 4100 1150 5200
+Wire Wire Line
+	1150 5200 1250 5200
+Wire Wire Line
+	950  4000 950  3750
+Wire Wire Line
+	950  3750 550  3750
+Wire Wire Line
+	550  3750 550  1550
+Wire Wire Line
+	550  1550 1300 1550
+NoConn ~ 950  4200
+$Comp
+L power:GND #PWR03
+U 1 1 60DF0A92
+P 950 4450
+F 0 "#PWR03" H 950 4200 50  0001 C CNN
+F 1 "GND" H 955 4277 50  0000 C CNN
+F 2 "" H 950 4450 50  0001 C CNN
+F 3 "" H 950 4450 50  0001 C CNN
+	1    950  4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4300 950  4450
 $EndSCHEMATC
