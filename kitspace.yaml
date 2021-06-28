@@ -19,16 +19,6 @@ multi:
         eda:
             type: kicad
             pcb: hardware/8_switch_array_(ver 2)/8_switch_array.kicad_pcb
-    boards/Peltier:
-        summary:  A board containing an H-Bridge and a temperature sensor for peltier applications
-        readme: README.md
-        color: green
-        site: https://github.com/isobianin/BeeHive
-        bom: hardware/peltier/1-click-bom.csv
-        gerbers: hardware/peltier/gerber
-        eda:
-            type: kicad
-            pcb: hardware/peltier/peltier.kicad_pcb
     boards/hp-led-switch:
         summary:  A board to control high powered leds
         readme: README.md
