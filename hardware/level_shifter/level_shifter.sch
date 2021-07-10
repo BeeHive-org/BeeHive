@@ -1,0 +1,590 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 60E99646
+P 1750 2650
+F 0 "J1" H 1668 2967 50  0000 C CNN
+F 1 "Conn_01x04" H 1668 2876 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1750 2650 50  0001 C CNN
+F 3 "~" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 60E99B97
+P 1750 3200
+F 0 "J2" H 1668 3517 50  0000 C CNN
+F 1 "Conn_01x04" H 1668 3426 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q1
+U 1 1 60E9D311
+P 4800 1450
+F 0 "Q1" V 5049 1450 50  0000 C CNN
+F 1 "2N7000" V 5140 1450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 1375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4800 1450 50  0001 L CNN
+	1    4800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 60EA0346
+P 6800 3900
+F 0 "#PWR014" H 6800 3650 50  0001 C CNN
+F 1 "GND" H 6805 3727 50  0000 C CNN
+F 2 "" H 6800 3900 50  0001 C CNN
+F 3 "" H 6800 3900 50  0001 C CNN
+	1    6800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60EA0825
+P 2200 3550
+F 0 "#PWR02" H 2200 3300 50  0001 C CNN
+F 1 "GND" H 2205 3377 50  0000 C CNN
+F 2 "" H 2200 3550 50  0001 C CNN
+F 3 "" H 2200 3550 50  0001 C CNN
+	1    2200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3400 2200 3400
+Wire Wire Line
+	2200 3400 2200 3550
+Wire Wire Line
+	1950 2850 2200 2850
+Wire Wire Line
+	2200 2850 2200 3400
+Connection ~ 2200 3400
+Wire Wire Line
+	6800 3900 6800 3600
+Wire Wire Line
+	6800 3600 6950 3600
+Wire Wire Line
+	6950 3050 6800 3050
+Wire Wire Line
+	6800 3050 6800 3600
+Connection ~ 6800 3600
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 60EA19A4
+P 7150 2000
+F 0 "J3" H 7230 1992 50  0000 L CNN
+F 1 "Conn_01x02" H 7230 1901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7150 2000 50  0001 C CNN
+F 3 "~" H 7150 2000 50  0001 C CNN
+	1    7150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2650 6950 2650
+Wire Wire Line
+	6950 2100 6800 2100
+Wire Wire Line
+	6800 2100 6800 2650
+Connection ~ 6800 2650
+Wire Wire Line
+	6800 2650 6800 3050
+Connection ~ 6800 3050
+$Comp
+L Device:R R7
+U 1 1 60EA49F2
+P 5200 1300
+F 0 "R7" H 5270 1346 50  0000 L CNN
+F 1 "1k" H 5270 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 5130 1300 50  0001 C CNN
+F 3 "~" H 5200 1300 50  0001 C CNN
+	1    5200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60EA4D8D
+P 4300 1300
+F 0 "R3" H 4370 1346 50  0000 L CNN
+F 1 "1k" H 4370 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4230 1300 50  0001 C CNN
+F 3 "~" H 4300 1300 50  0001 C CNN
+	1    4300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1550 4300 1450
+Wire Wire Line
+	4300 1550 4600 1550
+Connection ~ 4300 1550
+Wire Wire Line
+	5000 1550 5200 1550
+Wire Wire Line
+	5200 1550 5200 1450
+$Comp
+L power:+3.3V #PWR06
+U 1 1 60EA5FB5
+P 4300 1000
+F 0 "#PWR06" H 4300 850 50  0001 C CNN
+F 1 "+3.3V" H 4315 1173 50  0000 C CNN
+F 2 "" H 4300 1000 50  0001 C CNN
+F 3 "" H 4300 1000 50  0001 C CNN
+	1    4300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 60EA7674
+P 5200 1000
+F 0 "#PWR010" H 5200 850 50  0001 C CNN
+F 1 "+5V" H 5215 1173 50  0000 C CNN
+F 2 "" H 5200 1000 50  0001 C CNN
+F 3 "" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1000 4300 1050
+Wire Wire Line
+	5200 1000 5200 1150
+Text GLabel 2350 2650 2    50   BiDi ~ 0
+d1_l
+Text GLabel 2350 2550 2    50   BiDi ~ 0
+d2_l
+Text GLabel 2350 3200 2    50   BiDi ~ 0
+d3_l
+Text GLabel 2350 3100 2    50   BiDi ~ 0
+d4_l
+Wire Wire Line
+	1950 3100 2350 3100
+Wire Wire Line
+	1950 3200 2350 3200
+Wire Wire Line
+	1950 2550 2350 2550
+Wire Wire Line
+	1950 2650 2350 2650
+Wire Wire Line
+	4300 1050 4800 1050
+Wire Wire Line
+	4800 1050 4800 1250
+Connection ~ 4300 1050
+Wire Wire Line
+	4300 1050 4300 1150
+Text GLabel 6550 2000 0    50   BiDi ~ 0
+d1_h
+Text GLabel 6550 2550 0    50   BiDi ~ 0
+d2_h
+Text GLabel 6550 2950 0    50   BiDi ~ 0
+d3_h
+Text GLabel 6550 3500 0    50   BiDi ~ 0
+d4_h
+Wire Wire Line
+	6550 2000 6950 2000
+Wire Wire Line
+	6950 2550 6550 2550
+Wire Wire Line
+	6950 2950 6550 2950
+Wire Wire Line
+	6550 3500 6950 3500
+Text GLabel 4000 1550 0    50   BiDi ~ 0
+d1_l
+Wire Wire Line
+	4000 1550 4300 1550
+Text GLabel 5450 1550 2    50   BiDi ~ 0
+d1_h
+Wire Wire Line
+	5200 1550 5450 1550
+Connection ~ 5200 1550
+$Comp
+L power:+5V #PWR01
+U 1 1 60EB6254
+P 2050 2250
+F 0 "#PWR01" H 2050 2100 50  0001 C CNN
+F 1 "+5V" H 2065 2423 50  0000 C CNN
+F 2 "" H 2050 2250 50  0001 C CNN
+F 3 "" H 2050 2250 50  0001 C CNN
+	1    2050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3300 2050 3300
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 60EB7E6D
+P 7150 2550
+F 0 "J4" H 7230 2542 50  0000 L CNN
+F 1 "Conn_01x02" H 7230 2451 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7150 2550 50  0001 C CNN
+F 3 "~" H 7150 2550 50  0001 C CNN
+	1    7150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 60EB810D
+P 7150 2950
+F 0 "J5" H 7230 2942 50  0000 L CNN
+F 1 "Conn_01x02" H 7230 2851 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7150 2950 50  0001 C CNN
+F 3 "~" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 60EB87D6
+P 7150 3500
+F 0 "J6" H 7230 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 7230 3401 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7150 3500 50  0001 C CNN
+F 3 "~" H 7150 3500 50  0001 C CNN
+	1    7150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q2
+U 1 1 60EBA8C8
+P 4800 2550
+F 0 "Q2" V 5049 2550 50  0000 C CNN
+F 1 "2N7000" V 5140 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 2475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4800 2550 50  0001 L CNN
+	1    4800 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 2650 4300 2550
+Wire Wire Line
+	4300 2650 4600 2650
+Connection ~ 4300 2650
+Wire Wire Line
+	5000 2650 5200 2650
+Wire Wire Line
+	5200 2650 5200 2550
+$Comp
+L power:+3.3V #PWR07
+U 1 1 60EBA8DF
+P 4300 2100
+F 0 "#PWR07" H 4300 1950 50  0001 C CNN
+F 1 "+3.3V" H 4315 2273 50  0000 C CNN
+F 2 "" H 4300 2100 50  0001 C CNN
+F 3 "" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 60EBA8E5
+P 5200 2100
+F 0 "#PWR011" H 5200 1950 50  0001 C CNN
+F 1 "+5V" H 5215 2273 50  0000 C CNN
+F 2 "" H 5200 2100 50  0001 C CNN
+F 3 "" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2100 4300 2150
+Wire Wire Line
+	5200 2100 5200 2250
+Wire Wire Line
+	4300 2150 4800 2150
+Wire Wire Line
+	4800 2150 4800 2350
+Connection ~ 4300 2150
+Wire Wire Line
+	4300 2150 4300 2250
+Text GLabel 4000 2650 0    50   BiDi ~ 0
+d2_l
+Wire Wire Line
+	4000 2650 4300 2650
+Text GLabel 5450 2650 2    50   BiDi ~ 0
+d2_h
+Wire Wire Line
+	5200 2650 5450 2650
+Connection ~ 5200 2650
+$Comp
+L Transistor_FET:2N7000 Q3
+U 1 1 60EBC4E1
+P 4800 3600
+F 0 "Q3" V 5049 3600 50  0000 C CNN
+F 1 "2N7000" V 5140 3600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4800 3600 50  0001 L CNN
+	1    4800 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3700 4300 3600
+Wire Wire Line
+	4300 3700 4600 3700
+Connection ~ 4300 3700
+Wire Wire Line
+	5000 3700 5200 3700
+Wire Wire Line
+	5200 3700 5200 3600
+$Comp
+L power:+3.3V #PWR08
+U 1 1 60EBC4F8
+P 4300 3150
+F 0 "#PWR08" H 4300 3000 50  0001 C CNN
+F 1 "+3.3V" H 4315 3323 50  0000 C CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 60EBC4FE
+P 5200 3150
+F 0 "#PWR012" H 5200 3000 50  0001 C CNN
+F 1 "+5V" H 5215 3323 50  0000 C CNN
+F 2 "" H 5200 3150 50  0001 C CNN
+F 3 "" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3150 4300 3200
+Wire Wire Line
+	5200 3150 5200 3300
+Wire Wire Line
+	4300 3200 4800 3200
+Wire Wire Line
+	4800 3200 4800 3400
+Connection ~ 4300 3200
+Wire Wire Line
+	4300 3200 4300 3300
+Text GLabel 4000 3700 0    50   BiDi ~ 0
+d3_l
+Wire Wire Line
+	4000 3700 4300 3700
+Text GLabel 5450 3700 2    50   BiDi ~ 0
+d3_h
+Wire Wire Line
+	5200 3700 5450 3700
+Connection ~ 5200 3700
+$Comp
+L Transistor_FET:2N7000 Q4
+U 1 1 60EBE39A
+P 4800 4750
+F 0 "Q4" V 5049 4750 50  0000 C CNN
+F 1 "2N7000" V 5140 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 4675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4800 4750 50  0001 L CNN
+	1    4800 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 4850 4300 4750
+Wire Wire Line
+	4300 4850 4600 4850
+Connection ~ 4300 4850
+Wire Wire Line
+	5000 4850 5200 4850
+Wire Wire Line
+	5200 4850 5200 4750
+$Comp
+L power:+3.3V #PWR09
+U 1 1 60EBE3B1
+P 4300 4300
+F 0 "#PWR09" H 4300 4150 50  0001 C CNN
+F 1 "+3.3V" H 4315 4473 50  0000 C CNN
+F 2 "" H 4300 4300 50  0001 C CNN
+F 3 "" H 4300 4300 50  0001 C CNN
+	1    4300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 60EBE3B7
+P 5200 4300
+F 0 "#PWR013" H 5200 4150 50  0001 C CNN
+F 1 "+5V" H 5215 4473 50  0000 C CNN
+F 2 "" H 5200 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4300 4300 4350
+Wire Wire Line
+	5200 4300 5200 4450
+Wire Wire Line
+	4300 4350 4800 4350
+Wire Wire Line
+	4800 4350 4800 4550
+Connection ~ 4300 4350
+Wire Wire Line
+	4300 4350 4300 4450
+Text GLabel 4000 4850 0    50   BiDi ~ 0
+d4_l
+Wire Wire Line
+	4000 4850 4300 4850
+Text GLabel 5450 4850 2    50   BiDi ~ 0
+d4_h
+Wire Wire Line
+	5200 4850 5450 4850
+Connection ~ 5200 4850
+$Comp
+L power:+5V #PWR03
+U 1 1 60EC1613
+P 2600 1000
+F 0 "#PWR03" H 2600 850 50  0001 C CNN
+F 1 "+5V" H 2615 1173 50  0000 C CNN
+F 2 "" H 2600 1000 50  0001 C CNN
+F 3 "" H 2600 1000 50  0001 C CNN
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR05
+U 1 1 60EC19FD
+P 3500 1000
+F 0 "#PWR05" H 3500 850 50  0001 C CNN
+F 1 "+3.3V" H 3515 1173 50  0000 C CNN
+F 2 "" H 3500 1000 50  0001 C CNN
+F 3 "" H 3500 1000 50  0001 C CNN
+	1    3500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60EC2100
+P 2900 1200
+F 0 "R1" V 2693 1200 50  0000 C CNN
+F 1 "560" V 2784 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 2830 1200 50  0001 C CNN
+F 3 "~" H 2900 1200 50  0001 C CNN
+	1    2900 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1000 2600 1200
+Wire Wire Line
+	2600 1200 2750 1200
+$Comp
+L Device:R R2
+U 1 1 60EC4500
+P 3300 1450
+F 0 "R2" H 3230 1404 50  0000 R CNN
+F 1 "1k" H 3230 1495 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 3230 1450 50  0001 C CNN
+F 3 "~" H 3300 1450 50  0001 C CNN
+	1    3300 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 1200 3300 1200
+Wire Wire Line
+	3300 1200 3300 1300
+Wire Wire Line
+	3300 1200 3500 1200
+Wire Wire Line
+	3500 1200 3500 1000
+Connection ~ 3300 1200
+$Comp
+L power:GND #PWR04
+U 1 1 60EC7BF7
+P 3300 1800
+F 0 "#PWR04" H 3300 1550 50  0001 C CNN
+F 1 "GND" H 3305 1627 50  0000 C CNN
+F 2 "" H 3300 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1800 3300 1600
+Wire Wire Line
+	1950 2750 2050 2750
+Connection ~ 2050 2750
+Wire Wire Line
+	2050 2750 2050 3300
+Wire Wire Line
+	2050 2250 2050 2750
+$Comp
+L Device:R R4
+U 1 1 60EDF2D8
+P 4300 2400
+F 0 "R4" H 4370 2446 50  0000 L CNN
+F 1 "1k" H 4370 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4230 2400 50  0001 C CNN
+F 3 "~" H 4300 2400 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60EE10F5
+P 5200 2400
+F 0 "R8" H 5270 2446 50  0000 L CNN
+F 1 "1k" H 5270 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 5130 2400 50  0001 C CNN
+F 3 "~" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60EE231B
+P 4300 3450
+F 0 "R5" H 4370 3496 50  0000 L CNN
+F 1 "1k" H 4370 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4230 3450 50  0001 C CNN
+F 3 "~" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60EE3ED7
+P 5200 3450
+F 0 "R9" H 5270 3496 50  0000 L CNN
+F 1 "1k" H 5270 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 5130 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 60EE73AC
+P 5200 4600
+F 0 "R10" H 5270 4646 50  0000 L CNN
+F 1 "1k" H 5270 4555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 5130 4600 50  0001 C CNN
+F 3 "~" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60EE8F29
+P 4300 4600
+F 0 "R6" H 4370 4646 50  0000 L CNN
+F 1 "1k" H 4370 4555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 4230 4600 50  0001 C CNN
+F 3 "~" H 4300 4600 50  0001 C CNN
+	1    4300 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
