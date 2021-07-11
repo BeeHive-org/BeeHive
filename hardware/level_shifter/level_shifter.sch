@@ -587,4 +587,6 @@ F 3 "~" H 4300 4600 50  0001 C CNN
 	1    4300 4600
 	1    0    0    -1  
 $EndComp
+Text Notes 3200 1150 0    50   ~ 0
+3.25 V
 $EndSCHEMATC
