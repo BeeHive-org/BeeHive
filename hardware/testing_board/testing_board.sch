@@ -970,4 +970,174 @@ Wire Notes Line
 	7100 2200 5500 2200
 Wire Notes Line
 	5500 2200 5500 1100
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+U 1 1 6164C117
+P 6050 5750
+F 0 "J?" V 5825 5758 50  0000 C CNN
+F 1 "B4B-XH-A_LF__SN_" V 5916 5758 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 6250 5950 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6250 6050 60  0001 L CNN
+F 4 "455-2249-ND" H 6250 6150 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-XH-A(LF)(SN)" H 6250 6250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6250 6350 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6250 6450 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6250 6550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" H 6250 6650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2.5MM" H 6250 6750 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6250 6850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6250 6950 60  0001 L CNN "Status"
+	1    6050 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6164C11F
+P 6400 5850
+F 0 "R?" V 6204 5850 50  0000 C CNN
+F 1 "R_Small" V 6295 5850 50  0000 C CNN
+F 2 "" H 6400 5850 50  0001 C CNN
+F 3 "~" H 6400 5850 50  0001 C CNN
+	1    6400 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6164C125
+P 6400 5550
+F 0 "R?" V 6204 5550 50  0000 C CNN
+F 1 "R_Small" V 6295 5550 50  0000 C CNN
+F 2 "" H 6400 5550 50  0001 C CNN
+F 3 "~" H 6400 5550 50  0001 C CNN
+	1    6400 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6164C12B
+P 6800 5850
+F 0 "D?" H 6793 5595 50  0000 C CNN
+F 1 "LED" H 6793 5686 50  0000 C CNN
+F 2 "" H 6800 5850 50  0001 C CNN
+F 3 "~" H 6800 5850 50  0001 C CNN
+	1    6800 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6164C131
+P 6800 5550
+F 0 "D?" H 6793 5295 50  0000 C CNN
+F 1 "LED" H 6793 5386 50  0000 C CNN
+F 2 "" H 6800 5550 50  0001 C CNN
+F 3 "~" H 6800 5550 50  0001 C CNN
+	1    6800 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 5750 6150 5550
+Wire Wire Line
+	6150 5550 6300 5550
+Wire Wire Line
+	6500 5550 6650 5550
+Wire Wire Line
+	6150 5850 6300 5850
+Wire Wire Line
+	6500 5850 6650 5850
+$Comp
+L power:GND #PWR?
+U 1 1 6164C13C
+P 7200 5700
+F 0 "#PWR?" H 7200 5450 50  0001 C CNN
+F 1 "GND" V 7205 5572 50  0000 R CNN
+F 2 "" H 7200 5700 50  0001 C CNN
+F 3 "" H 7200 5700 50  0001 C CNN
+	1    7200 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 5550 7200 5550
+Wire Wire Line
+	7200 5550 7200 5700
+Wire Wire Line
+	6950 5850 7200 5850
+Wire Wire Line
+	7200 5850 7200 5700
+Connection ~ 7200 5700
+$Comp
+L Device:R_Small R?
+U 1 1 61668427
+P 6400 5950
+F 0 "R?" V 6204 5950 50  0000 C CNN
+F 1 "R_Small" V 6295 5950 50  0000 C CNN
+F 2 "" H 6400 5950 50  0001 C CNN
+F 3 "~" H 6400 5950 50  0001 C CNN
+	1    6400 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 616689D9
+P 6400 6100
+F 0 "R?" V 6204 6100 50  0000 C CNN
+F 1 "R_Small" V 6295 6100 50  0000 C CNN
+F 2 "" H 6400 6100 50  0001 C CNN
+F 3 "~" H 6400 6100 50  0001 C CNN
+	1    6400 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61668C6A
+P 6800 6000
+F 0 "D?" H 6793 5745 50  0000 C CNN
+F 1 "LED" H 6793 5836 50  0000 C CNN
+F 2 "" H 6800 6000 50  0001 C CNN
+F 3 "~" H 6800 6000 50  0001 C CNN
+	1    6800 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6166925E
+P 6800 6150
+F 0 "D?" H 6793 5895 50  0000 C CNN
+F 1 "LED" H 6793 5986 50  0000 C CNN
+F 2 "" H 6800 6150 50  0001 C CNN
+F 3 "~" H 6800 6150 50  0001 C CNN
+	1    6800 6150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 5950 6300 5950
+Wire Wire Line
+	6150 6050 6150 6100
+Wire Wire Line
+	6150 6100 6300 6100
+Wire Wire Line
+	6500 5950 6650 5950
+Wire Wire Line
+	6650 5950 6650 6000
+Wire Wire Line
+	6500 6100 6650 6100
+Wire Wire Line
+	6650 6100 6650 6150
+Wire Wire Line
+	6950 6000 7200 6000
+Wire Wire Line
+	7200 6000 7200 5850
+Connection ~ 7200 5850
+Wire Wire Line
+	6950 6150 7200 6150
+Wire Wire Line
+	7200 6150 7200 6000
+Connection ~ 7200 6000
+Wire Notes Line
+	5550 5250 7550 5250
+Wire Notes Line
+	7550 5250 7550 6350
+Wire Notes Line
+	7550 6350 5550 6350
+Wire Notes Line
+	5550 6350 5550 5250
 $EndSCHEMATC
