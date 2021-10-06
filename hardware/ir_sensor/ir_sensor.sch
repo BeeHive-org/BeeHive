@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 61058F2A
+P 1900 4700
+F 0 "#PWR04" H 1900 4450 50  0001 C CNN
+F 1 "GND" H 1905 4527 50  0000 C CNN
+F 2 "" H 1900 4700 50  0001 C CNN
+F 3 "" H 1900 4700 50  0001 C CNN
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6105926D
+P 1900 3900
+F 0 "R1" H 1970 3946 50  0000 L CNN
+F 1 "47" H 1970 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 1830 3900 50  0001 C CNN
+F 3 "~" H 1900 3900 50  0001 C CNN
+	1    1900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6105A46A
+P 1900 4350
+F 0 "D1" V 1939 4232 50  0000 R CNN
+F 1 "LED" V 1848 4232 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 1900 4350 50  0001 C CNN
+F 3 "https://docs.rs-online.com/d7e2/0900766b80e1b0e4.pdf" H 1900 4350 50  0001 C CNN
+	1    1900 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 4700 1900 4500
+Wire Wire Line
+	1900 4200 1900 4050
+$Comp
+L power:+5V #PWR05
+U 1 1 6105D32C
+P 3250 3500
+F 0 "#PWR05" H 3250 3350 50  0001 C CNN
+F 1 "+5V" H 3265 3673 50  0000 C CNN
+F 2 "" H 3250 3500 50  0001 C CNN
+F 3 "" H 3250 3500 50  0001 C CNN
+	1    3250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6105D332
+P 3250 3850
+F 0 "R2" H 3320 3896 50  0000 L CNN
+F 1 "10k" H 3320 3805 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 3180 3850 50  0001 C CNN
+F 3 "~" H 3250 3850 50  0001 C CNN
+	1    3250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3700 3250 3500
+$Comp
+L power:GND #PWR06
+U 1 1 6105D3A5
+P 3250 4700
+F 0 "#PWR06" H 3250 4450 50  0001 C CNN
+F 1 "GND" H 3255 4527 50  0000 C CNN
+F 2 "" H 3250 4700 50  0001 C CNN
+F 3 "" H 3250 4700 50  0001 C CNN
+	1    3250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN Q1
+U 1 1 6105E56E
+P 3150 4450
+F 0 "Q1" H 3340 4496 50  0000 L CNN
+F 1 "Q_Photo_NPN" H 3340 4405 50  0000 L CNN
+F 2 "LED_THT:OP505A" H 3350 4550 50  0001 C CNN
+F 3 "https://docs.rs-online.com/e02a/0900766b813ff04e.pdf" H 3150 4450 50  0001 C CNN
+	1    3150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4700 3250 4650
+Wire Wire Line
+	3250 4000 3250 4150
+Text GLabel 3900 4150 2    50   Input ~ 0
+data
+Wire Wire Line
+	3250 4150 3900 4150
+Connection ~ 3250 4150
+Wire Wire Line
+	3250 4150 3250 4250
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 61059BBB
+P 900 4100
+F 0 "J1" H 818 4417 50  0000 C CNN
+F 1 "Conn_01x04" H 818 4326 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 900 4100 50  0001 C CNN
+F 3 "~" H 900 4100 50  0001 C CNN
+	1    900  4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6105B3FB
+P 1300 4700
+F 0 "#PWR02" H 1300 4450 50  0001 C CNN
+F 1 "GND" H 1305 4527 50  0000 C CNN
+F 2 "" H 1300 4700 50  0001 C CNN
+F 3 "" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4300 1300 4300
+Wire Wire Line
+	1300 4300 1300 4700
+Wire Wire Line
+	1100 4200 1300 4200
+Wire Wire Line
+	1900 3450 1900 3750
+Text GLabel 1450 4000 2    50   Input ~ 0
+data
+Wire Wire Line
+	1100 4000 1450 4000
+$Comp
+L power:+5V #PWR01
+U 1 1 6105B8D1
+P 1300 3450
+F 0 "#PWR01" H 1300 3300 50  0001 C CNN
+F 1 "+5V" H 1315 3623 50  0000 C CNN
+F 2 "" H 1300 3450 50  0001 C CNN
+F 3 "" H 1300 3450 50  0001 C CNN
+	1    1300 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1100 4100
+$Comp
+L power:+5V #PWR03
+U 1 1 6106B706
+P 1900 3450
+F 0 "#PWR03" H 1900 3300 50  0001 C CNN
+F 1 "+5V" H 1915 3623 50  0000 C CNN
+F 2 "" H 1900 3450 50  0001 C CNN
+F 3 "" H 1900 3450 50  0001 C CNN
+	1    1900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3450 1300 4200
+$EndSCHEMATC
