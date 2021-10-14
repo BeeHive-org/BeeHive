@@ -260,7 +260,6 @@ F 3 "" H 2100 6050 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3950 3450 4050 3450
-Connection ~ 4050 3450
 Connection ~ 6500 1950
 $Comp
 L power:+5V #PWR0105
@@ -390,23 +389,12 @@ Wire Wire Line
 Connection ~ 7450 5350
 Wire Wire Line
 	6500 5350 7450 5350
-$Comp
-L power:+5V #PWR0111
-U 1 1 5E230612
-P 10300 1950
-F 0 "#PWR0111" H 10300 1800 50  0001 C CNN
-F 1 "+5V" V 10300 2150 50  0000 C CNN
-F 2 "" H 10300 1950 50  0001 C CNN
-F 3 "" H 10300 1950 50  0001 C CNN
-	1    10300 1950
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	7450 5350 7450 5300
 Wire Wire Line
 	10850 3100 10850 2450
 Wire Wire Line
-	10300 1950 10200 1950
+	10350 1950 10200 1950
 Wire Wire Line
 	10850 2450 10200 2450
 Wire Notes Line
@@ -675,19 +663,6 @@ Wire Notes Line
 	1750 3150 4700 3150
 Wire Notes Line
 	1750 4700 4700 4700
-Wire Wire Line
-	4050 3450 4250 3450
-$Comp
-L power:+5V #PWR0104
-U 1 1 5EBCB95D
-P 4250 3450
-F 0 "#PWR0104" H 4250 3300 50  0001 C CNN
-F 1 "+5V" V 4265 3578 50  0000 L CNN
-F 2 "" H 4250 3450 50  0001 C CNN
-F 3 "" H 4250 3450 50  0001 C CNN
-	1    4250 3450
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	4700 3150 4700 4700
 Wire Wire Line
@@ -1175,4 +1150,25 @@ Text Notes 1850 5450 0    100  ~ 0
 To additional\nPS 5V3A
 Text Notes 2850 5950 1    50   ~ 0
 12V line
+$Comp
+L power:+5V #PWR0104
+U 1 1 5EBCB95D
+P 4250 3450
+F 0 "#PWR0104" H 4250 3300 50  0001 C CNN
+F 1 "+5V" V 4265 3578 50  0000 L CNN
+F 2 "" H 4250 3450 50  0001 C CNN
+F 3 "" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	0    1    1    0   
+$EndComp
+Connection ~ 4050 3450
+Wire Wire Line
+	4050 3450 4250 3450
+Text GLabel 4100 1850 1    50   Input ~ 0
+ESP_pow
+Wire Wire Line
+	4100 1950 4100 1850
+Connection ~ 4100 1950
+Text GLabel 10350 1950 2    50   Input ~ 0
+ESP_pow
 $EndSCHEMATC
