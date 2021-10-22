@@ -16,17 +16,6 @@ $EndDescr
 Text Notes 2500 1200 0    50   ~ 0
 Testing properties:\n- Digital output (PWM can be incorporated in the same one)\n- Digital input\n- Analog input\n- Shift register\n- H-bridge\n- Solenoid driver\n- Temperature sensor\n
 $Comp
-L power:+5V #PWR05
-U 1 1 6149BF65
-P 3350 2150
-F 0 "#PWR05" H 3350 2000 50  0001 C CNN
-F 1 "+5V" V 3365 2278 50  0000 L CNN
-F 2 "" H 3350 2150 50  0001 C CNN
-F 3 "" H 3350 2150 50  0001 C CNN
-	1    3350 2150
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR06
 U 1 1 6149C4B6
 P 3350 2250
@@ -115,17 +104,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 2050 4250 1900
 Connection ~ 4250 1900
-$Comp
-L power:+5V #PWR07
-U 1 1 614AF75F
-P 3350 3000
-F 0 "#PWR07" H 3350 2850 50  0001 C CNN
-F 1 "+5V" V 3365 3128 50  0000 L CNN
-F 2 "" H 3350 3000 50  0001 C CNN
-F 3 "" H 3350 3000 50  0001 C CNN
-	1    3350 3000
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 614AF765
@@ -348,22 +326,11 @@ Wire Wire Line
 	2650 6250 3100 6250
 Connection ~ 2650 5800
 $Comp
-L Device:R_Small R9
-U 1 1 615170BB
-P 3850 5800
-F 0 "R9" V 3654 5800 50  0000 C CNN
-F 1 "220" V 3745 5800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3850 5800 50  0001 C CNN
-F 3 "~" H 3850 5800 50  0001 C CNN
-	1    3850 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small R10
 U 1 1 615170C1
 P 3850 6250
 F 0 "R10" V 3654 6250 50  0000 C CNN
-F 1 "220" V 3745 6250 50  0000 C CNN
+F 1 "1k" V 3745 6250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3850 6250 50  0001 C CNN
 F 3 "~" H 3850 6250 50  0001 C CNN
 	1    3850 6250
@@ -886,7 +853,7 @@ L Device:R_Small R12
 U 1 1 614BB4B1
 P 4400 4350
 F 0 "R12" V 4204 4350 50  0000 C CNN
-F 1 "220" V 4295 4350 50  0000 C CNN
+F 1 "1k" V 4295 4350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4400 4350 50  0001 C CNN
 F 3 "~" H 4400 4350 50  0001 C CNN
 	1    4400 4350
@@ -901,24 +868,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 4850 2750 4850
 Wire Wire Line
-	3500 3850 3750 3850
-Connection ~ 3500 3850
-Wire Wire Line
-	3500 4000 3500 3850
-Wire Wire Line
-	3500 4400 3750 4400
-Connection ~ 3500 4400
-Wire Wire Line
-	3500 4300 3500 4400
-Wire Wire Line
-	3400 4400 3500 4400
-Wire Wire Line
-	2250 3850 3500 3850
-Wire Wire Line
 	3150 4400 3200 4400
-Connection ~ 3750 4400
-Wire Wire Line
-	3750 3850 3750 4400
 Wire Wire Line
 	4400 3750 2250 3750
 $Comp
@@ -943,22 +893,9 @@ F 3 "~" H 3300 4850 50  0001 C CNN
 	1    3300 4850
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 614D233E
-P 3850 4400
-F 0 "R8" V 3654 4400 50  0000 C CNN
-F 1 "220" V 3745 4400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3850 4400 50  0001 C CNN
-F 3 "~" H 3850 4400 50  0001 C CNN
-	1    3850 4400
-	0    1    1    0   
-$EndComp
 Connection ~ 2650 4400
 Wire Wire Line
 	2650 4400 2650 4850
-Wire Wire Line
-	3950 4400 4050 4400
 $Comp
 L Device:R_Small R1
 U 1 1 614E3B5B
@@ -973,12 +910,12 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 614D3394
-P 4050 4400
-F 0 "#PWR09" H 4050 4150 50  0001 C CNN
-F 1 "GND" V 4055 4272 50  0000 R CNN
-F 2 "" H 4050 4400 50  0001 C CNN
-F 3 "" H 4050 4400 50  0001 C CNN
-	1    4050 4400
+P 4050 3850
+F 0 "#PWR09" H 4050 3600 50  0001 C CNN
+F 1 "GND" V 4055 3722 50  0000 R CNN
+F 2 "" H 4050 3850 50  0001 C CNN
+F 3 "" H 4050 3850 50  0001 C CNN
+	1    4050 3850
 	0    -1   -1   0   
 $EndComp
 Connection ~ 2450 3950
@@ -1024,17 +961,6 @@ F 2 "LED_THT:LED_D3.0mm" H 3600 4850 50  0001 C CNN
 F 3 "~" H 3600 4850 50  0001 C CNN
 	1    3600 4850
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 614BB4BD
-P 3500 4150
-F 0 "D1" V 3447 4230 50  0000 L CNN
-F 1 "LED" V 3538 4230 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 3500 4150 50  0001 C CNN
-F 3 "~" H 3500 4150 50  0001 C CNN
-	1    3500 4150
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2250 4050 2300 4050
@@ -1106,12 +1032,6 @@ Wire Notes Line
 	4800 3800 4800 2600
 Text Notes 4850 2700 0    50   ~ 0
 analog input
-Connection ~ 6100 3550
-Wire Wire Line
-	6300 3550 6100 3550
-Connection ~ 6000 3550
-Wire Wire Line
-	6100 3550 6000 3550
 Wire Wire Line
 	6000 3550 5350 3550
 Wire Notes Line
@@ -1130,7 +1050,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2650 5750 2650
 Wire Wire Line
-	6300 2950 6300 3550
+	6300 2950 6300 3450
 Wire Wire Line
 	6100 2950 6300 2950
 Wire Wire Line
@@ -1143,8 +1063,6 @@ Wire Wire Line
 	5750 3050 5750 3400
 Wire Wire Line
 	5750 3050 6100 3050
-Wire Wire Line
-	6100 3350 6100 3550
 $Comp
 L Device:R_POT RV1
 U 1 1 619244C6
@@ -1448,4 +1366,77 @@ NoConn ~ 8150 1950
 NoConn ~ 8150 2150
 NoConn ~ 7550 1950
 NoConn ~ 7550 2150
+$Comp
+L Device:R_Small R26
+U 1 1 61AC6697
+P 6150 3650
+F 0 "R26" V 6346 3650 50  0000 C CNN
+F 1 "330" V 6255 3650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 6150 3650 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3550 6000 3650
+Wire Wire Line
+	6000 3650 6050 3650
+Connection ~ 6000 3550
+Wire Wire Line
+	6100 3350 6100 3450
+Wire Wire Line
+	6100 3450 6300 3450
+Connection ~ 6300 3450
+Wire Wire Line
+	6300 3650 6250 3650
+Wire Wire Line
+	6300 3450 6300 3650
+NoConn ~ 3350 2150
+NoConn ~ 3350 3000
+Wire Wire Line
+	3400 4400 3500 4400
+Wire Wire Line
+	3950 3850 4050 3850
+$Comp
+L Device:R_Small R8
+U 1 1 614D233E
+P 3850 3850
+F 0 "R8" V 3654 3850 50  0000 C CNN
+F 1 "1k" V 3745 3850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3850 3850 50  0001 C CNN
+F 3 "~" H 3850 3850 50  0001 C CNN
+	1    3850 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 4300 3500 4400
+$Comp
+L Device:LED D1
+U 1 1 614BB4BD
+P 3500 4150
+F 0 "D1" V 3447 4230 50  0000 L CNN
+F 1 "LED" V 3538 4230 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 3500 4150 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3850 3500 3850
+Wire Wire Line
+	3500 3850 3750 3850
+Connection ~ 3500 3850
+Wire Wire Line
+	3500 4000 3500 3850
+$Comp
+L Device:R_Small R9
+U 1 1 615170BB
+P 3850 5800
+F 0 "R9" V 3654 5800 50  0000 C CNN
+F 1 "1k" V 3745 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3850 5800 50  0001 C CNN
+F 3 "~" H 3850 5800 50  0001 C CNN
+	1    3850 5800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
