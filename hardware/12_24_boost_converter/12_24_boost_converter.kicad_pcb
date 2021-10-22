@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.7)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
-    (drawings 39)
+    (drawings 40)
     (tracks 94)
     (zones 0)
     (modules 22)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.75)
+    (last_trace_width 0.25)
     (user_trace_width 0.75)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -63,7 +63,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
+      (layerselection 0x00030_7ffffffe)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
@@ -133,9 +133,6 @@
     (fp_text value Conn_01x02 (at 1.25 4.6 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 1.25 2.7 90) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -2.45 -2.35) (end -2.45 3.4) (layer F.Fab) (width 0.1))
     (fp_line (start -2.45 3.4) (end 4.95 3.4) (layer F.Fab) (width 0.1))
     (fp_line (start 4.95 3.4) (end 4.95 -2.35) (layer F.Fab) (width 0.1))
@@ -170,6 +167,9 @@
     (fp_line (start 4.3 2.75) (end 1.25 2.75) (layer F.SilkS) (width 0.12))
     (fp_line (start -1.6 -2.75) (end -2.85 -2.75) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.85 -2.75) (end -2.85 -1.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 1.25 2.7 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 2 thru_hole oval (at 2.5 0 270) (size 1.7 2) (drill 1) (layers *.Cu *.Mask)
       (net 1 GND))
     (pad 1 thru_hole roundrect (at 0 0 270) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.147059)
@@ -189,7 +189,7 @@
     (fp_text reference L1 (at 2.5 -6.25) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 33µH (at 2.5 6.25) (layer F.SilkS)
+    (fp_text value 33µH (at -4.05 -3.7) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 2.5 0) (end 7.75 0) (layer F.CrtYd) (width 0.05))
@@ -1305,6 +1305,9 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
+  (gr_text "board by Ihor Sobianin\nlicensed under\nCERN-OHL-W 2.0\nhttps://ohwr.org/project/cernohl" (at 118.11 125.73) (layer F.SilkS) (tstamp 61729ADD)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_line (start 139.5 115.5) (end 139.5 116) (layer F.SilkS) (width 0.12) (tstamp 60B78808))
   (gr_line (start 139.5 120) (end 139.5 120.5) (layer F.SilkS) (width 0.12) (tstamp 60B78809))
   (gr_text +24V (at 149 114 90) (layer F.SilkS) (tstamp 60B78906)
@@ -1495,7 +1498,7 @@
   (segment (start 117.04 84.5) (end 111.54 90) (width 0.75) (layer F.Cu) (net 10))
   (segment (start 120 84.5) (end 117.04 84.5) (width 0.75) (layer F.Cu) (net 10))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 60ADD068) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61729BC6) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.5)
     (fill yes (arc_segments 32) (thermal_gap 0.5) (thermal_bridge_width 1))
