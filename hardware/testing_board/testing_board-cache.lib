@@ -1,25 +1,45 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_D_Zener
+# Connector_Generic_Conn_01x02
 #
-DEF Device_D_Zener D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Zener" 0 -100 50 H V C CNN
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 3 0 1 10 -50 -50 -50 50 -30 50 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -46,6 +66,26 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_R_POT
+#
+DEF Device_R_POT RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_Small
 #
 DEF Device_R_Small R 0 10 N N 1 F N
@@ -63,26 +103,6 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_1N4005
-#
-DEF Diode_1N4005 D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Diode_1N4005" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
-$FPLIST
- D*DO?41*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Switch_SW_Push
 #
 DEF Switch_SW_Push SW 0 40 N N 1 F N
@@ -97,60 +117,6 @@ P 2 0 1 0 0 50 0 120 N
 P 2 0 1 0 100 50 -100 50 N
 X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Rectangular-Connectors-Headers-Male-Pins_B2B-XH-A_LF__SN_
-#
-DEF dk_Rectangular-Connectors-Headers-Male-Pins_B2B-XH-A_LF__SN_ J 0 40 Y Y 1 F N
-F0 "J" -100 -50 50 H V R CNN
-F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B2B-XH-A_LF__SN_" 50 -150 50 H V C CNN
-F2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" 200 200 60 H I L CNN
-F3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 300 60 H I L CNN
-F4 "455-2247-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "B2B-XH-A(LF)(SN)" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
-F8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN HEADER VERT 2POS 2.5MM" 200 1000 60 H I L CNN "Description"
-F11 "JST Sales America Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -50 0 150 -100 1 1 0 f
-S -10 -45 10 -65 1 1 0 F
-S 90 -45 110 -65 1 1 0 F
-X ~ 1 0 100 100 D 50 50 1 1 P
-X ~ 2 100 100 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Rectangular-Connectors-Headers-Male-Pins_B4B-XH-A_LF__SN_
-#
-DEF dk_Rectangular-Connectors-Headers-Male-Pins_B4B-XH-A_LF__SN_ J 0 40 Y Y 1 F N
-F0 "J" -100 -50 50 H V R CNN
-F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B4B-XH-A_LF__SN_" 150 -150 50 H V C CNN
-F2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" 200 200 60 H I L CNN
-F3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 300 60 H I L CNN
-F4 "455-2249-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "B4B-XH-A(LF)(SN)" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
-F8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN HEADER VERT 4POS 2.5MM" 200 1000 60 H I L CNN "Description"
-F11 "JST Sales America Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -50 0 350 -100 1 1 0 f
-S -10 -45 10 -65 1 1 0 F
-S 90 -45 110 -65 1 1 0 F
-S 190 -45 210 -65 1 1 0 F
-S 290 -45 310 -65 1 1 0 F
-X ~ 1 0 100 100 D 50 50 1 1 P
-X ~ 2 100 100 100 D 50 50 1 1 P
-X ~ 3 200 100 100 D 50 50 1 1 P
-X ~ 4 300 100 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

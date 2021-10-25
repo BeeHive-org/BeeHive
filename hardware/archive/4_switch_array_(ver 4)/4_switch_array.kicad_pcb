@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.7)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
-    (drawings 54)
+    (drawings 55)
     (tracks 50)
     (zones 0)
     (modules 22)
@@ -63,7 +63,7 @@
     (aux_axis_origin 127.5 78.5)
     (visible_elements 7FFFFF7F)
     (pcbplotparams
-      (layerselection 0x00020_7ffffffe)
+      (layerselection 0x00030_7ffffffe)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -1513,6 +1513,9 @@
     )
   )
 
+  (gr_text "board by Ihor Sobianin\nlicensed under\nCERN-OHL-W 2.0\nhttps://ohwr.org/project/cernohl" (at 132.08 46.99) (layer F.SilkS) (tstamp 61729ADD)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_text S0 (at 138.5 43.5 90) (layer F.SilkS) (tstamp 5FDDF111)
     (effects (font (size 1 0.75) (thickness 0.15)))
   )
@@ -1715,7 +1718,7 @@
   (segment (start 133 43.5) (end 133 53) (width 0.5) (layer F.Cu) (net 14))
   (segment (start 138.5 38) (end 133 43.5) (width 0.5) (layer F.Cu) (net 14))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 6030DBD7) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61729CB0) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.5)
     (fill yes (arc_segments 32) (thermal_gap 0.5) (thermal_bridge_width 1))
