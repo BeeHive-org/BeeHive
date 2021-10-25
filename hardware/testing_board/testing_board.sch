@@ -354,44 +354,11 @@ Wire Wire Line
 Wire Wire Line
 	3000 4400 3100 4400
 Connection ~ 2800 3950
-$Comp
-L power:GND #PWR?
-U 1 1 614D3394
-P 4400 4400
-F 0 "#PWR?" H 4400 4150 50  0001 C CNN
-F 1 "GND" V 4405 4272 50  0000 R CNN
-F 2 "" H 4400 4400 50  0001 C CNN
-F 3 "" H 4400 4400 50  0001 C CNN
-	1    4400 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 614E3B5B
-P 3650 4400
-F 0 "R?" V 3846 4400 50  0000 C CNN
-F 1 "R_Small" V 3755 4400 50  0000 C CNN
-F 2 "" H 3650 4400 50  0001 C CNN
-F 3 "~" H 3650 4400 50  0001 C CNN
-	1    3650 4400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4300 4400 4400 4400
 Wire Wire Line
 	3000 4400 3000 4850
 Connection ~ 3000 4400
-$Comp
-L Device:R_Small R?
-U 1 1 614D233E
-P 4200 4400
-F 0 "R?" V 4004 4400 50  0000 C CNN
-F 1 "R_Small" V 4095 4400 50  0000 C CNN
-F 2 "" H 4200 4400 50  0001 C CNN
-F 3 "~" H 4200 4400 50  0001 C CNN
-	1    4200 4400
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 615046FB
@@ -885,7 +852,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4150 6400 4250
 Wire Wire Line
-	6400 4150 6550 4150
+	6400 4150 6500 4150
 Connection ~ 6400 4150
 $Comp
 L power:+5V #PWR?
@@ -915,18 +882,8 @@ Wire Wire Line
 	6850 3800 6850 3850
 Wire Wire Line
 	4100 3850 4100 4400
-Connection ~ 4100 4400
-Wire Wire Line
-	3500 4400 3550 4400
-Wire Wire Line
-	2600 3850 3850 3850
-Wire Wire Line
-	3750 4400 3850 4400
 Wire Wire Line
 	3850 4300 3850 4400
-Connection ~ 3850 4400
-Wire Wire Line
-	3850 4400 4100 4400
 Wire Wire Line
 	3850 4000 3850 3850
 Connection ~ 3850 3850
@@ -970,26 +927,6 @@ Wire Notes Line
 	7100 2200 5500 2200
 Wire Notes Line
 	5500 2200 5500 1100
-$Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
-U 1 1 6164C117
-P 6050 5750
-F 0 "J?" V 5825 5758 50  0000 C CNN
-F 1 "B4B-XH-A_LF__SN_" V 5916 5758 50  0000 C CNN
-F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 6250 5950 60  0001 L CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6250 6050 60  0001 L CNN
-F 4 "455-2249-ND" H 6250 6150 60  0001 L CNN "Digi-Key_PN"
-F 5 "B4B-XH-A(LF)(SN)" H 6250 6250 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 6250 6350 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 6250 6450 60  0001 L CNN "Family"
-F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6250 6550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" H 6250 6650 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 4POS 2.5MM" H 6250 6750 60  0001 L CNN "Description"
-F 11 "JST Sales America Inc." H 6250 6850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6250 6950 60  0001 L CNN "Status"
-	1    6050 5750
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6164C11F
@@ -1140,4 +1077,233 @@ Wire Notes Line
 	7550 6350 5550 6350
 Wire Notes Line
 	5550 6350 5550 5250
+NoConn ~ 5800 4050
+$Comp
+L dk_Temperature-Sensors-Analog-and-Digital-Output:DS18S20_ U?
+U 1 1 6168DCC8
+P 7800 4150
+F 0 "U?" H 7928 4203 60  0000 L CNN
+F 1 "DS18S20_" H 7928 4097 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 8000 4350 60  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" H 8000 4450 60  0001 L CNN
+F 4 "DS18S20+-ND" H 8000 4550 60  0001 L CNN "Digi-Key_PN"
+F 5 "DS18S20+" H 8000 4650 60  0001 L CNN "MPN"
+F 6 "Sensors, Transducers" H 8000 4750 60  0001 L CNN "Category"
+F 7 "Temperature Sensors - Analog and Digital Output" H 8000 4850 60  0001 L CNN "Family"
+F 8 "https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" H 8000 4950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/maxim-integrated/DS18S20-/DS18S20--ND/1017697" H 8000 5050 60  0001 L CNN "DK_Detail_Page"
+F 10 "SENSOR DIGITAL -55C-125C TO92-3" H 8000 5150 60  0001 L CNN "Description"
+F 11 "Maxim Integrated" H 8000 5250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 5350 60  0001 L CNN "Status"
+	1    7800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6168EEC2
+P 7850 3800
+F 0 "#PWR?" H 7850 3650 50  0001 C CNN
+F 1 "+5V" V 7865 3928 50  0000 L CNN
+F 2 "" H 7850 3800 50  0001 C CNN
+F 3 "" H 7850 3800 50  0001 C CNN
+	1    7850 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6168F6A5
+P 7800 4500
+F 0 "#PWR?" H 7800 4250 50  0001 C CNN
+F 1 "GND" H 7805 4327 50  0000 C CNN
+F 2 "" H 7800 4500 50  0001 C CNN
+F 3 "" H 7800 4500 50  0001 C CNN
+	1    7800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4150 6500 3700
+Wire Wire Line
+	6500 3700 7500 3700
+Wire Wire Line
+	7500 3700 7500 4150
+Connection ~ 6500 4150
+Wire Wire Line
+	6500 4150 6550 4150
+Wire Wire Line
+	7800 4450 7800 4500
+Wire Wire Line
+	7850 3800 7800 3800
+Wire Wire Line
+	7800 3800 7800 3850
+Wire Notes Line
+	8450 3500 8450 4850
+Wire Notes Line
+	8450 4850 5300 4850
+Wire Notes Line
+	5300 4850 5300 3500
+Wire Notes Line
+	5300 3500 8450 3500
+$Comp
+L power:GND #PWR?
+U 1 1 614D3394
+P 4400 4400
+F 0 "#PWR?" H 4400 4150 50  0001 C CNN
+F 1 "GND" V 4405 4272 50  0000 R CNN
+F 2 "" H 4400 4400 50  0001 C CNN
+F 3 "" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 614D233E
+P 4200 4400
+F 0 "R?" V 4004 4400 50  0000 C CNN
+F 1 "R_Small" V 4095 4400 50  0000 C CNN
+F 2 "" H 4200 4400 50  0001 C CNN
+F 3 "~" H 4200 4400 50  0001 C CNN
+	1    4200 4400
+	0    1    1    0   
+$EndComp
+Connection ~ 4100 4400
+Connection ~ 3850 4400
+Wire Wire Line
+	3850 4400 4100 4400
+Wire Wire Line
+	3750 4400 3850 4400
+Wire Wire Line
+	3500 4400 3550 4400
+Wire Wire Line
+	2600 3850 3850 3850
+$Comp
+L Device:R_Small R?
+U 1 1 614E3B5B
+P 3650 4400
+F 0 "R?" V 3846 4400 50  0000 C CNN
+F 1 "R_Small" V 3755 4400 50  0000 C CNN
+F 2 "" H 3650 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C68C5
+P 5800 5600
+F 0 "J?" V 5575 5608 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 5608 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 5800 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 5900 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 6000 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 6100 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 6200 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 6300 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 6400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 6500 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 6600 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 6700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 6800 60  0001 L CNN "Status"
+	1    5800 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C74E5
+P 5800 5950
+F 0 "J?" V 5575 5958 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 5958 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 6150 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 6250 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 6350 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 6450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 6550 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 6650 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 6750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 6850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 6950 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 7050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7150 60  0001 L CNN "Status"
+	1    5800 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C7DFA
+P 5800 6300
+F 0 "J?" V 5575 6308 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 6308 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 6500 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 6600 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 6700 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 6800 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 6900 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 7000 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 7100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 7200 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 7300 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 7400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7500 60  0001 L CNN "Status"
+	1    5800 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C8871
+P 5800 6650
+F 0 "J?" V 5575 6658 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 6658 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 6850 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 6950 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 7050 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 7150 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 7250 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 7350 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 7450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 7550 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 7650 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 7750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7850 60  0001 L CNN "Status"
+	1    5800 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C8E30
+P 5800 7000
+F 0 "J?" V 5575 7008 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 7008 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 7200 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 7300 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 7400 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 7500 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 7600 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 7700 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 7800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 7900 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 8000 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 8100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 8200 60  0001 L CNN "Status"
+	1    5800 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+U 1 1 616C9701
+P 5800 7350
+F 0 "J?" V 5575 7358 50  0000 C CNN
+F 1 "B2B-XH-A_LF__SN_" V 5666 7358 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 6000 7550 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 7650 60  0001 L CNN
+F 4 "455-2247-ND" H 6000 7750 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-XH-A(LF)(SN)" H 6000 7850 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6000 7950 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6000 8050 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 6000 8150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 6000 8250 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.5MM" H 6000 8350 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 6000 8450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 8550 60  0001 L CNN "Status"
+	1    5800 7350
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
