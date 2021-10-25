@@ -281,7 +281,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 5350 2650 5800
 Wire Wire Line
-
 	2650 5800 3100 5800
 Connection ~ 2450 5350
 Wire Wire Line
