@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "(5.1.10)-1"
+      "Version":     "5.1.10-88a1d61d58~90~ubuntu20.04.1"
     },
-    "CreationDate":  "2021-08-14T09:06:37+01:00"
+    "CreationDate":  "2022-01-16T22:17:14+00:00"
   },
   "GeneralSpecs":
   {
@@ -19,8 +19,8 @@
     },
     "Size":
     {
-      "X": 64.050,
-      "Y": 41.550
+      "X": 73.163,
+      "Y": 47.010
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -45,6 +45,16 @@
     {
       "Path":  "grove_adaptor_panel-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "grove_adaptor_panel-F_Adhes.gbr",
+      "FileFunction":  "Glue,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "grove_adaptor_panel-B_Adhes.gbr",
+      "FileFunction":  "Glue,Bot",
       "FilePolarity":  "Positive"
     },
     {
@@ -80,6 +90,16 @@
     {
       "Path":  "grove_adaptor_panel-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "grove_adaptor_panel-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "grove_adaptor_panel-B_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
   ],
