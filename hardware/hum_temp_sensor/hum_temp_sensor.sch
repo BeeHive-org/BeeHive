@@ -74,7 +74,6 @@ F 3 "~" H 2450 2100 50  0001 C CNN
 	1    2450 2100
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2650 2100
 $Comp
 L power:+5V #PWR06
 U 1 1 5F342F45
@@ -214,4 +213,5 @@ Wire Wire Line
 	2650 2300 2700 2300
 Wire Wire Line
 	2700 2300 2700 2850
+NoConn ~ 2650 2100
 $EndSCHEMATC
