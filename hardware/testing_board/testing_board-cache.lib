@@ -1,25 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x02
-#
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x04
 #
 DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
@@ -156,42 +137,40 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_Signal-Relays-Up-to-2-Amps_G5V-1-DC12
+# dk_Power-Relays-Over-2-Amps_G5LE-14_DC5
 #
-DEF dk_Signal-Relays-Up-to-2-Amps_G5V-1-DC12 RLY 0 40 Y N 1 F N
-F0 "RLY" -400 250 50 H V C CNN
-F1 "dk_Signal-Relays-Up-to-2-Amps_G5V-1-DC12" -350 -75 50 V V C CNN
-F2 "digikey-footprints:Relay_THT_G5V-1" 200 200 50 H I L CNN
-F3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" 200 300 60 H I L CNN
-F4 "Z774-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "G5V-1-DC12" 200 500 60 H I L CNN "MPN"
+DEF dk_Power-Relays-Over-2-Amps_G5LE-14_DC5 RLY 0 0 Y N 1 F N
+F0 "RLY" -340 270 50 H V C CNN
+F1 "dk_Power-Relays-Over-2-Amps_G5LE-14_DC5" -350 200 50 V V R CNN
+F2 "digikey-footprints:Relay_THT_G5LE-14" 200 200 50 H I L CNN
+F3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 300 60 H I L CNN
+F4 "Z1011-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "G5LE-14 DC5" 200 500 60 H I L CNN "MPN"
 F6 "Relays" 200 600 60 H I L CNN "Category"
-F7 "Signal Relays, Up to 2 Amps" 200 700 60 H I L CNN "Family"
-F8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/omron-electronics-inc-emc-div/G5V-1-DC12/Z774-ND/87833" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "RELAY GEN PURPOSE SPDT 1A 12VDC" 200 1000 60 H I L CNN "Description"
+F7 "Power Relays, Over 2 Amps" 200 700 60 H I L CNN "Family"
+F8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/280371" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "RELAY GEN PURPOSE SPDT 10A 5V" 200 1000 60 H I L CNN "Description"
 F11 "Omron Electronics Inc-EMC Div" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
-C 0 110 14 0 1 0 F
+C 0 90 14 0 1 0 F
 C 100 -80 14 0 1 0 F
-C 200 110 14 0 1 0 F
+C 200 90 14 0 1 0 F
 S -300 200 300 -200 0 1 0 f
-S -275 40 -125 -40 0 1 0 N
-P 2 0 1 0 -255 -40 -145 40 N
-P 2 0 1 0 -200 -40 -200 -200 N
-P 2 0 1 0 -200 40 -200 200 N
-P 2 0 1 0 0 -200 0 -80 N
-P 2 0 1 0 0 200 0 120 N
-P 2 0 1 0 100 -70 190 125 N
-P 2 0 1 0 200 200 200 120 N
-P 3 0 1 0 200 -200 200 -80 0 -80 N
-X NC 1 200 300 100 D 50 50 1 1 P
-X NO 10 0 300 100 D 50 50 1 1 P
-X COIL 2 -200 -300 100 U 50 50 1 1 P
-X COM 5 0 -300 100 U 50 50 1 1 P
-X COM 6 200 -300 100 U 50 50 1 1 P
-X COIL 9 -200 300 100 D 50 50 1 1 P
+S -280 40 -120 -40 0 1 0 N
+P 2 0 1 0 -260 -40 -140 40 N
+P 2 0 1 0 -200 -200 -200 -40 N
+P 2 0 1 0 -200 200 -200 40 N
+P 2 0 1 0 0 200 0 100 N
+P 2 0 1 0 100 -200 100 -90 N
+P 2 0 1 0 100 -70 190 100 N
+P 2 0 1 0 200 200 200 100 N
+X COM 1 100 -300 100 U 50 50 1 1 P
+X COIL 2 -200 300 100 D 50 50 1 1 P
+X NO 3 0 300 100 D 50 50 1 1 P
+X NC 4 200 300 100 D 50 50 1 1 P
+X COIL 5 -200 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -244,6 +223,21 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice_DIODE
+#
+DEF pspice_DIODE D 0 40 Y N 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "pspice_DIODE" 0 -175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 75 100 75 -100 N
+P 3 0 1 0 -75 100 -75 -100 75 0 F
+X K 1 -200 0 150 R 50 50 1 1 I
+X A 2 200 0 150 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
