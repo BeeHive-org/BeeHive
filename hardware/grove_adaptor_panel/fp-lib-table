@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name panelization)(type KiCad)(uri /home/andre/repositories/beehive/BeeHive/hardware/kicad_libraries/modules/Panelization.pretty-master)(options "")(descr ""))
+)
