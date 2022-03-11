@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name beehive_libraries)(type Legacy)(uri /home/andre/repositories/beehive/BeeHive/hardware/kicad_libraries/library/TC4427CPA.lib)(options "")(descr ""))
+)
