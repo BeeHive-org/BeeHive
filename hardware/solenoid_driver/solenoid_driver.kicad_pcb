@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 10)
     (tracks 29)
     (zones 0)
     (modules 16)
@@ -62,7 +62,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00020_7ffffffe)
+      (layerselection 0x3ffff_ffffffff)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
@@ -969,7 +969,7 @@
     (fp_text user %R (at 1.25 2.7 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.147059)
+    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.1470588235294118)
       (net 3 +12V))
     (pad 2 thru_hole oval (at 2.5 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask)
       (net 1 GND))
@@ -1032,7 +1032,7 @@
     (pad "" np_thru_hole circle (at -1.6 2 90) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
     (pad 2 thru_hole oval (at 2.5 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask)
       (net 4 "Net-(D1-Pad2)"))
-    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.147059)
+    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.1470588235294118)
       (net 3 +12V))
     (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1089,7 +1089,7 @@
     (fp_text user %R (at 1.25 2.7 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.147059)
+    (pad 1 thru_hole roundrect (at 0 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.1470588235294118)
       (net 3 +12V))
     (pad 2 thru_hole oval (at 2.5 0 90) (size 1.7 2) (drill 1) (layers *.Cu *.Mask)
       (net 5 "Net-(D2-Pad2)"))
@@ -1227,6 +1227,7 @@
     )
   )
 
+  (target plus (at 112.014 128.9685) (size 5) (width 0.05) (layer Edge.Cuts))
   (gr_text "board by Andre M Chagas\nlicensed under\nCERN-OHL-W 2.0\nhttps://ohwr.org/project/cernohl" (at 139.7 124.714) (layer F.SilkS) (tstamp 61729ADD)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
@@ -1304,7 +1305,7 @@
   (segment (start 126.1745 85.5345) (end 124.587 83.947) (width 0.5) (layer F.Cu) (net 9))
   (segment (start 126.1745 92.219) (end 126.1745 85.5345) (width 0.5) (layer F.Cu) (net 9))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 6172A2E9) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 622BC83D) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.5)
     (fill yes (arc_segments 32) (thermal_gap 0.5) (thermal_bridge_width 1))
