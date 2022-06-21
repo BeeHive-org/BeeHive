@@ -1,0 +1,62 @@
+# Site information
+site_name: BeeHive
+site_url: https://beehive-org.github.io/
+site_description: A flexible open hardware platform for behavioural experiments
+site_sub_description: Science <i>your</i> way
+
+# Repository
+repo_name: BeeHive-org
+repo_url: https://github.com/BeeHive-org/
+
+# Theme
+theme:
+  custom_dir: material/
+  name: material
+  include_sidebar: true
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+  logo: 'assets/images/beehive.png'
+  icon:
+    repo: 'fontawesome/brands/github'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: amber
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      
+
+# Extras
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+
+plugins:
+  - search
+  - bibtex:
+      cite_style: 'plain'
+      bib_file: 'docs/bibliography.bib'
+      #csl_file: 'docs/apa.csl'
+
+markdown_extensions:
+  - footnotes
+  - admonition
+
+# Page tree
+nav:
+    - Home: index.md
+    - Getting started:
+        - user-guide.md
+    - Recipes: 
+        - recipes/intro.md
+        - Incubator: recipes/incubator.md
+    - Ingredients:
+        - ingredients/summary.md
