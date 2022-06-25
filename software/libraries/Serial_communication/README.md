@@ -3,8 +3,7 @@
 ## PORT CONFIGURATION
 There must be a port open with the speed 115200 open for the ESP32 and Python library to connect. The board will typically automatically connect. A way of testing this is using the Board library with `B.serial_ports()` with the device unplugged, and then plugged in. This missing COM will reveal which the baord is on. If there are still problems, manual connection can be made with using the PuTTY app, which is available on Windows and Linux. This must be ran while the board is not attached.
 
-![image of PuTTY](https://raw.githubusercontent.com/BeeHive-org/BeeHive/master/media/enable.png)
-
+<img src="[https://raw.githubusercontent.com/shepai/OpenEduBot/main/Assets/wheelBot.jpg](https://raw.githubusercontent.com/BeeHive-org/BeeHive/master/media/enable.png)" width="50%" >
 The board cannot be connected to any Micro-Python specific IDE through serial, otherwise it will be undetectable by the Python library.
 
 ## Using the library
