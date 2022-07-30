@@ -1,0 +1,251 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +5V-power
+#
+DEF +5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Conn_01x04-Connector_Generic
+#
+DEF Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x04-Connector_Generic" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DS18S20_-dk_Temperature-Sensors-Analog-and-Digital-Output
+#
+DEF DS18S20_-dk_Temperature-Sensors-Analog-and-Digital-Output U 0 40 Y Y 1 F N
+F0 "U" -200 250 60 H V C CNN
+F1 "DS18S20_-dk_Temperature-Sensors-Analog-and-Digital-Output" 150 -300 60 V V L CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" 200 300 60 H I L CNN
+F4 "DS18S20+-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "DS18S20+" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Temperature Sensors - Analog and Digital Output" 200 700 60 H I L CNN "Family"
+F8 "https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/maxim-integrated/DS18S20-/DS18S20--ND/1017697" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SENSOR DIGITAL -55C-125C TO92-3" 200 1000 60 H I L CNN "Description"
+F11 "Maxim Integrated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 200 100 -200 0 1 0 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X DQ 2 -300 0 100 R 50 50 1 1 B
+X VDD 3 0 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# D_Schottky-Device
+#
+DEF D_Schottky-Device D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D_Schottky-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# G5LE-14_DC5-dk_Power-Relays-Over-2-Amps
+#
+DEF G5LE-14_DC5-dk_Power-Relays-Over-2-Amps RLY 0 0 Y N 1 F N
+F0 "RLY" -340 270 50 H V C CNN
+F1 "G5LE-14_DC5-dk_Power-Relays-Over-2-Amps" -350 200 50 V V R CNN
+F2 "digikey-footprints:Relay_THT_G5LE-14" 200 200 50 H I L CNN
+F3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 300 60 H I L CNN
+F4 "Z1011-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "G5LE-14 DC5" 200 500 60 H I L CNN "MPN"
+F6 "Relays" 200 600 60 H I L CNN "Category"
+F7 "Power Relays, Over 2 Amps" 200 700 60 H I L CNN "Family"
+F8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/280371" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "RELAY GEN PURPOSE SPDT 10A 5V" 200 1000 60 H I L CNN "Description"
+F11 "Omron Electronics Inc-EMC Div" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 200 300 -200 0 1 0 f
+S -280 40 -120 -40 0 1 0 N
+P 2 0 1 0 -260 -40 -140 40 N
+P 2 0 1 0 -200 -200 -200 -40 N
+P 2 0 1 0 -200 200 -200 40 N
+P 2 0 1 0 0 200 0 100 N
+P 2 0 1 0 100 -200 100 -90 N
+P 2 0 1 0 100 -70 190 100 N
+P 2 0 1 0 200 200 200 100 N
+C 0 90 14 0 1 0 F
+C 100 -80 14 0 1 0 F
+C 200 90 14 0 1 0 F
+X COM 1 100 -300 100 U 50 50 1 1 P
+X COIL 2 -200 300 100 D 50 50 1 1 P
+X NO 3 0 300 100 D 50 50 1 1 P
+X NC 4 200 300 100 D 50 50 1 1 P
+X COIL 5 -200 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND-power
+#
+DEF GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# LED-Device
+#
+DEF LED-Device D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "LED-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R_POT-Device
+#
+DEF R_POT-Device RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "R_POT-Device" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+S 40 100 -40 -100 0 1 10 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R_Small-Device
+#
+DEF R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "R_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SW_Push-Switch
+#
+DEF SW_Push-Switch SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "SW_Push-Switch" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+C 80 0 20 0 1 0 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# TPIC6595-Interface_Expansion
+#
+DEF TPIC6595-Interface_Expansion U 0 15 Y Y 1 F N
+F0 "U" -350 550 50 H V C CNN
+F1 "TPIC6595-Interface_Expansion" 250 550 50 H V C CNN
+F2 "" 650 -650 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+$FPLIST
+ SOIC*7.5x12.8mm*P1.27mm*
+ DIP*W7.62mm*
+$ENDFPLIST
+DRAW
+S -400 500 400 -600 0 1 10 f
+X PGND 1 -100 -700 100 U 50 50 1 1 W
+X PGND 10 -100 -700 100 U 50 50 1 1 P N
+X PGND 11 -100 -700 100 U 50 50 1 1 P N
+X RCLK 12 -500 -100 100 R 50 50 1 1 I
+X SRCK 13 -500 200 100 R 50 50 1 1 I
+X DRAIN4 14 500 0 100 L 50 50 1 1 C
+X DRAIN5 15 500 -100 100 L 50 50 1 1 C
+X DRAIN6 16 500 -200 100 L 50 50 1 1 C
+X DRAIN7 17 500 -300 100 L 50 50 1 1 C
+X SER_OUT 18 500 -500 100 L 50 50 1 1 O
+X LGND 19 -300 -700 100 U 50 50 1 1 W
+X VCC 2 0 600 100 D 50 50 1 1 W
+X PGND 20 -100 -700 100 U 50 50 1 1 P N
+X SER_IN 3 -500 400 100 R 50 50 1 1 I
+X DRAIN0 4 500 400 100 L 50 50 1 1 C
+X DRAIN1 5 500 300 100 L 50 50 1 1 C
+X DRAIN2 6 500 200 100 L 50 50 1 1 C
+X DRAIN3 7 500 100 100 L 50 50 1 1 C
+X ~{SRCLR} 8 -500 100 100 R 50 50 1 1 I
+X ~{G} 9 -500 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
