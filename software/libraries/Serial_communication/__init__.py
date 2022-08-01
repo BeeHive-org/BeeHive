@@ -115,11 +115,76 @@ class Board:
                     log.append(dic)
                 seq=self.COM.exec('getEnded()').decode("utf-8").replace("\r\n","")
         print(log)
-       
-            
 
 
 """
+Open sound board allows wireless programming
+"""
+import socket
+
+class openSoundBoard:
+    def __init__(self,ip='0.0.0.0',com=80):
+        self.ip=ip
+        self.com=com
+        self.s=socket.socket()
+        self.s.bind((ip,com))
+        self.s.listen(0)
+        print("Connecting...")
+        self.client,self.addr=self.s.accept()
+        print("Connected.")
+    def send(self,message):
+        """
+        @PARAM message is a string of the message you want sent
+        """
+        self.client.send(bytes(message, "utf-8"))
+    def get(self):
+        content=""
+        content = self.client.recv(32)
+        return str(content, 'utf8')
+    def getData(self,data):
+        self.send(data)
+        return self.get()
+    def close(self):
+        self.client.close()
+    def record(self,time_interval=None,till=None,gather=10):
+        """
+        Record data for a given time interval
+        @PARAM time_interval will loop till a time interval (seconds) is reached
+        @PARAM till will record till the sentence end is returned
+        @PARAM
+        @PARAM gather will pull the data from the board every n iterations
+        """
+        log=[] 
+        if time_interval!=None and till!=None: print("You have entered a time interval and loop till. Default picking time")
+        if time_interval!=None:
+            #loop for given time gathering information from the board
+            t1=time.time()
+            #self.COM.exec('SENSOR_MONITOR').decode("utf-8").replace("\r\n","")
+            while time.time()-t1<=time_interval:
+                d=self.getData("getLen()")
+                if d!="" and int(d)>gather:
+                    print("pull")
+                    data=self.getData('getData()')#decode data
+                    log.append(data)
+        elif till==True:
+            #loop till
+            #record until "end" 
+            seq="no"
+            while seq!="END":
+                d=self.getData("getLen()")
+                if d!="" and int(d)>gather:
+                    print("pull")
+                    data=self.getData('getData()')#decode data
+                    log.append(data)
+                seq=self.getData('getEnded()')
+        print(log)
+
+"""  
+o=openSoundBoard()
+print(o.getData("Hello, world!"))
+
+o.record(till=True)
+
             
 b=Board()
 #print(b.serial_ports())

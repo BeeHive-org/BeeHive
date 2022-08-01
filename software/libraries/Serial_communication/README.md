@@ -38,3 +38,35 @@ This will loop for 60 seconds and perform a pull request every 15 iterations. Th
 Conditional:
 `B.record(till=True)`
 This will loop till the board returns "END" from a "getEnded()". This is something setup within the onboard code by the developer for their given experiment. The gathering will result to default 10, as it has not been stated in the parameters.
+
+# MicroPython Opensound configuration
+
+The open sound class makes use of wireless communication to gather data from the MicroPython device. In order to make it work you must set up the circuit-side first. 
+
+## Setting up the device
+Within the device code found in examples, there are several variables that need changing for it to pair with your device. Firstly, your PC device and the ESP32 must be on the same network. Edit the following variables within the micropython code.
+`
+YOUR_IP="device.ip.for.pc"
+YOUR_NETWORK_SSID="network_name"
+YOUR_PASSWORD="network_password"
+COM=integer_of_the_selected_com
+`
+
+## Setting up the PC side
+
+The board can be set up calling on the following line. The parameters can have the ip and coms manually set. Keep the ip as default to have the PC act in a normal way, but change the COM if you have multiple devices. This must be the same as the COM on the circuit side. 
+`o=openSoundBoard()`
+
+A signal can be sent using the `o.getData("message you want sent")` function, however this will return nothing if the string does not correspond to the inbuilt commands within the code. 
+
+The record function works in the exact same way as the serial library. 
+`o.record(till=True)`
+
+Time interval:
+`B.record(time_interval=60,gather=15)`
+This will loop for 60 seconds and perform a pull request every 15 iterations. The pull request gathers all the data that the board has collected, since the last pull. Gather is by default 10.
+
+Conditional:
+`B.record(till=True)`
+This will loop till the board returns "END" from a "getEnded()". This is something setup within the onboard code by the developer for their given experiment. The gathering will result to default 10, as it has not been stated in the parameters.
+

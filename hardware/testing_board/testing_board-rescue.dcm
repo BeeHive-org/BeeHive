@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS18S20_-dk_Temperature-Sensors-Analog-and-Digital-Output
+F https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf
+$ENDCMP
+#
+$CMP G5LE-14_DC5-dk_Power-Relays-Over-2-Amps
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf
+$ENDCMP
+#
+#End Doc Library
