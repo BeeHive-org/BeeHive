@@ -2763,7 +2763,7 @@
   (gr_line (start 112 129) (end 112 80.5) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000060ce240e))
   (gr_line (start 157.5 80.5) (end 112 80.5) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000060ce2411))
   (gr_line (start 157.5 129) (end 112 129) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000060ce2412))
-  (gr_text "board by Andre M Chagas\nlicensed under\nCERN-OHL-W 2.0\nhttps://ohwr.org/project/cernohl" (at 139.7 124.714) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000061729add)
+  (gr_text "board by Andre M Chagas\nlicensed under\nCERN-OHL-S 2.0\nhttps://ohwr.org/project/cernohl" (at 139.7 124.714) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000061729add)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
   (gr_text "Solenoid_driver\nv0.1\n" (at 138.4935 117.348) (layer "F.SilkS") (tstamp 5b34a16c-5a14-4291-8242-ea6d6ac54372)
