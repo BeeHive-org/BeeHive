@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "ir_sensor-rescue")(type "Legacy")(uri "${KIPRJMOD}/ir_sensor-rescue.lib")(options "")(descr ""))
+)
