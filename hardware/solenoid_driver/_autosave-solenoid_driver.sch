@@ -1,0 +1,319 @@
+EESchema Schematic File Version 5
+EELAYER 36 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 7000 3000
+Connection ~ 7050 3300
+Connection ~ 7050 5000
+Connection ~ 7100 5300
+Wire Wire Line
+	2950 4100 3650 4100
+Wire Wire Line
+	2950 4200 3650 4200
+Wire Wire Line
+	2950 4300 3300 4300
+Wire Wire Line
+	2950 4400 3300 4400
+Wire Wire Line
+	2950 5150 3050 5150
+Wire Wire Line
+	3050 5000 3050 5050
+Wire Wire Line
+	3050 5050 2950 5050
+Wire Wire Line
+	3050 5150 3050 5250
+Wire Wire Line
+	3300 4300 3300 3600
+Wire Wire Line
+	3300 4400 3300 4600
+Wire Wire Line
+	5300 3550 6250 3550
+Wire Wire Line
+	5350 5550 6300 5550
+Wire Wire Line
+	6700 2950 6700 3000
+Wire Wire Line
+	6700 2950 6900 2950
+Wire Wire Line
+	6700 3300 6700 3350
+Wire Wire Line
+	6700 3350 6900 3350
+Wire Wire Line
+	6750 3550 6550 3550
+Wire Wire Line
+	6750 4950 6750 5000
+Wire Wire Line
+	6750 4950 6950 4950
+Wire Wire Line
+	6750 5300 6750 5350
+Wire Wire Line
+	6800 5550 6600 5550
+Wire Wire Line
+	6900 2950 6900 3000
+Wire Wire Line
+	6900 3000 7000 3000
+Wire Wire Line
+	6900 3300 6900 3350
+Wire Wire Line
+	6950 4950 6950 5000
+Wire Wire Line
+	6950 5000 7050 5000
+Wire Wire Line
+	6950 5300 6950 5350
+Wire Wire Line
+	6950 5350 6750 5350
+Wire Wire Line
+	7000 2950 7000 3000
+Wire Wire Line
+	7000 3000 7000 3050
+Wire Wire Line
+	7000 3050 7150 3050
+Wire Wire Line
+	7050 3150 7050 3300
+Wire Wire Line
+	7050 3300 6900 3300
+Wire Wire Line
+	7050 3300 7050 3350
+Wire Wire Line
+	7050 3750 7050 3900
+Wire Wire Line
+	7050 4950 7050 5000
+Wire Wire Line
+	7050 5000 7050 5050
+Wire Wire Line
+	7050 5050 7200 5050
+Wire Wire Line
+	7100 5150 7100 5300
+Wire Wire Line
+	7100 5300 6950 5300
+Wire Wire Line
+	7100 5300 7100 5350
+Wire Wire Line
+	7100 5750 7100 5900
+Wire Wire Line
+	7150 3150 7050 3150
+Wire Wire Line
+	7200 5150 7100 5150
+Text GLabel 3650 4100 2    50   Input ~ 0
+solenoid1
+Text GLabel 3650 4200 2    50   Input ~ 0
+solenoid2
+Text GLabel 5300 3550 0    50   Input ~ 0
+solenoid2
+Text GLabel 5350 5550 0    50   Input ~ 0
+solenoid1
+$Comp
+L power:+12V #PWR04
+U 1 1 622CA3EC
+P 3050 5250
+F 0 "#PWR04" H 3050 5100 50  0001 C CNN
+F 1 "+12V" H 3065 5423 50  0000 C CNN
+F 2 "" H 3050 5250 50  0001 C CNN
+F 3 "" H 3050 5250 50  0001 C CNN
+	1    3050 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 60CF8933
+P 3300 3600
+F 0 "#PWR01" H 3300 3450 50  0001 C CNN
+F 1 "+5V" H 3315 3773 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR05
+U 1 1 622D7BC5
+P 7000 2950
+F 0 "#PWR05" H 7000 2800 50  0001 C CNN
+F 1 "+12V" H 7015 3123 50  0000 C CNN
+F 2 "" H 7000 2950 50  0001 C CNN
+F 3 "" H 7000 2950 50  0001 C CNN
+	1    7000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR07
+U 1 1 622CB48D
+P 7050 4950
+F 0 "#PWR07" H 7050 4800 50  0001 C CNN
+F 1 "+12V" H 7065 5123 50  0000 C CNN
+F 2 "" H 7050 4950 50  0001 C CNN
+F 3 "" H 7050 4950 50  0001 C CNN
+	1    7050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 622CADFD
+P 3050 5000
+F 0 "#PWR03" H 3050 4750 50  0001 C CNN
+F 1 "GND" H 3055 4827 50  0000 C CNN
+F 2 "" H 3050 5000 50  0001 C CNN
+F 3 "" H 3050 5000 50  0001 C CNN
+	1    3050 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60CF512E
+P 3300 4600
+F 0 "#PWR02" H 3300 4350 50  0001 C CNN
+F 1 "GND" H 3305 4427 50  0000 C CNN
+F 2 "" H 3300 4600 50  0001 C CNN
+F 3 "" H 3300 4600 50  0001 C CNN
+	1    3300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 622D7BB6
+P 7050 3900
+F 0 "#PWR06" H 7050 3650 50  0001 C CNN
+F 1 "GND" H 7055 3727 50  0000 C CNN
+F 2 "" H 7050 3900 50  0001 C CNN
+F 3 "" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 622C3F57
+P 7100 5900
+F 0 "#PWR08" H 7100 5650 50  0001 C CNN
+F 1 "GND" H 7105 5727 50  0000 C CNN
+F 2 "" H 7100 5900 50  0001 C CNN
+F 3 "" H 7100 5900 50  0001 C CNN
+	1    7100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 622C9C8F
+P 2750 5150
+F 0 "J2" H 2722 5032 50  0000 R CNN
+F 1 "12V power" H 2722 5123 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2750 5150 50  0001 C CNN
+F 3 "~" H 2750 5150 50  0001 C CNN
+	1    2750 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 622D7BBE
+P 7350 3050
+F 0 "J3" H 7322 3024 50  0000 R CNN
+F 1 "to_solenoid2" H 7322 2933 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7350 3050 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7350 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 622C4AB8
+P 7400 5050
+F 0 "J4" H 7372 5024 50  0000 R CNN
+F 1 "to_solenoid1" H 7372 4933 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7400 5050 50  0001 C CNN
+F 3 "~" H 7400 5050 50  0001 C CNN
+	1    7400 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 622D7BA3
+P 6400 3550
+F 0 "R2" H 6330 3504 50  0000 R CNN
+F 1 "47" H 6330 3595 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 6330 3550 50  0001 C CNN
+F 3 "~" H 6400 3550 50  0001 C CNN
+	1    6400 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60CE2F55
+P 6450 5550
+F 0 "R1" H 6380 5504 50  0000 R CNN
+F 1 "47" H 6380 5595 50  0000 R CNN
+F 2 "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm" V 6380 5550 50  0001 C CNN
+F 3 "~" H 6450 5550 50  0001 C CNN
+	1    6450 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 622E3F7C
+P 6700 3150
+F 0 "D1" V 6654 3230 50  0000 L CNN
+F 1 "D_Schottky" V 6745 3230 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6700 3150 50  0001 C CNN
+F 3 "~" H 6700 3150 50  0001 C CNN
+	1    6700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 622E62D4
+P 6750 5150
+F 0 "D2" V 6704 5230 50  0000 L CNN
+F 1 "D_Schottky" V 6795 5230 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6750 5150 50  0001 C CNN
+F 3 "~" H 6750 5150 50  0001 C CNN
+	1    6750 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 60CF213C
+P 2750 4200
+F 0 "J1" H 2668 4517 50  0000 C CNN
+F 1 "from_mainboard" H 2668 4426 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2750 4200 50  0001 C CNN
+F 3 "~" H 2750 4200 50  0001 C CNN
+	1    2750 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 622D7BB0
+P 6950 3550
+F 0 "Q1" H 7154 3596 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 7154 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7150 3650 50  0001 C CNN
+F 3 "~" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 622BD3BE
+P 7000 5550
+F 0 "Q2" H 7204 5596 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 7204 5505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7200 5650 50  0001 C CNN
+F 3 "~" H 7000 5550 50  0001 C CNN
+	1    7000 5550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
