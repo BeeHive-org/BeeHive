@@ -1,0 +1,6 @@
+References,Qty,Description,Manufacturer,MPN,Manufacturer,MPN,Manufacturer,MPN,Manufacturer,MPN,Manufacturer,MPN,Digikey,Mouser,RS,Newark,Farnell
+J1;J2;,2,CONN HEADER XH TOP 4POS 2.5MM,JST,B4B-XH-A (LF)(SN),,,,,,,,,455-2249-ND,,8201551,,1516278
+J3; J4; J5; J6;,4,CONN HEADER XH TOP 2POS 2.5MM,JST,B2B-XH-A (LF)(SN),,,,,,,,,455-2247-ND,,8201554P,73M9415,1516276
+Q1;,4,2N7000,,,,,,,,,2N7000FS-ND,,,,
+R5;R6;R7;R8,9,Resistor 1k ohm 250mW through-hole,TE Connectivity,CFR16J1K0,,,,,,,,,A104669CT-ND,279216239273,1251150,,2329486
+R11;,1,Resistor 560 ohm 250mW through-hole,TE Connectivity,CFR25J560R,KOA Speer,CF1/2CT52R561J,,,,,,,,,,,,,,,2019-CF1/2CT52R561JCT-ND,279CFR25J560R,131227,,2329690
