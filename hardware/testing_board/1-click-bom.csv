@@ -1,0 +1,13 @@
+"References"	"Qty"	"Description"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Digikey"	"Mouser"	"RS"	"Newark"	"Farnell"
+"D19; D20;"	2	"Diode Schottky 5A DO-201AD"	"Vishay"	"1N5822-E3/73"	"Zetex"	"SB5100-T"							"1N5822-E3/73GICT-ND"	"6251N5822E3/73"	7514843		1336553
+"RV1;RV2;RV3;RV4"	4	"10k/50mw/20%"	"Alps"	"RK09K1130AH1 "											"729-3587"		
+"J1;J2;J3;J4;J5:J6;J7:J8;J16;J9"	10	"CONN HEADER XH TOP 4POS 2.5MM"	"JST"	"B4B-XH-A (LF)(SN)"									"455-2249-ND"		8201551		1516278
+"SW1; SW2; SW3; SW4"	4	"12V 50ma"	"TE connectivity"	"4-1437565-1"											"479-1508"		
+"d1;d2;d3;d4;d5;d6;d7;d8;d9;d10;d11;d12;d13;d14;d15;d16;d17;d18;d19;d20;d21;d22;d23;d24;d25"	25	"indicator led"	"Marktech"	"MT7403A-UR-A"									"1125-1181-ND"				
+"u1;u2"	2	"DS18s20 temp sensor"															
+	2	"relay"															
+"R13;r14;r15;r16;r20;r22;r23;r24;r25;r28"	10	"560 resistor"															
+		"220 resistor"															
+		"1k resistor"															
+		"4.7k resistor"															
+		"TPIC6595"															
