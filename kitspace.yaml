@@ -29,3 +29,13 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/hp_led_switch/hp_led_switch.kicad_pcb
+    boards/testing_board:
+        summary:  A training board for users to practice programming
+        readme: README.md
+        color: green
+        site: https://github.com/isobianin/BeeHive
+        bom: hardware/PCBs/testing_board/1-click-bom.csv
+        gerbers: hardware/PCBs/testing_board/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/testing_board/testing_board.kicad_pcb

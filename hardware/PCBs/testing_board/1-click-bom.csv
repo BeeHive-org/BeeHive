@@ -1,13 +1,13 @@
-"References"	"Qty"	"Description"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Manufacturer"	"MPN"	"Digikey"	"Mouser"	"RS"	"Newark"	"Farnell"
-"D19; D20;"	2	"Diode Schottky 5A DO-201AD"	"Vishay"	"1N5822-E3/73"	"Zetex"	"SB5100-T"							"1N5822-E3/73GICT-ND"	"6251N5822E3/73"	7514843		1336553
-"RV1;RV2;RV3;RV4"	4	"10k/50mw/20%"	"Alps"	"RK09K1130AH1 "											"729-3587"		
-"J1;J2;J3;J4;J5:J6;J7:J8;J16;J9"	10	"CONN HEADER XH TOP 4POS 2.5MM"	"JST"	"B4B-XH-A (LF)(SN)"									"455-2249-ND"		8201551		1516278
-"SW1; SW2; SW3; SW4"	4	"12V 50ma"	"TE connectivity"	"4-1437565-1"											"479-1508"		
-"d1;d2;d3;d4;d5;d6;d7;d8;d9;d10;d11;d12;d13;d14;d15;d16;d17;d18;d19;d20;d21;d22;d23;d24;d25"	25	"indicator led"	"Marktech"	"MT7403A-UR-A"									"1125-1181-ND"				
-"u1;u2"	2	"DS18s20 temp sensor"															
-	2	"relay"															
-"R13;r14;r15;r16;r20;r22;r23;r24;r25;r28"	10	"560 resistor"															
-		"220 resistor"															
-		"1k resistor"															
-		"4.7k resistor"															
-		"TPIC6595"															
+References,Qty,Description,Manufacturer,MPN,Manufacturer,MPN,Digikey,Mouser,RS,Newark,Farnell,LCSC,JLC Assembly
+d1;d2;d3;d4;d5;d6;d7;d8;d9;d10;d11;d12;d13;d14;d15;d16;d17;d18;d21;d22,20,indicator leds,Marktech Optoelectronics,MT7403A-UR-A,,,1125-1181-ND,193MT7403AURA,,,,,
+d19;d20,2,flyback diodes,Vishay,1N5822-E3/73,Diodes Inc.,SB5100-T,1N5822-E3/73GICT-ND,6251N5822E3/73,7514843,,1336553,,
+j1;j2;j3;j4;j5;j6;j7;j8;j9;j16,10,connector,JST,B4B-XH-A (LF)(SN),,,455-2249-ND,,,,1516278,,
+u3,1,tpic6595n,Texas Instruments,TPIC6B595N,Texas Instruments,TPIC6C595N,296-1956-5-ND,595TPIC6B595N,528145,,3120896,,
+RV1;RV2,2,potentiometer,ALPS,RK09K1130AH1,Bourns,PTV09A-4025F-B503,PTV09A-4025F-B503-ND,688RK09K1130AH1,7293587,,1191725,,
+U1;U2,2,temp sensor,Maxim Integrated,DS18B20+,,,DS18B20+T&RCT-ND,,,,,,
+sw1;sw2;sw3;sw4,4,push buttons,TE Connectivity,1825910-2,,,450-1649-ND,506FSM2JH,4791390,,2469975,,
+RLY1;RLY2,2,relays,omron,G5LE-1-36 DC5,,,G5LE-1-36DC5-ND,653G5LE136DC5,,,1798616,,
+r1;r;2;r3;r4;r5;r6;r7;r13;14;r15;r16;r20;r21;r22;r23;r24;r25,20,resistor 220 ohm,Yageo,CFR-25JB-52-220R,,,220QBK-ND,603CFR25JB52220R,,,3952580,,
+r18,1,resistor 4.7kohm,Stackpole Electronics,CF14JT4K70,,,CF14JT4K70CT-ND,,,,,,
+r8;r9;r10;r12;,1,resistor 1kohm,Stackpole Electronics,CF14JT1K00,,,CF14JT1K00CT-ND,,,,,,
+r19;r26,1,resistor 330ohm,,CF14JT330R,,,CF14JT330RCT-ND,,,,,,
