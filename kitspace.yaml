@@ -4,28 +4,28 @@ multi:
         readme: README.md
         color: green
         site: https://github.com/isobianin/BeeHive
-        bom: hardware/central_hub/1-click-bom.csv
-        gerbers: hardware/central_hub/gerber
+        bom: hardware/PCBs/central_hub/1-click-bom.csv
+        gerbers: hardware/PCBs/central_hub/gerber
         eda:
             type: kicad
-            pcb: hardware/central_hub/beehive.kicad_pcb
+            pcb: hardware/PCBs/central_hub/beehive.kicad_pcb
     boards/8-switch-array:
         summary: an array of 8 individually addresseable NPN transistors
         readme: README.md
         color: green
         site: https://github.com/isobianin/BeeHive
-        bom: hardware/8_switch_array/1-click-bom.csv
-        gerbers: boards/8_switch_array/gerber
+        bom: hardware/PCBs/8_switch_array/1-click-bom.csv
+        gerbers: boards/PCBs/8_switch_array/gerber
         eda:
             type: kicad
-            pcb: hardware/8_switch_array/8_switch_array.kicad_pcb
+            pcb: hardware/PCBs/8_switch_array/8_switch_array.kicad_pcb
     boards/hp-led-switch:
         summary:  A board to control high powered leds
         readme: README.md
         color: green
         site: https://github.com/isobianin/BeeHive
-        bom: hardware/hp_led_switch/1-click-bom.csv
-        gerbers: hardware/hp_led_switch/gerber
+        bom: hardware/PCBs/hp_led_switch/1-click-bom.csv
+        gerbers: hardware/PCBs/hp_led_switch/gerber
         eda:
             type: kicad
-            pcb: hardware/hp_led_switch/hp_led_switch.kicad_pcb
+            pcb: hardware/PCBs/hp_led_switch/hp_led_switch.kicad_pcb

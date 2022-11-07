@@ -1,0 +1,5 @@
+References,Qty,Description,Manufacturer,MPN,Manufacturer_1,MPN_2,Manufacturer_3,MPN_4,Manufacturer_5,MPN_6,Manufacturer_7,MPN_8,Digikey,Mouser,RS,Newark,Farnell
+J1;,1,2.1mm socket,Cliff,FC68148 DC10A,Lumberg,NEB 21 R,Cliff,FC68148,Gravitech,CON-SOCJ-2155,Parallax,452-00007,452-00007-ND,992CONSOCJ2155,5051609,08WX2563,224959
+J2; J3; J4; J5; J6; J7; J8; J9; J10;,9,CONN HEADER XH TOP 2POS 2.5MM,JST,B2B-XH-A (LF)(SN),,,,,,,,,455-2247-ND,,8201554P,73M9415,1516276
+R1;,1,Resistor 560 ohm 250mW through-hole,Stackpole Electronics,CF14JT270R,Yageo,MFR-25FBF52-220R,TE Connectivity,CFR16J270R,Ohmite,OD271JE,Kamaya,RC1/4271JB ,CF14JT270RCT-ND,791-RC1/4-271JB ,148360,95W5736,2329504
+D1,D2;,2,3mm LED any colour,Bivar Inc,ELM 5-065,492-2284-ND,,,,,,,,,,,
