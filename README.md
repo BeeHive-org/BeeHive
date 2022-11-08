@@ -70,3 +70,5 @@ On the software side of things we are initially running micropython, as this wil
 <img alt="PCB_8_switch_array.png" src="hardware/8_switch_array/8_switch_array_PCB.png" />
 
 ---
+
+test github
