@@ -5,7 +5,7 @@ from machine import Pin
 import time
 
 
-led2 = Pin(2,Pin.OUT)
+led2 = Pin(15,Pin.OUT)
 
 for i in range(10):
     print("LED on")
