@@ -42,31 +42,32 @@ On the software side of things we are initially running micropython, as this wil
 
 #### Schematics
 
-<img alt="beehive.png" src="hardware/central_hub/beehive.png" />
+<img alt="beehive.png" src="hardware/PCBs/central_hub/beehive.png" />
 
 #### PCB
 
-<img alt="beehive_PCB" src="hardware/central_hub/beehive_PCB.png" />
+<img alt="beehive_PCB" src="hardware/PCBs/central_hub/beehive_PCB.png" />
 
 ### The power supply module:
 
 #### Schematics
 
-<img alt="power_supply.png" src=hardware/power_supply/power_supply.png />
+<img alt="power_supply.png" src=hardware/PCBs/power_supply/power_supply.png />
 
 #### PCB
 
-<img alt="PCB_power_supply.png" src="hardware/power_supply/PCB_power_supply.png" />
+<img alt="PCB_power_supply.png" src="hardware/PCBs/power_supply/PCB_power_supply.png" />
 
 
 ### The transistor-switch hub for 8 devices:
 
 #### Schematics
 
-<img alt="8_switch_array.png" src="hardware/8_switch_array/8_switch_array.png" />
+<img alt="8_switch_array.png" src="hardware/PCBs/8_switch_array/8_switch_array.png" />
 
 #### PCB
 
-<img alt="PCB_8_switch_array.png" src="hardware/8_switch_array/8_switch_array_PCB.png" />
+<img alt="PCB_8_switch_array.png" src="hardware/PCBs/8_switch_array/8_switch_array_PCB.png" />
 
 ---
+
