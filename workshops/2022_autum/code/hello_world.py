@@ -1,17 +1,25 @@
-# hello world!
-# little script to blink an LED for the BeeHive course
-
-from machine import Pin
+import machine
 import time
 
+timer1 = 0
+timer2 = 0
 
-led2 = Pin(15,Pin.OUT)
+led1Pin = 15
+led2Pin = 2
+button1Pin = 16
+trials = 10
 
-for i in range(10):
-    print("LED on")
-    led2.on()
+button1 = machine.Pin(button1Pin,machine.Pin.IN)
+
+led1 = machine.Pin(led1Pin,machine.Pin.OUT)
+led2 = machine.Pin(led2Pin,machine.Pin.OUT)
+
+timer1 = time.ticks_ms()
+
+for attempt in range(trials):
+    print(button1.value())
     time.sleep_ms(1000)
-    print("LED off")
-    led2.off()
-    time.sleep_ms(1000)
-    
+
+timer2 = time.ticks_ms()
+
+print(timer2-timer1)

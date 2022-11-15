@@ -15,7 +15,9 @@ for i in range(trials):
     
     timer1 = time.ticks_ms()
     timer2 = time.ticks_ms()
-    
+    while button1.value()==1:
+        time.sleep_ms(500)
+
     while button1.value()==0:
         timer2 = time.ticks_ms()
     led1.value(0)
