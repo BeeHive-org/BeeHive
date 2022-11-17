@@ -2,7 +2,7 @@
 import machine
 import time
 
-led = machine.Pin(2, machine.Pin.OUT) # set to 2 for builtin LED in Wemos D1 mini pro
+#led = machine.Pin(2, machine.Pin.OUT) # set to 2 for builtin LED in Wemos D1 mini pro
 
 def main():
     uart = machine.UART(0)                         # init with given baudrate
@@ -11,18 +11,9 @@ def main():
     ticker1 = time.ticks_ms()
     ticker2 = time.ticks_ms()
     while ticker2-ticker1<10000:
-        ticker2 = time.ticks_ms()
-        if uart.any():
-            hostMsg = uart.readline()
-            if hostMsg is not None:
-                strMsg = str(hostMsg.decode('utf-8'))
-                uart.write(strMsg.strip('\r\n') + ' 2 plus 2 equals 4' + '\r\n')
-        
-        timeCheck = time.ticks_ms()
         if time.ticks_diff(timeCheck, ticker) > 1000:
             ticker = timeCheck
-            uart.write('ESP32 time: ' + str(timeCheck) + '\r\n')
-            led.value(not led.value()) # Toggle LED            
+            uart.write('mydata'\r\n')        
 
 # Run main loop
 #main()

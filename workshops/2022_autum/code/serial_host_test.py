@@ -12,15 +12,9 @@ try:
             msgFromEsp32 = esp32.readline()            
             #print('{:.3f}: [uart read] {}'.format(time.time(), msgFromEsp32.decode('utf-8').strip('\r\n')))
             print( msgFromEsp32.decode('utf-8').strip('\r\n'))
-     
-        timeCheck = time.time()
-        if timeCheck - timer > 3:
-            timer = timeCheck            
-            print('{:.3f}: [print] Asking esp32 2+2?'.format(time.time()))
-            esp32.write(b'2 + 2?\r\n')
         
         # Uncomment following line to reduce host CPU usage
-        # time.sleep(.1) 
+        time.sleep(.1) 
 
 except KeyboardInterrupt:
     print(' Ctrl+C was pressed')
