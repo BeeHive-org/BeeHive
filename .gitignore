@@ -7,22 +7,8 @@
 *passes.py
 *.kicad_pcb-bak
 *.sch-bak
-hardware/gas_sensor/fp-info-cache
-hardware/hum_temp_sensor/fp-info-cache
-hardware/peltier/fp-info-cache
-hardware/power_supply/power_supply-cache.lib
-hardware/hp_led_switch/fp-info-cache
-hardware/hp_led_switch/hp_led_switch-cache.lib
-hardware/4 switch array (ver 4)/fp-info-cache
-hardware/4 switch array (ver 4)/4_switch_array-cache.lib
-*.kicad_pcb-bak
-hardware/8 switch array (ver 2)/8_switch_array.kicad_pcb-bak
-*.kicad_pcb-bak
-hardware/archive/4 switch array (ver 3)/4_switch_array-cache.lib
-hardware/archive/4 switch array (ver 3)/fp-info-cache
-hardware/8 switch array (ver 2)/8_switch_array.kicad_pcb-bak
-hardware/peltier/peltier.kicad_pcb-bak
-hardware/peltier/peltier.kicad_pcb-bak
+*.fp-info-cache
+*.power_supply-cache.lib
 *.kicad_pcb-bak
 software/bonsai/*.bin
 software/bonsai/*.obj
