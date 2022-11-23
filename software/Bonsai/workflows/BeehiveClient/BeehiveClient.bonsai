@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.7.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:osc="clr-namespace:Bonsai.Osc;assembly=Bonsai.Osc"
+                 xmlns="https://bonsai-rx.org/2018/workflow">
+  <Workflow>
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="osc:CreateUdpClient">
+          <osc:Name>OscClient</osc:Name>
+          <osc:Port>9001</osc:Port>
+          <osc:RemoteHostName>192.168.1.71</osc:RemoteHostName>
+          <osc:RemotePort>0</osc:RemotePort>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="osc:CreateTcpClient">
+            <osc:Port>0</osc:Port>
+            <osc:NoDelay>false</osc:NoDelay>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="osc:ReceiveMessage">
+        <osc:Address>/digitalInput</osc:Address>
+        <osc:TypeTag>b</osc:TypeTag>
+        <osc:Connection>OscClient</osc:Connection>
+      </Expression>
+      <Expression xsi:type="Index">
+        <Operand xsi:type="IntProperty">
+          <Value>5</Value>
+        </Operand>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="2" To="3" Label="Source1" />
+    </Edges>
+  </Workflow>
+</WorkflowBuilder>
