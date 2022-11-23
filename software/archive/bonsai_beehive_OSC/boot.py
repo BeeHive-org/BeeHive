@@ -1,11 +1,4 @@
-import esp
-
-esp.osdebug(None)
 import network
-import machine
-
-# set cpu frequency to 240MHz
-machine.freq(240000000)
 
 # passes is a file that is not being tracked by github
 # as it contains network sensitive data, such as login
@@ -44,10 +37,10 @@ def do_connect():
 
 
 do_connect()
-import webrepl
+#import webrepl
 
-webrepl.start()
-print(webrepl)
+#webrepl.start()
+#print(webrepl)
 
 import main
 

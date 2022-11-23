@@ -38,35 +38,11 @@ def main():
     # pinOutNum = [0,1,2,3]
 
     # digital input
-    # p4 = Pin(27, Pin.IN) # currently beehive D4 is IO27
     p5 = Pin(14, Pin.IN)  # currently beehive D5 is IO14
-    # p6 = Pin(12, Pin.IN) # currently beehive D6 is IO12
-    # p7 = Pin(13, Pin.IN) # currently beehive D7 is IO13
 
     # index of pins set as input
     pinInList = [p5]  # [p4,p5,p6,p7]
     pinInIndex = [5]  # [4,5,6,7]
-
-    # Analog input
-
-    # although attenuation allows 3.6V to be the max range, 3.3V should be the MAX send to the board!!!
-    # adc0 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc0.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc1 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc1.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc2 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc2.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc3 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc3.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-
-    # index of pins set as analog
-    # pinsAnalogInList = [adc0,adc1,adc2,adc3]
-
-    # analog output (actually PWM):
-    # dac0 = 1
-    # dac1 = 2
-    # dac2 = 3
-    # dac4 = 4
 
     # create bundle
     b = Bundle()
@@ -107,12 +83,10 @@ def main():
         toc2 = time.ticks_us()
         print("sending took: " + str(toc2 - tic2) + " microseconds")
         x = 0
-        while (
-            stopTiming - startTiming < timePeriod * 1000
-        ):  # convert milliseconds in microseconds
+        while (stopTiming - startTiming < timePeriod * 1000):  # convert milliseconds in microseconds
             # read digital port
             stopTiming = time.ticks_us()
-        # time.sleep(0.001)
+        time.sleep(0.001)
 
     # analog input pins
     # for i in range(len(pinsAnalogInList)):
