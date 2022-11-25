@@ -11,7 +11,7 @@ multi:
             pcb: hardware/PCBs/central_hub/beehive.kicad_pcb
     boards/8-switch-array:
         summary: an array of 8 individually addresseable NPN transistors
-        readme: README.md
+        readme: hardware/PCBs/8_switch_array/readme.md
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/8_switch_array/1-click-bom.csv
