@@ -1,5 +1,5 @@
 multi:
-    boards/central-hub:
+    central-hub:
         summary: the central hub of BeeHive
         readme: README.md
         color: green
@@ -9,7 +9,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/central_hub/beehive.kicad_pcb
-    boards/8-switch-array:
+    8-switch-array:
         summary: an array of 8 individually addresseable NPN transistors
         readme: hardware/PCBs/8_switch_array/readme.md
         color: green
@@ -19,7 +19,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/8_switch_array/8_switch_array.kicad_pcb
-    boards/12_24_boost_converter:
+    12_24_boost_converter:
         summary: a 12V to 24V boost converter
         readme: README.md
         color: green
@@ -29,7 +29,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/12_24_boost_converter/12_24_boost_converter.kicad_pcb
-    boards/12V5A_breakout:
+    12V5A_breakout:
         summary: a breakout board to split a 12V 5A line into several cable connectors
         readme: README.md
         color: green
@@ -39,7 +39,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/12V5A_breakout/12V5A_breakout.kicad_pcb
-    boards/gas_sensor:
+    gas_sensor:
         summary: a board to house different types of gas_sensors
         readme: README.md
         color: green
@@ -49,7 +49,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/gas_sensor/gas_sensor.kicad_pcb
-    boards/grove_adaptor:
+    grove_adaptor:
         summary: an adaptor board to connect JST-XH plugs to Grove system plugs
         readme: README.md
         color: green
@@ -59,7 +59,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/grove_adaptor/grove_adaptor.kicad_pcb
-    boards/grove_adaptor_panel:
+    grove_adaptor_panel:
         summary: a panel of adaptor boards to connect JST-XH plugs to Grove system plugs
         readme: README.md
         color: green
@@ -69,7 +69,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/grove_adaptor_panel/grove_adaptor_panel.kicad_pcb
-    boards/hbridge_driver:
+    hbridge_driver:
         summary: An H-Bridge driver for peltiers, motors, linear actuators.
         readme: README.md
         color: green
@@ -79,7 +79,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/hbridge_driver/hbridge_driver.kicad_pcb    
-    boards/hp-led-switch:
+    hp-led-switch:
         summary:  A board to control high powered leds
         readme: README.md
         color: green
@@ -89,7 +89,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/hp_led_switch/hp_led_switch.kicad_pcb
-    boards/hum_temp_sensor:
+    hum_temp_sensor:
         summary:  A board porting temperature and humidity sensort
         readme: README.md
         color: green
@@ -99,8 +99,7 @@ multi:
         eda:
             type: kicad
             pcb: hardware/PCBs/hum_temp_sensor/hum_temp_sensor.kicad_pcb
-
-    boards/testing_board:
+    testing_board:
         summary:  A training board for users to practice programming
         readme: README.md
         color: green
