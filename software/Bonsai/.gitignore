@@ -1,4 +1,7 @@
 #bonsai setting up files
+bin
+obj
+Packages
 *.bin
 *.obj
 *.calibration
