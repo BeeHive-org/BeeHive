@@ -14,15 +14,4 @@
 hardware/*-backups
 
 
-#bonsai setting up files
-software/bonsai/*.bin
-software/bonsai/*.obj
-software/bonsai/*.calibration
-software/bonsai/*.displays*
-software/bonsai/*.images*
-software/bonsai/*.Packages
-software/bonsai/*.yml
-software/bonsai/*.exe
-software/bonsai/*.exe.settings
-
 
