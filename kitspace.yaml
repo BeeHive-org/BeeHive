@@ -1,41 +1,111 @@
 multi:
-    boards/central-hub:
+    central-hub:
         summary: the central hub of BeeHive
         readme: README.md
         color: green
-        site: https://github.com/isobianin/BeeHive
+        site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/central_hub/1-click-bom.csv
         gerbers: hardware/PCBs/central_hub/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/central_hub/beehive.kicad_pcb
-    boards/8-switch-array:
+    8-switch-array:
         summary: an array of 8 individually addresseable NPN transistors
-        readme: README.md
+        readme: hardware/PCBs/8_switch_array/readme.md
         color: green
-        site: https://github.com/isobianin/BeeHive
+        site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/8_switch_array/1-click-bom.csv
         gerbers: boards/PCBs/8_switch_array/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/8_switch_array/8_switch_array.kicad_pcb
-    boards/hp-led-switch:
+    12_24_boost_converter:
+        summary: a 12V to 24V boost converter
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/12_24_boost_converter/1-click-bom.csv
+        gerbers: boards/PCBs/12_24_boost_converter/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/12_24_boost_converter/12_24_boost_converter.kicad_pcb
+    12V5A_breakout:
+        summary: a breakout board to split a 12V 5A line into several cable connectors
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/12V5A_breakout/1-click-bom.csv
+        gerbers: boards/PCBs/12V5A_breakout/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/12V5A_breakout/12V5A_breakout.kicad_pcb
+    gas_sensor:
+        summary: a board to house different types of gas_sensors
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/gas_sensor/1-click-bom.csv
+        gerbers: boards/PCBs/gas_sensor/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/gas_sensor/gas_sensor.kicad_pcb
+    grove_adaptor:
+        summary: an adaptor board to connect JST-XH plugs to Grove system plugs
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/grove_adaptor/1-click-bom.csv
+        gerbers: boards/PCBs/grove_adaptor/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/grove_adaptor/grove_adaptor.kicad_pcb
+    grove_adaptor_panel:
+        summary: a panel of adaptor boards to connect JST-XH plugs to Grove system plugs
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/grove_adaptor_panel/1-click-bom.csv
+        gerbers: boards/PCBs/grove_adaptor_panel/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/grove_adaptor_panel/grove_adaptor_panel.kicad_pcb
+    hbridge_driver:
+        summary: An H-Bridge driver for peltiers, motors, linear actuators.
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/hbridge_driver/1-click-bom.csv
+        gerbers: boards/PCBs/hbridge_driver/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/hbridge_driver/hbridge_driver.kicad_pcb    
+    hp-led-switch:
         summary:  A board to control high powered leds
         readme: README.md
         color: green
-        site: https://github.com/isobianin/BeeHive
+        site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/hp_led_switch/1-click-bom.csv
         gerbers: hardware/PCBs/hp_led_switch/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/hp_led_switch/hp_led_switch.kicad_pcb
-    boards/testing_board:
+    hum_temp_sensor:
+        summary:  A board porting temperature and humidity sensort
+        readme: README.md
+        color: green
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/hum_temp_sensor/1-click-bom.csv
+        gerbers: hardware/PCBs/hum_temp_sensor/gerber
+        eda:
+            type: kicad
+            pcb: hardware/PCBs/hum_temp_sensor/hum_temp_sensor.kicad_pcb
+    testing_board:
         summary:  A training board for users to practice programming
         readme: README.md
         color: green
-        site: https://github.com/isobianin/BeeHive
-        bom: hardware/PCBs/testing_board/1-click-bom.csv
-        gerbers: hardware/PCBs/testing_board/gerber
+        site: https://github.com/beeHive-org/beeHive
+        bom: hardware/PCBs/training_board/1-click-bom.csv
+        gerbers: hardware/PCBs/training_board/gerber
         eda:
             type: kicad
-            pcb: hardware/PCBs/testing_board/testing_board.kicad_pcb
+            pcb: hardware/PCBs/training_board/training_board.kicad_pcb

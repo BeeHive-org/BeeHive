@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "training_board-rescue")(type "Legacy")(uri "${KIPRJMOD}/training_board-rescue.lib")(options "")(descr ""))
+)
