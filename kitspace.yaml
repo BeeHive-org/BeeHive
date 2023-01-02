@@ -15,7 +15,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/8_switch_array/1-click-bom.csv
-        gerbers: boards/PCBs/8_switch_array/gerber
+        gerbers: hardware/PCBs/8_switch_array/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/8_switch_array/8_switch_array.kicad_pcb
@@ -25,7 +25,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/12_24_boost_converter/1-click-bom.csv
-        gerbers: boards/PCBs/12_24_boost_converter/gerber
+        gerbers: hardware/PCBs/12_24_boost_converter/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/12_24_boost_converter/12_24_boost_converter.kicad_pcb
@@ -35,7 +35,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/12V5A_breakout/1-click-bom.csv
-        gerbers: boards/PCBs/12V5A_breakout/gerber
+        gerbers: hardware/PCBs/12V5A_breakout/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/12V5A_breakout/12V5A_breakout.kicad_pcb
@@ -45,7 +45,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/gas_sensor/1-click-bom.csv
-        gerbers: boards/PCBs/gas_sensor/gerber
+        gerbers: hardware/PCBs/gas_sensor/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/gas_sensor/gas_sensor.kicad_pcb
@@ -55,7 +55,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/grove_adaptor/1-click-bom.csv
-        gerbers: boards/PCBs/grove_adaptor/gerber
+        gerbers: hardware/PCBs/grove_adaptor/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/grove_adaptor/grove_adaptor.kicad_pcb
@@ -65,7 +65,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/grove_adaptor_panel/1-click-bom.csv
-        gerbers: boards/PCBs/grove_adaptor_panel/gerber
+        gerbers: hardware/PCBs/grove_adaptor_panel/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/grove_adaptor_panel/grove_adaptor_panel.kicad_pcb
@@ -75,7 +75,7 @@ multi:
         color: green
         site: https://github.com/beeHive-org/beeHive
         bom: hardware/PCBs/hbridge_driver/1-click-bom.csv
-        gerbers: boards/PCBs/hbridge_driver/gerber
+        gerbers: hardware/PCBs/hbridge_driver/gerber
         eda:
             type: kicad
             pcb: hardware/PCBs/hbridge_driver/hbridge_driver.kicad_pcb    
