@@ -2830,11 +2830,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIxIiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIisgR05EIiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjUiLCAiUGFkZGluZ0xlZnRDdHJsIjogIjUiLCAiUGFkZGluZ1JpZ2h0Q3RybCI6ICI1IiwgIlBhZGRpbmdUb3BDdHJsIjogIjUiLCAiV2lkdGhDdHJsIjogIjIifQ==")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-63064EFA" (at 0 -3.891492 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 38dcf1af-de48-4197-a927-f556a577b306)
     )
     (fp_text value "G***" (at 0 3.891492 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 9a90c66a-7d60-44d9-8111-87919ba45203)
     )
     (fp_poly (pts
@@ -2986,11 +2986,11 @@
     (attr through_hole)
     (fp_text reference "R3" (at 4.5 -3.25 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 9023ded7-5e38-4860-9e96-7f4aa14bfbc0)
+      (tstamp f699494a-77d6-4c73-bd50-29c1c1c5b879)
     )
     (fp_text value "47" (at 4.5 3.25 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 6100e00e-a10c-4220-8a81-fda419ec458b)
+      (tstamp 05d3e08e-e1f9-46cf-93d0-836d1306d03a)
     )
     (fp_text user "${REFERENCE}" (at 4.5 0 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3005,9 +3005,9 @@
     (fp_line (start -2.25 2.25) (end 11.25 2.25) (layer "F.CrtYd") (width 0.05) (tstamp 6ce1e7fb-de48-4656-8c11-ec8941657719))
     (fp_line (start 11.25 -2.25) (end -2.25 -2.25) (layer "F.CrtYd") (width 0.05) (tstamp e2bd79ff-68e4-44ce-b8af-0802e62c681c))
     (fp_line (start -2 2) (end 11 2) (layer "F.Fab") (width 0.1) (tstamp 6353d5b2-5b1c-400d-8204-bf7ccdb0b45b))
-    (fp_line (start -2 -2) (end -2 2) (layer "F.Fab") (width 0.1) (tstamp 89828fab-982a-4806-9f76-b6352eba8592))
+    (fp_line (start -2 -2) (end -2 2) (layer "F.Fab") (width 0.1) (tstamp 6bd46644-7209-4d4d-acd8-f4c0d045bc61))
     (fp_line (start 11 2) (end 11 -2) (layer "F.Fab") (width 0.1) (tstamp 95bbafef-d4dd-4a6f-948d-dc50e488e566))
-    (fp_line (start 11 -2) (end -2 -2) (layer "F.Fab") (width 0.1) (tstamp b785b49e-0b3f-4721-8858-42bc6802f4dd))
+    (fp_line (start 11 -2) (end -2 -2) (layer "F.Fab") (width 0.1) (tstamp befdfbe5-f3e5-423b-a34e-7bba3f218536))
     (pad "1" thru_hole circle (at 0 0 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 8 "Net-(Q1-Pad1)") (pintype "passive") (tstamp 213bfbe0-3448-45a7-b876-c23e5b13d65d))
     (pad "2" thru_hole circle (at 9 0 270) (size 2 2) (drill 1) (layers *.Cu *.Mask)
@@ -3026,11 +3026,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIxIiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogInNvbGVub2lkMlxyXG4iLCAiUGFkZGluZ0JvdHRvbUN0cmwiOiAiNSIsICJQYWRkaW5nTGVmdEN0cmwiOiAiNSIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjUiLCAiUGFkZGluZ1RvcEN0cmwiOiAiNSIsICJXaWR0aEN0cmwiOiAiMiJ9")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-63064E8E" (at 0 -3.93991 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 0be98f3e-b1de-48aa-bf2f-b705e6291adc)
     )
     (fp_text value "G***" (at 0 3.93991 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 3f36ae2b-271c-4042-baa2-71f36dd4a92c)
     )
     (fp_poly (pts
@@ -3410,11 +3410,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIxIiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogIisgR05EIiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjUiLCAiUGFkZGluZ0xlZnRDdHJsIjogIjUiLCAiUGFkZGluZ1JpZ2h0Q3RybCI6ICI1IiwgIlBhZGRpbmdUb3BDdHJsIjogIjUiLCAiV2lkdGhDdHJsIjogIjIifQ==")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-63065932" (at 0 -3.891492 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 8d37ec02-3ddb-49b2-843e-4e246582d967)
     )
     (fp_text value "G***" (at 0 3.891492 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp d0da5b90-2abc-4bcc-8fa4-a3ed6573dce8)
     )
     (fp_poly (pts
@@ -3628,11 +3628,11 @@
     (tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIxIiwgIkxheWVyQ29tYm9Cb3giOiAiRi5TaWxrUyIsICJNdWx0aUxpbmVUZXh0IjogInNvbGVub2lkMSIsICJQYWRkaW5nQm90dG9tQ3RybCI6ICI1IiwgIlBhZGRpbmdMZWZ0Q3RybCI6ICI1IiwgIlBhZGRpbmdSaWdodEN0cmwiOiAiNSIsICJQYWRkaW5nVG9wQ3RybCI6ICI1IiwgIldpZHRoQ3RybCI6ICIyIn0=")
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "kibuzzard-63063C94" (at 0 -3.93991 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp 3ea03728-7a77-4313-bf8a-27a007c9d6a6)
     )
     (fp_text value "G***" (at 0 3.93991 90) (layer "F.SilkS") hide
-      (effects (font (size 0 0)))
+      (effects (font (size 0 0) (thickness 0.15)))
       (tstamp bb6903ed-84a9-4c39-98ce-b2fbbf83ed6c)
     )
     (fp_poly (pts
@@ -3991,7 +3991,7 @@
   (gr_text "board by Andre M Chagas\nlicensed under\nCERN-OHL-S 2.0\nhttps://ohwr.org/project/cernohl" (at 139.7 124.714) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000061729add)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
-  (gr_text "Solenoid_driver\nv0.2\n" (at 138.4935 117.348) (layer "F.SilkS") (tstamp 5b34a16c-5a14-4291-8242-ea6d6ac54372)
+  (gr_text "Solenoid_driver\nv0.2\n" (at 139.75 119.75) (layer "F.SilkS") (tstamp 5b34a16c-5a14-4291-8242-ea6d6ac54372)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (dimension (type aligned) (layer "Eco1.User") (tstamp 00000000-0000-0000-0000-000060ce240a)
