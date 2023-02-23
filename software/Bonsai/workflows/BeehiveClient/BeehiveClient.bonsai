@@ -32,54 +32,78 @@
           <Value>5</Value>
         </Operand>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="osc:SendMessage">
-        <osc:Connection>OscClient</osc:Connection>
-        <osc:Address>/digitalOut1</osc:Address>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:SendMessage">
+          <osc:Connection>OscClient</osc:Connection>
+          <osc:Address>/digitalOut1</osc:Address>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="rx:Zip" />
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="rx:Zip" />
+        </Builder>
       </Expression>
-      <Expression xsi:type="osc:SendMessage">
-        <osc:Connection>OscClient</osc:Connection>
-        <osc:Address>/digitalOut</osc:Address>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:SendMessage">
+          <osc:Connection>OscClient</osc:Connection>
+          <osc:Address>/digitalOut</osc:Address>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="osc:Format">
-        <osc:Address>/Value</osc:Address>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:Format">
+          <osc:Address>/Value</osc:Address>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="osc:Format">
-        <osc:Address>/Port</osc:Address>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:Format">
+          <osc:Address>/Port</osc:Address>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="rx:Zip" />
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="rx:Zip" />
+        </Builder>
       </Expression>
-      <Expression xsi:type="osc:SendMessage">
-        <osc:Connection>OscClient</osc:Connection>
-        <osc:Address>/digitalOut</osc:Address>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:SendMessage">
+          <osc:Connection>OscClient</osc:Connection>
+          <osc:Address>/digitalOut</osc:Address>
+        </Builder>
       </Expression>
     </Nodes>
     <Edges>
