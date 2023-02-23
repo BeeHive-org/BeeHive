@@ -17,11 +17,13 @@ def main():
 
     # set variables for uosc client
     microsDelay = 20 * 1000  #  time delay in microseconds
+    bonsaiAddress = "192.168.137.255"
+    commPort = 9001
     digitalSend = "/digitalInput"
     digitalReceive = "/digitalOutput"
 
     # create osc client object
-    osc = Client(passes.OscComputerAddress, passes.commPort)
+    osc = Client(bonsaiAddress, commPort)
     # set Digital pins
 
     # Digital output
@@ -48,14 +50,15 @@ def main():
     # Analog input
 
     # although attenuation allows 3.6V to be the max range, 3.3V should be the MAX send to the board!!!
-    # adc0 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc0.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc1 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc1.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc2 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc2.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
-    # adc3 = machine.ADC(34) # currently beehive D7 is IO13
-    # adc3.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+#    adc0 = machine.ADC(34) # currently beehive D7 is IO13
+#    adc0.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+#    adc1 = machine.ADC(34) # currently beehive D7 is IO13
+#    adc1.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+#    adc2 = machine.ADC(34) # currently beehive D7 is IO13
+#    adc2.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+#    adc3 = machine.ADC(34) # currently beehive D7 is IO13
+#    adc3.atten(machine.ADC.ATTN_11DB)    # set 11dB input attenuation (voltage range roughly 0.0v - 3.6v)
+
 
     # index of pins set as analog
     # pinsAnalogInList = [adc0,adc1,adc2,adc3]
@@ -69,10 +72,6 @@ def main():
     # create bundle
     b = Bundle()
     # infinite loop
-    
-    temp = uarray.array("B", [10, 32, 10, 20, 10, 10])
-    msg = create_message(digitalSend, ("b", temp))
-    b.add(msg)
 
     while 1:
 
@@ -99,6 +98,9 @@ def main():
         # print("getting all dig in ports took: "+str(toc1-tic1)+ " microseconds" )
         # print(toc1-tic1)
         # temp = bytes(temp)
+        temp = uarray.array("B", [10, 32, 10, 20, 10, 10])
+        msg = create_message(digitalSend, ("b", temp))
+        b.add(msg)
         tic2 = time.ticks_us()
         osc.send(b)
         osc.close()
@@ -111,7 +113,7 @@ def main():
         ):  # convert milliseconds in microseconds
             # read digital port
             stopTiming = time.ticks_us()
-        time.sleep(0.01)
+        # time.sleep(0.001)
 
     # analog input pins
     # for i in range(len(pinsAnalogInList)):
