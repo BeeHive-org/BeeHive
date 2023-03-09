@@ -57,10 +57,10 @@ class ThreadedClient(threading.Thread):
         self.client.close()
 
     def send(self, addr, *args, **kw):
-        self._q.put((addr, args), timeout=kw.get("timeout", self.timeout))
+        self._q.put((addr, args), timeout=kw.get('timeout', self.timeout))
 
     def close(self, **kw):
-        timeout = kw.get("timeout", self.timeout)
+        timeout = kw.get('timeout', self.timeout)
         log.debug("Emptying send queue...")
 
         while True:

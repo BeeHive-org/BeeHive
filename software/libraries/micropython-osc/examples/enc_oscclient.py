@@ -1,13 +1,15 @@
 from machine import Pin
 from time import sleep_ms
+
+# https://github.com/SpotlightKid/micropython-stm-lib/tree/master/encoder
 from encoder import Encoder
 from uosc.client import Client
 
 
 UPDATE_DELAY = const(50)
-OSC_SERVER = "192.168.42.1"
+OSC_SERVER = '192.168.42.1'
 OSC_PORT = const(12101)
-OSC_TOPIC = "/midi"
+OSC_TOPIC = '/midi'
 MIDI_CC_ENC = const(7)
 MIDI_CC_SW = const(64)
 PIN_CLK = const(4)
@@ -25,13 +27,13 @@ def main():
     try:
         while True:
             if enc.value != oldval:
-                osc.send(OSC_TOPIC, ("m", (0, 0xB0, MIDI_CC_ENC, enc.value)))
+                osc.send(OSC_TOPIC, ('m', (0, 0xB0, MIDI_CC_ENC, enc.value)))
                 oldval = enc.value
 
             enc.cur_accel = max(0, enc.cur_accel - enc.accel)
 
             if sw() != oldsw:
-                osc.send(OSC_TOPIC, ("m", (0, 0xB0, MIDI_CC_SW, 0 if sw() else 127)))
+                osc.send(OSC_TOPIC, ('m', (0, 0xB0, MIDI_CC_SW, 0 if sw() else 127)))
                 oldsw = sw()
 
             sleep_ms(UPDATE_DELAY)
@@ -40,5 +42,5 @@ def main():
         print(exc)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

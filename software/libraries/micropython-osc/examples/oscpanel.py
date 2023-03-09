@@ -21,7 +21,7 @@ from uosc.threadedclient import ThreadedClient
 
 log = logging.getLogger("oscpanel")
 
-OSC_HOST = "192.168.42.151"
+OSC_HOST = '192.168.42.151'
 OSC_PORT = 12101
 NCOLS = 5
 NROWS = 7
@@ -31,19 +31,19 @@ YSPACING = 16
 BWIDTH = 184
 BHEIGHT = 80
 BCOLOR = 1.00, 1.00, 0.00
-BFONT = "DINAlternate-Bold"
+BFONT = 'DINAlternate-Bold'
 BFONTSIZE = 20
 BFONTCOLOR = 0.50, 0.00, 0.25
 
 ICONS = {
-    "osc_active": ui.Image.named("ionicons-social-rss-24"),
-    "osc_inactive": ui.Image.named("ionicons-social-rss-outline-24"),
+    'osc_active': ui.Image.named('ionicons-social-rss-24'),
+    'osc_inactive': ui.Image.named('ionicons-social-rss-outline-24'),
 }
 
 
 def contains(box, pos):
     # Touch coordinates are relative to view, which started the touch
-    return 0 <= pos[0] < box[2] and 0 <= pos[1] < box[3]
+    return (0 <= pos[0] < box[2] and 0 <= pos[1] < box[3])
 
 
 class OscButton(ui.View):
@@ -106,9 +106,10 @@ class OscPanelView(ui.View):
 
     def create_gui(self):
         self.btn_osc_activity = ui.ButtonItem(
-            image=ICONS["osc_inactive"], enabled=False
-        )
-        self.right_button_items = [self.btn_osc_activity]
+            image=ICONS['osc_inactive'], enabled=False)
+        self.right_button_items = [
+            self.btn_osc_activity
+        ]
         for y in range(NROWS):
             for x in range(NCOLS):
                 self.add_button(x, y, self.button_activated)
@@ -119,13 +120,13 @@ class OscPanelView(ui.View):
     def osc_active(self):
         if not self._osc_active:
             self._osc_active = True
-            self.btn_osc_activity.image = ICONS["osc_active"]
+            self.btn_osc_activity.image = ICONS['osc_active']
             ui.delay(self.osc_inactive, 0.1)
 
     def osc_inactive(self):
         if self._osc_active:
             self._osc_active = False
-            self.btn_osc_activity.image = ICONS["osc_inactive"]
+            self.btn_osc_activity.image = ICONS['osc_inactive']
 
     def button_activated(self, sender):
         self.osc_active()
@@ -134,23 +135,19 @@ class OscPanelView(ui.View):
         if sender.value != self.program:
             self.program = sender.value
             try:
-                self.client.send("/midi", ("m", (0, 0xC0, self.program, 0)))
+                self.client.send('/midi', ('m', (0, 0xC0, self.program, 0)))
             except Exception as exc:
                 import traceback
-
                 traceback.print_exc()
 
 
 def main(args=None):
-    logging.basicConfig(
-        level=logging.DEBUG if "-v" in args else logging.INFO,
-        format="%(levelname)s: %(message)s",
-    )
-    view = ui.load_view("oscpanel")
-    view.present("fullscreen")
+    logging.basicConfig(level=logging.DEBUG if '-v' in args else logging.INFO,
+                        format="%(levelname)s: %(message)s")
+    view = ui.load_view('oscpanel')
+    view.present('fullscreen')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     import sys
-
     sys.exit(main(sys.argv[1:]) or 0)
