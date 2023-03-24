@@ -37,6 +37,7 @@ beehive:
 /Analog_write
     /Port Value
     /PWM Value
+    /Timestamp
 
 belay: interator for step_trials, trials, sessions
     /<function name>
@@ -63,6 +64,7 @@ Pin(32, Pin.OUT)
        
 ### Naming convention:
 After a short discussion, naming should be given to the actual electronic function being deployed. That is, a function that turns a digital output on/off, should be called something that makes that explicit. The rationale here is that many different actions would map on to that (for instance, by turning a digital output port on, we can deliver water, turn on an led, tur on a sound, etc. so we have many to one mapping). To make it easier for users, what we can do is provide a table where all of this things are explicitly mapped:  
+Timestamps?
 
 |action|electronic equivalent|function name|example|observation|
 |--|--|--|--|--|
