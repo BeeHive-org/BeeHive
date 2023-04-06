@@ -14,33 +14,35 @@ machine.freq(240000000)
 # users should rename this file to "passes.py" and
 # add the login information for their local networks.
 
+wlanCurrent = 0
 
 import passes
 
 
 # connect to wifi and setup osc
 def do_connect():
+    global wlanCurrent
     networkID = passes.wifiID
     networkPass = passes.wifiPass
     # comment the two lines right above
     # uncomment the two lines right below
     # networkID = passes_template.wifiID
     # networkPass = passes_template.wifiPass
-    wlan = network.WLAN(network.STA_IF)
-    wlan.active(True)
-    if not wlan.isconnected():
+    wlanCurrent = network.WLAN(network.STA_IF)
+    wlanCurrent.active(True)
+    if not wlanCurrent.isconnected():
         print("connecting to network...")
-        wlan.connect(networkID, networkPass)
+        wlanCurrent.connect(networkID, networkPass)
 
-        while not wlan.isconnected():
+        while not wlanCurrent.isconnected():
             pass
             # print("notyet")
             # print(networkID)
             # print(networkPass)
             # wlan.connect(networkID, networkPass)
 
-    print("network config:", wlan.ifconfig())
-    return wlan
+    print("network config:", wlanCurrent.ifconfig())
+    return wlanCurrent
 
 
 do_connect()
@@ -50,6 +52,6 @@ do_connect()
 # webrepl.start()
 # print(webrepl)
 
-import main
+#import main
 
-main.main()
+#main.main()
