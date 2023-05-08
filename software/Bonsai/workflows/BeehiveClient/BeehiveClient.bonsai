@@ -30,25 +30,31 @@
           </Combinator>
         </Builder>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="osc:ReceiveMessage">
-          <osc:Address>/digitalInput</osc:Address>
-          <osc:TypeTag>b</osc:TypeTag>
-          <osc:Connection>OscClient</osc:Connection>
-        </Builder>
+      <Expression xsi:type="osc:ReceiveMessage">
+        <osc:Address />
+        <osc:Connection>OscReceive</osc:Connection>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Index">
-          <Operand xsi:type="IntProperty">
-            <Value>5</Value>
-          </Operand>
-        </Builder>
+      <Expression xsi:type="osc:ReceiveMessage">
+        <osc:Address>/foo</osc:Address>
+        <osc:TypeTag>s</osc:TypeTag>
+        <osc:Connection>OscReceive</osc:Connection>
+      </Expression>
+      <Expression xsi:type="osc:ReceiveMessage">
+        <osc:Address>/digitalInput</osc:Address>
+        <osc:TypeTag>b</osc:TypeTag>
+        <osc:Connection>OscReceive</osc:Connection>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
-          <Combinator xsi:type="IntProperty">
-            <Value>10</Value>
+          <Combinator xsi:type="StringProperty">
+            <Value>Pin(13,Pin.OUT).value(0)</Value>
           </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="osc:SendMessage">
+          <osc:Connection>OscSend</osc:Connection>
+          <osc:Address>/eval</osc:Address>
         </Builder>
       </Expression>
       <Expression xsi:type="Disable">
@@ -60,38 +66,27 @@
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>13</Value>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="IntProperty">
+            <Value>0</Value>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
           <Combinator xsi:type="rx:CombineLatest" />
         </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="osc:SendMessage">
           <osc:Connection>OscSend</osc:Connection>
-          <osc:Address>/Pin</osc:Address>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="IntProperty">
-            <Value>0</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="IntProperty">
-            <Value>0</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:Zip" />
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="osc:SendMessage">
-          <osc:Connection>OscClient</osc:Connection>
-          <osc:Address>/digitalOut</osc:Address>
+          <osc:Address>/coustumFunction</osc:Address>
         </Builder>
       </Expression>
       <Expression xsi:type="Disable">
@@ -125,94 +120,22 @@
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="osc:SendMessage">
-          <osc:Connection>OscClient</osc:Connection>
+          <osc:Connection>OscSend</osc:Connection>
           <osc:Address>/digitalOut</osc:Address>
         </Builder>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="StringProperty">
-            <Value>Pin(13,Pin.OUT).value(0)</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="osc:SendMessage">
-          <osc:Connection>OscSend</osc:Connection>
-          <osc:Address>/coustumEasyPinFunction</osc:Address>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="StringProperty">
-            <Value>Pin.OUT</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="IntProperty">
-            <Value>13</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="IntProperty">
-            <Value>1</Value>
-          </Combinator>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:CombineLatest" />
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="osc:SendMessage">
-          <osc:Connection>OscSend</osc:Connection>
-          <osc:Address>/coustumEasyPinFunction</osc:Address>
-        </Builder>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="StringProperty">
-          <Value>Pin.OUT</Value>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>13</Value>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="rx:CombineLatest" />
-      </Expression>
-      <Expression xsi:type="osc:SendMessage">
-        <osc:Connection>OscSend</osc:Connection>
-        <osc:Address>/Pin</osc:Address>
-      </Expression>
     </Nodes>
     <Edges>
-      <Edge From="3" To="4" Label="Source1" />
-      <Edge From="5" To="7" Label="Source1" />
-      <Edge From="6" To="7" Label="Source2" />
-      <Edge From="7" To="8" Label="Source1" />
+      <Edge From="6" To="7" Label="Source1" />
+      <Edge From="8" To="11" Label="Source2" />
       <Edge From="9" To="11" Label="Source1" />
-      <Edge From="10" To="11" Label="Source2" />
+      <Edge From="10" To="11" Label="Source3" />
       <Edge From="11" To="12" Label="Source1" />
       <Edge From="13" To="14" Label="Source1" />
       <Edge From="14" To="17" Label="Source1" />
       <Edge From="15" To="16" Label="Source1" />
       <Edge From="16" To="17" Label="Source2" />
       <Edge From="17" To="18" Label="Source1" />
-      <Edge From="19" To="20" Label="Source1" />
-      <Edge From="21" To="24" Label="Source2" />
-      <Edge From="22" To="24" Label="Source1" />
-      <Edge From="23" To="24" Label="Source3" />
-      <Edge From="24" To="25" Label="Source1" />
-      <Edge From="26" To="28" Label="Source2" />
-      <Edge From="27" To="28" Label="Source1" />
-      <Edge From="28" To="29" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
