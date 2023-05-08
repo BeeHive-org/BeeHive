@@ -4,6 +4,12 @@
 # Example 2
 # /function_name argv argc
 # call function_name(argv,argc)
+
+# (ToDo) Example 3
+# Send the return value back to bonsai as a OSC message.
+
+
+
 import network
 
 try:
