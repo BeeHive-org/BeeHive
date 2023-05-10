@@ -5,10 +5,28 @@
 *.micropythonrc
 #ignore file with passwords
 *passes.py
-#hardware related files
+
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+**/fp-info-cache
 *.kicad_pcb-bak
 *.sch-bak
-**/fp-info-cache
+
 *.power_supply-cache.lib
 *.kicad_pcb-bak
 hardware/*-backups
