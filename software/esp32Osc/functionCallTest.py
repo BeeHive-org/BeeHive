@@ -38,6 +38,32 @@ def coustumFunction(pinNumber,pinMode,value):
     mypin.value(value)
     return
 
+def definePin(pinNumber,pinMode):
+    mypin = Pin(pinNumber,pinMode)
+    return mypin
+
+def digitalWrite(mypin, value):
+    mypin.value(value)
+    return
+
+def digitalRead(mypin):
+    return mypin.value()
+
+def analogRead(mypin):
+    #check if there is a way to check if an assigned pin is capable of analog read
+    pass
+
+def analogWrite(mypin):
+    #check if there is a way to check if an assigned pin is capable of analog write
+    pass
+
+# def pwm write
+
+
+
+
+
+
 def dispatch (timetag, message):
     #Pin(13,Pin.OUT).value(0)
     print(timetag)
