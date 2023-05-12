@@ -45,7 +45,7 @@ def do_connect():
     return wlanCurrent
 
 
-do_connect()
+
 
 # import webrepl
 
