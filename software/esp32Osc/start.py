@@ -1,4 +1,4 @@
-import manualboot as mb
+import manualBoot as mb
 import functionCallTest as fct
 
 mb.do_connect()
