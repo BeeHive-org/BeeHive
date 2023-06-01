@@ -22,7 +22,7 @@ Analog:
 - (TODO) Send/receive servers Examples for all types of data (Bundle,float,int, bool, string,char)
 - (TODO) Collect Useful functions from past projecs in upython for beeHive and some groove.
 - OSC messages call functions with same name as the message
-- (TODO) Return values is a message called Return
+- Return values is a message called Return
 - Functions are defined in uPython
 - Write a automatic message Handler -> Function call -> Return value -> OSC Message
 - (TODO) Timestamps

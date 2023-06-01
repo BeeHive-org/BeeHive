@@ -28,7 +28,7 @@ def Sending():
     b = Bundle()
     # infinite loop
     
-    temp = uarray.array("B", [10, 32, 10, 20, 10, 10]) # B for unsignet char
+    temp = uarray.array("B", [10, 32, 10, 20, 10, 10]) # B for unsigner char
     msg = create_message(digitalSend, ("b", temp)) #b for bytearray
         
     b.add(msg)

@@ -34,10 +34,13 @@
         <osc:Address />
         <osc:Connection>OscReceive</osc:Connection>
       </Expression>
-      <Expression xsi:type="osc:ReceiveMessage">
+      <Expression xsi:type="osc:Parse">
         <osc:Address>/foo</osc:Address>
         <osc:TypeTag>s</osc:TypeTag>
-        <osc:Connection>OscReceive</osc:Connection>
+      </Expression>
+      <Expression xsi:type="osc:Parse">
+        <osc:Address>/typemashup</osc:Address>
+        <osc:TypeTag>ifs</osc:TypeTag>
       </Expression>
       <Expression xsi:type="osc:ReceiveMessage">
         <osc:Address>/digitalInput</osc:Address>
@@ -124,18 +127,60 @@
           <osc:Address>/digitalOut</osc:Address>
         </Builder>
       </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="StringProperty">
+          <Value>Pin.IN</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="IntProperty">
+          <Value>1</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:CombineLatest" />
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/definePin</osc:Address>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="StringProperty">
+          <Value>Pin(1)</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/digitalRead</osc:Address>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="IntProperty">
+          <Value>1</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/digitalRead2</osc:Address>
+      </Expression>
     </Nodes>
     <Edges>
-      <Edge From="6" To="7" Label="Source1" />
-      <Edge From="8" To="11" Label="Source2" />
-      <Edge From="9" To="11" Label="Source1" />
-      <Edge From="10" To="11" Label="Source3" />
-      <Edge From="11" To="12" Label="Source1" />
-      <Edge From="13" To="14" Label="Source1" />
-      <Edge From="14" To="17" Label="Source1" />
-      <Edge From="15" To="16" Label="Source1" />
-      <Edge From="16" To="17" Label="Source2" />
-      <Edge From="17" To="18" Label="Source1" />
+      <Edge From="3" To="4" Label="Source1" />
+      <Edge From="3" To="5" Label="Source1" />
+      <Edge From="7" To="8" Label="Source1" />
+      <Edge From="9" To="12" Label="Source2" />
+      <Edge From="10" To="12" Label="Source1" />
+      <Edge From="11" To="12" Label="Source3" />
+      <Edge From="12" To="13" Label="Source1" />
+      <Edge From="14" To="15" Label="Source1" />
+      <Edge From="15" To="18" Label="Source1" />
+      <Edge From="16" To="17" Label="Source1" />
+      <Edge From="17" To="18" Label="Source2" />
+      <Edge From="18" To="19" Label="Source1" />
+      <Edge From="20" To="22" Label="Source2" />
+      <Edge From="21" To="22" Label="Source1" />
+      <Edge From="22" To="23" Label="Source1" />
+      <Edge From="24" To="25" Label="Source1" />
+      <Edge From="26" To="27" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
