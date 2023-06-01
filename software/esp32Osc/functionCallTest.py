@@ -25,6 +25,8 @@ except ImportError:
     
 from uosc.server import handle_osc
 from machine import Pin
+from uosc.client import Bundle, Client, create_message
+import passes
     
 log = logging.getLogger("uosc.minimal_server")
 #DEFAULT_ADDRESS = '10.20.23.46'
@@ -32,6 +34,8 @@ log = logging.getLogger("uosc.minimal_server")
 DEFAULT_ADDRESS = network.WLAN().ifconfig()[0]
 DEFAULT_PORT = 9001
 MAX_DGRAM_SIZE = 1472
+osc = Client(passes.OscComputerAddress, passes.commPort)
+
 
 def coustumFunction(pinNumber,pinMode,value):
     mypin = Pin(pinNumber,pinMode)
@@ -49,6 +53,10 @@ def digitalWrite(mypin, value):
 def digitalRead(mypin):
     return mypin.value()
 
+def digitalRead2(pinNumber):
+    mypin = Pin(pinNumber)
+    return mypin.value()
+
 def analogRead(mypin):
     #check if there is a way to check if an assigned pin is capable of analog read
     pass
@@ -59,11 +67,6 @@ def analogWrite(mypin):
 
 # def pwm write
 
-
-
-
-
-
 def dispatch (timetag, message):
     #Pin(13,Pin.OUT).value(0)
     print(timetag)
@@ -71,6 +74,18 @@ def dispatch (timetag, message):
     if (message[0] == '/eval'):
         eval(message[2][0])
     #  send back return value of eval
+    elif (message[0] == '/definePin'):
+        test = definePin(message[2][0],eval(message[2][1]))
+        print(test)
+        osc.send('/definePin/return', repr(test))
+    elif (message[0] == '/digitalRead'):
+        test = digitalRead(eval(message[2][0]))
+        print(test)
+        osc.send('/digitalRead/return', test)
+    elif (message[0] == '/digitalRead2'):
+        test = digitalRead2(message[2][0])
+        print(test)
+        osc.send('/digitalRead2/return', test)
     elif (message[0] == '/coustumFunction'):
         coustumFunction(message[2][0],eval(message[2][1]), message[2][2])
     # send back return value of mycoustum funtion.
@@ -85,6 +100,11 @@ def run_server(saddr = DEFAULT_ADDRESS, port = DEFAULT_PORT, handler=handle_osc)
     ai = socket.getaddrinfo(saddr, port)[0]
     sock.bind(ai[-1])
     log.info("Listening for OSC messages on %s:%i.", saddr, port)
+    
+    #osc = Client(passes.OscComputerAddress, passes.commPort)
+    osc.send('/Server', "Start")
+    # osc.send('/Interface/coustumFunction',,,) # send interface to bonsai
+    # osc.send('/Server/Address',saddr,port) #see if this is usefull or redundant
 
     try:
         while True:

@@ -124,6 +124,41 @@
           <osc:Address>/digitalOut</osc:Address>
         </Builder>
       </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="StringProperty">
+          <Value>Pin.IN</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="IntProperty">
+          <Value>1</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:CombineLatest" />
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/definePin</osc:Address>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="StringProperty">
+          <Value>Pin(1)</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/digitalRead</osc:Address>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="IntProperty">
+          <Value>1</Value>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="osc:SendMessage">
+        <osc:Connection>OscSend</osc:Connection>
+        <osc:Address>/digitalRead2</osc:Address>
+      </Expression>
     </Nodes>
     <Edges>
       <Edge From="6" To="7" Label="Source1" />
@@ -136,6 +171,11 @@
       <Edge From="15" To="16" Label="Source1" />
       <Edge From="16" To="17" Label="Source2" />
       <Edge From="17" To="18" Label="Source1" />
+      <Edge From="19" To="21" Label="Source2" />
+      <Edge From="20" To="21" Label="Source1" />
+      <Edge From="21" To="22" Label="Source1" />
+      <Edge From="23" To="24" Label="Source1" />
+      <Edge From="25" To="26" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
