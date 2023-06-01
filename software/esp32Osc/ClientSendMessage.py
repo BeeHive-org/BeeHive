@@ -11,7 +11,7 @@ import uarray
 def Sending():
     print("Ola")
     osc = Client(passes.OscComputerAddress, passes.commPort)
-    osc.send('/controls/frobnicator', 42, 3.1419, "spamm")
+    osc.send('/typemashup', 42, 3.1419, "spamm")
     b = Bundle()
     b.add(create_message("/spamm", 12345))
     bar = "Ola"

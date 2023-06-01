@@ -5,10 +5,15 @@
 # /function_name argv argc
 # call function_name(argv,argc)
 
-# (ToDo) Example 3
+# Example 3
 # Send the return value back to bonsai as a OSC message.
 
+# Example 4
+# Reactive Callback
+# ex: Sample all analog countinuasly while receiving messages.
 
+# Example 5
+# use OSC timestamps in previous examples.
 
 import network
 
