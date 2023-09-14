@@ -12,7 +12,9 @@ The idea here is to make a very flexible hardware system that is easy to expand/
 - a hub PCB - which contains:
    -  2 voltage regulators that step down voltage from 12V to 5V and supply these 3 voltages to specific pins throughout the board.
    -  a central slot for an [ESP32 WROOM](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf) and the breakout of all its pins into JST connectors.
-
+   - Two Mikroe MikroBus connectors (https://www.mikroe.com/mikrobus).
+   - Two Sparkfun Qwiic connectore (https://www.sparkfun.com/qwiic).
+   - A 3.3V onboard voltage regulator.
 
 -  4 switch array with an [TPIC6B595 shift register](https://www.ti.com/lit/ds/symlink/tpic6b595.pdf) and transistors.
 
