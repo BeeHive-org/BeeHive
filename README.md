@@ -42,11 +42,11 @@ On the software side of things we are initially running micropython, as this wil
 
 #### Schematics
 
-<img alt="beehive.png" src="hardware/PCBs/central_hub/beehive.png" />
+<img alt="beehive.png" src="hardware/PCBs/central_hub_v2_MIKROBUS/schematic.png" />
 
 #### PCB
 
-<img alt="beehive_PCB" src="hardware/PCBs/central_hub/beehive_PCB.png" />
+<img alt="beehive_PCB" src="hardware/PCBs/central_hub_v2_MIKROBUS/pcb.png" />
 
 ### The power supply module:
 
