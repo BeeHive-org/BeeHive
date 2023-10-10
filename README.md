@@ -12,7 +12,9 @@ The idea here is to make a very flexible hardware system that is easy to expand/
 - a hub PCB - which contains:
    -  2 voltage regulators that step down voltage from 12V to 5V and supply these 3 voltages to specific pins throughout the board.
    -  a central slot for an [ESP32 WROOM](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf) and the breakout of all its pins into JST connectors.
-
+   - Two Mikroe MikroBus connectors (https://www.mikroe.com/mikrobus).
+   - Two Sparkfun Qwiic connectore (https://www.sparkfun.com/qwiic).
+   - A 3.3V onboard voltage regulator.
 
 -  4 switch array with an [TPIC6B595 shift register](https://www.ti.com/lit/ds/symlink/tpic6b595.pdf) and transistors.
 
@@ -42,11 +44,11 @@ On the software side of things we are initially running micropython, as this wil
 
 #### Schematics
 
-<img alt="beehive.png" src="hardware/PCBs/central_hub/beehive.png" />
+<img alt="beehive.png" src="hardware/PCBs/central_hub_v2_MIKROBUS/schematic.png" />
 
 #### PCB
 
-<img alt="beehive_PCB" src="hardware/PCBs/central_hub/beehive_PCB.png" />
+<img alt="beehive_PCB" src="hardware/PCBs/central_hub_v2_MIKROBUS/pcb.png" />
 
 ### The power supply module:
 
