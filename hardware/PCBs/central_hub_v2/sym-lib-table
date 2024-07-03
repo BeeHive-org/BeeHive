@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name flypi_v2-cache)(type Legacy)(uri ${KIPRJMOD}/flypi_v2-cache.lib)(options "")(descr ""))
-  (lib (name beehive-rescue)(type Legacy)(uri ${KIPRJMOD}/beehive-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "flypi_v2-cache")(type "Legacy")(uri "${KIPRJMOD}/flypi_v2-cache.lib")(options "")(descr ""))
+  (lib (name "beehive-rescue")(type "KiCad")(uri "${KIPRJMOD}/beehive-rescue.kicad_sym")(options "")(descr ""))
 )
