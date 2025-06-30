@@ -5,7 +5,7 @@
    viewBox="0 0 3203.21 1800"
    version="1.1"
    sodipodi:docname="Beehive figure_Sina.svg"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    width="3203.21"
    height="1800"
    inkscape:export-filename="Beehive figure_Sina.png"
@@ -24,16 +24,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.80232018"
-     inkscape:cx="2510.843"
-     inkscape:cy="491.69896"
+     inkscape:zoom="1.4629739"
+     inkscape:cx="2882.8266"
+     inkscape:cy="341.42783"
      inkscape:window-width="1920"
-     inkscape:window-height="1011"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1"
-     inkscape:export-bgcolor="#ffffffff" />
+     inkscape:export-bgcolor="#ffffffff"
+     showgrid="false" />
   <defs
      id="defs1">
     <marker
@@ -53,25 +54,6 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:none"
          d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
          id="path314" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Triangle"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Triangle arrow"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135" />
     </marker>
     <marker
        style="overflow:visible"
@@ -308,24 +290,6 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:none"
          d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
          id="path3-4" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="ArrowWideHeavy-52"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Wide, heavy arrow"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
-         id="path3-2" />
     </marker>
     <marker
        style="overflow:visible"
@@ -2265,10 +2229,10 @@
   <text
      class="cls-2"
      id="text295"
-     x="2522.4849"
-     y="824.75629"><tspan
-       x="2522.4849"
-       y="824.75629"
+     x="2520.1033"
+     y="626.90106"><tspan
+       x="2520.1033"
+       y="626.90106"
        id="tspan295">Stimulus timing</tspan></text>
   <text
      class="cls-2"
@@ -2329,6 +2293,26 @@
        x="1824.0873"
        y="364.67786"
        id="tspan298-0">Solenoids</tspan></text>
+  <text
+     class="cls-2"
+     id="text298-5-3"
+     x="2294.7646"
+     y="609.45709"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"><tspan
+       x="2294.7646"
+       y="609.45709"
+       id="tspan298-0-6"
+       style="fill:#026b17;fill-opacity:1">Digital</tspan></text>
+  <text
+     class="cls-2"
+     id="text298-5-3-7"
+     x="2124.8901"
+     y="1015.6719"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"><tspan
+       x="2124.8901"
+       y="1015.6719"
+       id="tspan298-0-6-9"
+       style="fill:#026b17;fill-opacity:1">Analog</tspan></text>
   <text
      class="cls-2"
      id="text299"
@@ -2480,19 +2464,6 @@
        style="fill:none;stroke:#3f49ff;stroke-width:4.56428;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#ArrowWideHeavy-5-5)" />
   </g>
   <g
-     id="g308-7"
-     transform="matrix(0.78641515,0,0,1,2123.5383,90.705)"
-     style="stroke-width:7.89355;stroke-dasharray:none">
-    <line
-       class="cls-8"
-       x1="491.13681"
-       y1="678.76227"
-       x2="827.46692"
-       y2="678.76227"
-       id="line308-0"
-       style="fill:none;stroke:#3f49ff;stroke-width:7.89355;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#ArrowWideHeavy-52)" />
-  </g>
-  <g
      id="g309"
      style="stroke-width:7;stroke-dasharray:none"
      transform="matrix(1,0,0,0.67722257,144,-108.56238)">
@@ -2523,6 +2494,26 @@
        x="2303.72"
        y="1081.34"
        id="tspan313">Lick time (side)</tspan></text>
+  <text
+     class="cls-2"
+     id="text298-5-3-7-2"
+     x="2576.2136"
+     y="742.24017"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"><tspan
+       x="2576.2136"
+       y="742.24017"
+       id="tspan298-0-6-9-3"
+       style="fill:#026b17;fill-opacity:1">Digital</tspan></text>
+  <text
+     class="cls-2"
+     id="text298-5-3-7-2-7"
+     x="2943.8394"
+     y="591.55725"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"><tspan
+       x="2943.8394"
+       y="591.55725"
+       id="tspan298-0-6-9-3-5"
+       style="fill:#026b17;fill-opacity:1">USB</tspan></text>
   <line
      class="cls-22"
      x1="-1281.7"
@@ -5156,4 +5147,26 @@
      style="fill:#3f49ff;fill-opacity:1;stroke:#3d47ff;stroke-width:7;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker314-7)"
      d="m 2935.1058,623.31489 v -76.50344 0"
      id="path326-5" />
+  <text
+     class="cls-2"
+     id="text298-5-3-0"
+     x="1640.7335"
+     y="1116.0061"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"
+     transform="rotate(-10.940501)"><tspan
+       x="1640.7335"
+       y="1116.0061"
+       id="tspan298-0-6-6"
+       style="fill:#026b17;fill-opacity:1">Digital</tspan></text>
+  <text
+     class="cls-2"
+     id="text298-5-3-0-2"
+     x="1625.9567"
+     y="1222.5448"
+     style="font-size:45.9px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1"
+     transform="rotate(-9.6999618)"><tspan
+       x="1625.9567"
+       y="1222.5448"
+       id="tspan298-0-6-6-6"
+       style="fill:#026b17;fill-opacity:1">Digital(PWM)</tspan></text>
 </svg>
