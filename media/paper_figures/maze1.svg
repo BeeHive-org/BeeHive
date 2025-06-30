@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="407.9946mm"
+   height="303.76651mm"
+   viewBox="0 0 407.9946 303.76651"
+   version="1.1"
+   id="svg4129"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="maze1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4131"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.67341597"
+     inkscape:cx="692.73677"
+     inkscape:cy="431.3827"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4126">
+    <marker
+       style="overflow:visible"
+       id="marker314"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, heavy arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path314" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker314-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, heavy arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path314-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker314-5-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, heavy arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path314-3-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker314-5-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, heavy arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path314-3-3" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(196.85965,92.770646)">
+    <text
+       class="cls-2"
+       id="text296-3"
+       x="108.46202"
+       y="182.65808"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1444px;font-family:ArialMT, Arial;-inkscape-font-specification:'ArialMT, Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"><tspan
+         sodipodi:role="line"
+         id="tspan314"
+         x="108.46202"
+         y="182.65808"
+         style="stroke-width:0.264583">Beehive MB</tspan></text>
+    <text
+       class="cls-2"
+       id="text298-5-3-7-2-7"
+       x="135.85497"
+       y="-10.249249"
+       style="font-size:12.1444px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1;stroke-width:0.264583"
+       transform="rotate(56.060255)"><tspan
+         x="135.85497"
+         y="-10.249249"
+         id="tspan298-0-6-9-3-5"
+         style="fill:#026b17;fill-opacity:1;stroke-width:0.264583">I²C</tspan></text>
+    <text
+       class="cls-2"
+       id="text298-5-3-7-2-7-9"
+       x="171.02194"
+       y="116.65783"
+       style="font-size:12.1444px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1;stroke-width:0.264583"
+       transform="rotate(0.65573121)"><tspan
+         sodipodi:role="line"
+         id="tspan13941"
+         x="171.02194"
+         y="116.65783"><tspan
+           x="171.02194"
+           y="116.65783"
+           id="tspan298-0-6-9-3-5-2"
+           style="fill:#026b17;fill-opacity:1;stroke-width:0.264583">Digital</tspan></tspan><tspan
+         sodipodi:role="line"
+         id="tspan13943"
+         x="171.02194"
+         y="131.83833" /></text>
+    <text
+       class="cls-2"
+       id="text298-5-3-7-2-7-9-3"
+       x="174.03989"
+       y="-2.8577092"
+       style="font-size:12.1444px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1;stroke-width:0.264583"
+       transform="rotate(0.65573121)"><tspan
+         sodipodi:role="line"
+         id="tspan13943-0"
+         x="174.03989"
+         y="-2.8577092">Analog</tspan></text>
+    <text
+       class="cls-2"
+       id="text298-5-3-7-2-7-9-3-6"
+       x="-77.779404"
+       y="62.017872"
+       style="font-size:12.1444px;font-family:ArialMT, Arial;fill:#026b17;fill-opacity:1;stroke-width:0.264583"
+       transform="rotate(0.65573121)"><tspan
+         sodipodi:role="line"
+         id="tspan13941-6-3"
+         x="-77.779404"
+         y="62.017872"><tspan
+           x="-77.779404"
+           y="62.017872"
+           id="tspan298-0-6-9-3-5-2-1-2"
+           style="fill:#026b17;fill-opacity:1;stroke-width:0.264583">Digital</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="-77.779404"
+         y="77.198372"
+         id="tspan14427-0">(PWM)</tspan><tspan
+         sodipodi:role="line"
+         id="tspan13943-0-6"
+         x="-77.779404"
+         y="92.378868" /></text>
+    <rect
+       class="cls-28"
+       x="88.083519"
+       y="146.96002"
+       width="106.47789"
+       height="62.845219"
+       rx="1.1347555"
+       ry="0.85795522"
+       id="rect304"
+       style="fill:none;stroke:#7f0017;stroke-width:2.38125;stroke-miterlimit:10;stroke-dasharray:none" />
+    <g
+       id="g326"
+       transform="matrix(0.26458333,0,0,0.26458333,-469.21521,-120.29181)">
+      <g
+         id="g14120">
+        <text
+           class="cls-2"
+           id="text296-3-7"
+           x="2114.0154"
+           y="694.67706"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.9px;font-family:ArialMT, Arial;-inkscape-font-specification:'ArialMT, Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+             sodipodi:role="line"
+             id="tspan314-6"
+             x="2114.0154"
+             y="694.67706">Infrared sensor DB</tspan></text>
+        <rect
+           class="cls-28"
+           x="2106.3259"
+           y="559.47516"
+           width="402.43613"
+           height="237.52524"
+           rx="4.2888398"
+           ry="3.2426655"
+           id="rect304-0"
+           style="fill:none;stroke:#7f0017;stroke-width:9;stroke-miterlimit:10;stroke-dasharray:none" />
+      </g>
+      <g
+         id="g14312">
+        <text
+           class="cls-2"
+           id="text296-3-7-2"
+           x="2126.9175"
+           y="239.14684"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.9px;font-family:ArialMT, Arial;-inkscape-font-specification:'ArialMT, Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+             sodipodi:role="line"
+             id="tspan314-6-9"
+             x="2126.9175"
+             y="239.14684">Pellet dispensers</tspan></text>
+        <rect
+           class="cls-28"
+           x="2101.3542"
+           y="108.517"
+           width="402.43613"
+           height="237.52524"
+           rx="4.2888398"
+           ry="3.2426655"
+           id="rect304-0-31"
+           style="fill:none;stroke:#7f0017;stroke-width:9;stroke-miterlimit:10;stroke-dasharray:none" />
+      </g>
+      <g
+         id="g14319">
+        <text
+           class="cls-2"
+           id="text296-3-7-2-4"
+           x="1060.1781"
+           y="629.83435"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.9px;font-family:ArialMT, Arial;-inkscape-font-specification:'ArialMT, Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+             sodipodi:role="line"
+             id="tspan314-6-9-5"
+             x="1060.1781"
+             y="629.83435">Servo motors</tspan><tspan
+             sodipodi:role="line"
+             x="1060.1781"
+             y="687.20935"
+             id="tspan14297">(gratings +</tspan><tspan
+             sodipodi:role="line"
+             x="1060.1781"
+             y="744.58435"
+             id="tspan14299">Pellet dispensers</tspan></text>
+        <rect
+           class="cls-28"
+           x="1033.8754"
+           y="556.29938"
+           width="402.43613"
+           height="237.52524"
+           rx="4.2888398"
+           ry="3.2426655"
+           id="rect304-0-31-0"
+           style="fill:none;stroke:#7f0017;stroke-width:9;stroke-miterlimit:10;stroke-dasharray:none" />
+      </g>
+      <g
+         id="g14324">
+        <text
+           class="cls-2"
+           id="text296-3-7-6"
+           x="1666.5067"
+           y="694.27509"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.9px;font-family:ArialMT, Arial;-inkscape-font-specification:'ArialMT, Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+             sodipodi:role="line"
+             id="tspan314-6-7"
+             x="1666.5067"
+             y="694.27509">Adafruit PCA9685</tspan></text>
+        <rect
+           class="cls-28"
+           x="1648.0482"
+           y="559.08441"
+           width="402.43613"
+           height="237.52524"
+           rx="4.2888398"
+           ry="3.2426655"
+           id="rect304-0-3"
+           style="fill:none;stroke:#7f0017;stroke-width:9;stroke-miterlimit:10;stroke-dasharray:none" />
+      </g>
+    </g>
+    <path
+       style="fill:#3f49ff;fill-opacity:1;stroke:#3d47ff;stroke-width:1.85208;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker314)"
+       d="m 71.421407,93.027572 34.912863,52.742308 v 0"
+       id="path326" />
+    <path
+       style="fill:#3f49ff;fill-opacity:1;stroke:#3d47ff;stroke-width:1.85208;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker314-5)"
+       d="m 168.61581,143.21341 v -51.400277 0"
+       id="path326-5" />
+    <path
+       style="fill:#3f49ff;fill-opacity:1;stroke:#3d47ff;stroke-width:1.85208;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker314-5-7)"
+       d="m 170.49409,24.303094 v -51.40027 0"
+       id="path326-5-6" />
+    <path
+       style="fill:#3f49ff;fill-opacity:1;stroke:#3d47ff;stroke-width:1.85208;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker314-5-2)"
+       d="m -85.998741,60.300351 h 51.400269 v 0"
+       id="path326-5-9" />
+  </g>
+</svg>
